@@ -1,0 +1,231 @@
+{%extends 'base/polynomial_base1.html'%}
+{%load static%}
+  {%block meta%}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="{% static 'images/logo/Factor-Polynomial-Com-Fevicon.png' %}" type="icon">
+  {%block css%}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  {%endblock%}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- META DATA STARTS --->
+    <title> Multiplying Polynomials Calculator | How to Calculate Product of Polynomials?</title>
+    <meta name="description" content=" Online Multiplying Polynomials Calculator multiplies 2 polynomials & gives product as output. Just enter polynomials, hit the calculate button to check its product.">
+    <link rel="canonical" href="{{request.build_absolute_uri}}" >
+<!-- META DATA ENDS --->
+
+<!-- OPEN GRAPH CONFIGURATIONS STARTS -->
+    <!--  FACEBOOK CONFIGURATION STARTS  -->
+    <meta content="https://www.facebook.com/Factor-Polynomials-102151955136428" property="og:url" />
+    <meta property="og:title" content=" Multiplying Polynomials Calculator | How to Calculate Product of Polynomials?"/>
+    <meta property="og:description" content=" Online Multiplying Polynomials Calculator multiplies 2 polynomials & gives product as output. Just enter polynomials, hit the calculate button to check its product."/>
+    <meta content="" property="og:site_name" />
+    <meta  content="https://factorpolynomials.com/static/images/polynomials/Polynomials-Multiplication-Calculator.jpeg" property="og:image" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="435" />
+    <meta property="og:image:width" content="354" />
+    <!--  FACEBOOK CONFIGURATION ENDS  -->
+    <!-- TWITTER CARD CONFIGURATION STARTS  -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="https://twitter.com/factorpolynomil"/>
+    <meta name="twitter:title" content=" Multiplying Polynomials Calculator | How to Calculate Product of Polynomials?"/>
+    <meta name="twitter:description" content=" Online Multiplying Polynomials Calculator multiplies 2 polynomials & gives product as output. Just enter polynomials, hit the calculate button to check its product."/>
+    <meta name="twitter:image:src" content="https://factorpolynomials.com/static/images/polynomials/Polynomials-Multiplication-Calculator.jpeg"/>
+    <meta property="twitter:image:height" content="435"/>
+    <meta property="twitter:image:width" content="354"/>
+    <!-- TWITTER CARD CONFIGURATION ENDS  -->
+    <!--  LINKEDIN CONFIGURATION STARTS-->
+    <meta property='og:title' content=" Multiplying Polynomials Calculator | How to Calculate Product of Polynomials?"/>
+    <meta property='og:image' content="https://factorpolynomials.com/static/images/polynomials/Polynomials-Multiplication-Calculator.jpeg"/>
+    <meta property='og:description' content=" Online Multiplying Polynomials Calculator multiplies 2 polynomials & gives product as output. Just enter polynomials, hit the calculate button to check its product."/>
+    <meta property='og:url' content="https://www.linkedin.com/in/factorpolynomials/" />
+    <!-- end of linkedin CONFIGURATIONS ENDS -->
+<!-- OPEN GRAPH CONFIGURATION ENDS -->
+<!-- FAQ SCHEMA STARTS -->
+<script type="application/ld+json">{"@context": "https://schema.org","@type": "FAQPage","mainEntity": [{"@type": "Question","name":"1.
+  How do you multiply polynomials on a calculator?
+  ","acceptedAnswer": {"@type": "Answer","text":" To multiply polynomials using a calculator follow these steps. You have to enter two polynomials in the input fields and tap on the calculate button. The exact product of polynomials with an explanation will get displayed on the screen."}	}, {"@type": "Question","name":"2.
+  What is the multiplication of polynomials?
+  ","acceptedAnswer": {"@type": "Answer","text":" Multiplication is one of the arithmetic operations in algebra. Multiplying a thing with another means the repeated addition. In the same way polynomials, multiplication is defined as its product. So, the multiplication of two or more polynomials will be one polynomial."}	}, {"@type": "Question","name":"3.
+  Solve (3x² + 2x + 1)(5x + 4)
+  ","acceptedAnswer": {"@type": "Answer","text":" Given expression is (3x² + 2x + 1)(5x + 4)
+  Multiply each term of the first polynomial with every term of the second polynomial.
+  (3x² + 2x + 1)(5x + 4) = 3x²(5x + 4) + 2x(5x + 4) + 1(5x + 4)
+  = 15x³ + 12x² + 10x² + 8x + 5x + 4
+  = 15x³ + 22x² + 13x + 4"}	}, {"@type": "Question","name":"4.
+  Where can I find the best calculator to calculate polynomials product?
+  ","acceptedAnswer": {"@type": "Answer","text":" You can get the best and free online calculator that helps to compute the polynomials multiplication on our page."}	}]}</script>
+  
+  
+{%endblock%}
+{%block content%}
+<div class="container">
+    <div class="card c1">
+      <div class="card-header">
+  <h1 class="h1">Multiplying Polynomials Calculator</h1>
+  </div>
+  <div class="card-body">
+    <p>Free Multiplying Polynomials Calculator produces the product of two polynomials easily and quickly. The only thing you have to do is give the details of polynomials in the input fields of the calculator and press the calculate button. It will automatically give the multiplication of given polynomials value as output.
+    </p><br>
+    <p><b>Ex: </b>  
+    <ul>
+      <li><a href="/multiplying-polynomials-(3x_2)(4x-1)/" title="Multiplying Polynomials (3x+2)(4x-1)" >Multiplying Polynomials (3x+2)(4x-1)</a></li>
+    <li><a href="/multiplying-polynomials-(3x_2)(4x-7)/" title="Multiplying Polynomials (3x+2)(4x-7)" >Multiplying Polynomials (3x+2)(4x-7)</a></li>
+    <li><a href="/multiplying-polynomials-(3x_4)(3x_4)/" title="Multiplying Polynomials (3x+4)(3x+4)" >Multiplying Polynomials (3x+4)(3x+4)</a></li>
+ 
+    </ul>
+    </p>
+    <form method="POST">{% csrf_token %}
+      <div class="form-row align-items-center">
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInputGroup">Multiplying Polynomials</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><strong>Calculate Multiplication of Polynomials: </strong></div>
+            </div>
+            <input type="text" class="form-control" name="textfield1" id="inlineFormInputGroup" placeholder="Enter Polynomials" value="(9x+2)(8x-1)">
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-2">Calculate</button>
+        </div>
+      </div>
+    </form>
+    <p>{{ cont|default:" "}}</p>
+    <br>
+    <p><strong>Here are some samples of Multiplying Polynomials calculations.</strong></p>
+    <div class='row'>
+      <div class='col-sm-6'> <ul>
+    <li><a href="/multiplying-polynomials-(2n~2-7n_2)(3n_1)/" title="Multiplying Polynomials (2n^2-7n+2)(3n+1)" >Multiplying Polynomials (2n^2-7n+2)(3n+1)</a></li>
+    <li><a href="/multiplying-polynomials-(2n_2)(6n_1)/" title="Multiplying Polynomials (2n+2)(6n+1)" >Multiplying Polynomials (2n+2)(6n+1)</a></li>
+    <li><a href="/multiplying-polynomials-(2x~2_3x-6)(x-1)/" title="Multiplying Polynomials (2x^2+3x-6)(x-1)" >Multiplying Polynomials (2x^2+3x-6)(x-1)</a></li>
+    <li><a href="/multiplying-polynomials-(2x~2_5x_5)(4x-3)/" title="Multiplying Polynomials (2x^2+5x+5)(4x-3)" >Multiplying Polynomials (2x^2+5x+5)(4x-3)</a></li>
+    <li><a href="/multiplying-polynomials-(2x~2_5x-3)(3x_7)/" title="Multiplying Polynomials (2x^2+5x-3)(3x+7)" >Multiplying Polynomials (2x^2+5x-3)(3x+7)</a></li>
+    <li><a href="/multiplying-polynomials-(2x~2-3x)(3x~2_2x-1)/" title="Multiplying Polynomials (2x^2-3x)(3x^2+2x-1)" >Multiplying Polynomials (2x^2-3x)(3x^2+2x-1)</a></li>
+    <li><a href="/multiplying-polynomials-(2x~2-4x_1)(5x-7)/" title="Multiplying Polynomials (2x^2-4x+1)(5x-7)" >Multiplying Polynomials (2x^2-4x+1)(5x-7)</a></li>
+    <li><a href="/multiplying-polynomials-(2x_1)(2x_1)/" title="Multiplying Polynomials (2x+1)(2x+1)" >Multiplying Polynomials (2x+1)(2x+1)</a></li>
+    <li><a href="/multiplying-polynomials-(2x_1)(2x-1)/" title="Multiplying Polynomials (2x+1)(2x-1)" >Multiplying Polynomials (2x+1)(2x-1)</a></li>
+    <li><a href="/multiplying-polynomials-(2x_3)(2x_3)/" title="Multiplying Polynomials (2x+3)(2x+3)" >Multiplying Polynomials (2x+3)(2x+3)</a></li>
+    <li><a href="/multiplying-polynomials-(2x_3)(2x-3)/" title="Multiplying Polynomials (2x+3)(2x-3)" >Multiplying Polynomials (2x+3)(2x-3)</a></li>
+    <li><a href="/multiplying-polynomials-(2x_3)(x~2-x-1)/" title="Multiplying Polynomials (2x+3)(x^2-x-1)" >Multiplying Polynomials (2x+3)(x^2-x-1)</a></li>
+    <li><a href="/multiplying-polynomials-(2x_3y)(2x-3y)/" title="Multiplying Polynomials (2x+3y)(2x-3y)" >Multiplying Polynomials (2x+3y)(2x-3y)</a></li>
+    <li><a href="/multiplying-polynomials-(2x_5)(2x-5)/" title="Multiplying Polynomials (2x+5)(2x-5)" >Multiplying Polynomials (2x+5)(2x-5)</a></li>
+    <li><a href="/multiplying-polynomials-(2x_5)(x_3)/" title="Multiplying Polynomials (2x+5)(x+3)" >Multiplying Polynomials (2x+5)(x+3)</a></li>
+    <li><a href="/multiplying-polynomials-(2x_5y)(2x-5y)/" title="Multiplying Polynomials (2x+5y)(2x-5y)" >Multiplying Polynomials (2x+5y)(2x-5y)</a></li>
+    <li><a href="/multiplying-polynomials-(2x_6)(x-2)/" title="Multiplying Polynomials (2x+6)(x-2)" >Multiplying Polynomials (2x+6)(x-2)</a></li>
+    <li><a href="/multiplying-polynomials-(2x_7)(2x-7)/" title="Multiplying Polynomials (2x+7)(2x-7)" >Multiplying Polynomials (2x+7)(2x-7)</a></li>
+    <li><a href="/multiplying-polynomials-(2x-1)(2x_1)/" title="Multiplying Polynomials (2x-1)(2x+1)" >Multiplying Polynomials (2x-1)(2x+1)</a></li>
+    <li><a href="/multiplying-polynomials-(2x-1)(x~2-4x_3)/" title="Multiplying Polynomials (2x-1)(x^2-4x+3)" >Multiplying Polynomials (2x-1)(x^2-4x+3)</a></li>
+    </ul>
+    </div><div class="col-sm-6">
+    <ul>
+    <li><a href="/multiplying-polynomials-(2x-1)(x_3)/" title="Multiplying Polynomials (2x-1)(x+3)" >Multiplying Polynomials (2x-1)(x+3)</a></li>
+    <li><a href="/multiplying-polynomials-(2x-3)(2x_3)/" title="Multiplying Polynomials (2x-3)(2x+3)" >Multiplying Polynomials (2x-3)(2x+3)</a></li>
+    <li><a href="/multiplying-polynomials-(2x-3)(2x-3)/" title="Multiplying Polynomials (2x-3)(2x-3)" >Multiplying Polynomials (2x-3)(2x-3)</a></li>
+    <li><a href="/multiplying-polynomials-(2x-3)(4x~2_6x_9)/" title="Multiplying Polynomials (2x-3)(4x^2+6x+9)" >Multiplying Polynomials (2x-3)(4x^2+6x+9)</a></li>
+    <li><a href="/multiplying-polynomials-(2x-3)(x_4)/" title="Multiplying Polynomials (2x-3)(x+4)" >Multiplying Polynomials (2x-3)(x+4)</a></li>
+    <li><a href="/multiplying-polynomials-(2x-5)(2x_5)/" title="Multiplying Polynomials (2x-5)(2x+5)" >Multiplying Polynomials (2x-5)(2x+5)</a></li>
+    <li><a href="/multiplying-polynomials-(2x-5)(x~2_4x-6)/" title="Multiplying Polynomials (2x-5)(x^2+4x-6)" >Multiplying Polynomials (2x-5)(x^2+4x-6)</a></li>
+    <li><a href="/multiplying-polynomials-(2x-7)(2x_7)/" title="Multiplying Polynomials (2x-7)(2x+7)" >Multiplying Polynomials (2x-7)(2x+7)</a></li>
+    <li><a href="/multiplying-polynomials-(3n~2_2n_4)(2n-1)/" title="Multiplying Polynomials (3n^2+2n+4)(2n-1)" >Multiplying Polynomials (3n^2+2n+4)(2n-1)</a></li>
+    <li><a href="/multiplying-polynomials-(3x~2_2x-3)(x-1)/" title="Multiplying Polynomials (3x^2+2x-3)(x-1)" >Multiplying Polynomials (3x^2+2x-3)(x-1)</a></li>
+    <li><a href="/multiplying-polynomials-(3x~2_3x_4)(2x-1)/" title="Multiplying Polynomials (3x^2+3x+4)(2x-1)" >Multiplying Polynomials (3x^2+3x+4)(2x-1)</a></li>
+    <li><a href="/multiplying-polynomials-(3x~2_5x_10)(x~2-3x-1)/" title="Multiplying Polynomials (3x^2+5x+10)(x^2-3x-1)" >Multiplying Polynomials (3x^2+5x+10)(x^2-3x-1)</a></li>
+    <li><a href="/multiplying-polynomials-(3x~2_5x_9)(6x-8)/" title="Multiplying Polynomials (3x^2+5x+9)(6x-8)" >Multiplying Polynomials (3x^2+5x+9)(6x-8)</a></li>
+    <li><a href="/multiplying-polynomials-(3x~2_6x_9)(8x-4)/" title="Multiplying Polynomials (3x^2+6x+9)(8x-4)" >Multiplying Polynomials (3x^2+6x+9)(8x-4)</a></li>
+    <li><a href="/multiplying-polynomials-(3x~2-11)(3x~2_11)/" title="Multiplying Polynomials (3x^2-11)(3x^2+11)" >Multiplying Polynomials (3x^2-11)(3x^2+11)</a></li>
+    <li><a href="/multiplying-polynomials-(3x~2-2x)(2x~2_3x-1)/" title="Multiplying Polynomials (3x^2-2x)(2x^2+3x-1)" >Multiplying Polynomials (3x^2-2x)(2x^2+3x-1)</a></li>
+    <li><a href="/multiplying-polynomials-(3x_1)(2x-5)/" title="Multiplying Polynomials (3x+1)(2x-5)" >Multiplying Polynomials (3x+1)(2x-5)</a></li>
+    <li><a href="/multiplying-polynomials-(3x_1)(3x_1)/" title="Multiplying Polynomials (3x+1)(3x+1)" >Multiplying Polynomials (3x+1)(3x+1)</a></li>
+    <li><a href="/multiplying-polynomials-(3x_1)(3x-1)/" title="Multiplying Polynomials (3x+1)(3x-1)" >Multiplying Polynomials (3x+1)(3x-1)</a></li>
+    <li><a href="/multiplying-polynomials-(3x_2)(3x-2)/" title="Multiplying Polynomials (3x+2)(3x-2)" >Multiplying Polynomials (3x+2)(3x-2)</a></li>
+       </ul>
+    </div>
+    </div>
+    <p><strong>Multiplying Polynomials Calculator: </strong>Calculating the multiplication of polynomials is not a difficult task by using this user-friendly Multiplying Polynomials Calculator. It gives the resultant product polynomial along with the detailed explanation. Continue reading to learn about what is meant by the product of polynomials, how to calculate it and so on. Also, get the example questions with solutions for the sake of your convenience.</p>
+</div></div>
+<div class="card ">
+  <div class="card-header"><h2 class="h2">What is Multiplication Polynomials?</h2></div>
+  <div class="card-body">
+    <p>Multiplying polynomials is a method that is used to get the product of two or more polynomials effortlessly. To multiply polynomials, take the first polynomial terms and split them over the second polynomial.</p>
+    </div>
+</div>
+  <div class="card ">
+    <div class="card-header"><h2 class="h2">How to Multiply Polynomials?</h2></div>
+    <div class="card-body">
+      <p>To obtain the multiplication of polynomials, follow the below-provided simple rules and instructions.</p>
+      <p>To multiply two polynomials, just follow the simple steps given below and find the product expansion easily.</p>
+      <ul>
+        <li>Get any two polynomials to perform multiplication operation.</li>
+        <li>Multiply each term in one polynomial by each term in another polynomial.</li>
+        <li>Add the like terms together and simplify them</li>
+        <li>The final polynomial is the answer.</li>
+      </ul>
+      <p>If you are performing polynomial products or expansion of terms manually then these simple steps will help you a lot. If you wanna check whether the result is correct or wrong then go with our Multiplying Polynomials Calculator and give the input to attain the accurate output in just a fraction of seconds.</p>
+      <p>Explore more algebraic calculators from our site <a href="{%url 'polynomials_calculator'%}">factorpolynomials.com</a> and calculate all your algebra problems easily at a faster pace.</p>
+      <img src="{% static 'images/polynomials/Polynomials-Multiplication-Calculator.jpeg' %}" alt="Polynomials Multiplication Calculator">
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+          <h3 class="h3">Multiplying Polynomials with Example</h3>
+      </div>
+    <div class="card-body">
+          <p><strong>Example</strong></p>
+          <p><strong>Question: Find the product of 12 + 5x and x³ + 2x² + xy + 1</strong></p>
+          <p><strong>Solution:</strong></p>
+          <p>Given polynomials are 12 + 5x and x³ + 2x² + xy + 1</p>
+          <p>(12 + 5x)(x³ + 2x² + xy + 1) = 12(x³ + 2x² + xy + 1) + 5x(x³ + 2x² + xy + 1)</p>
+          <p>= 12x³ + 24x² + 12xy + 12 + 5x⁴ + 10x³ + 5x²y + 5x</p>
+          <p>= 5x⁴ + 22x³ + 24x² + 5x²y + 12xy + 5x + 12</p>
+          <p>Therefore, (12 + 5x)(x³ + 2x² + xy + 1) = 5x⁴ + 22x³ + 24x² + 5x²y + 12xy + 5x + 12</p>
+          <a href="/">factorpolynomials.com</a> has got concepts like addition, subtraction, multiplication, division of polynomials, and many more along with their relevant calculators all one under one roof.
+          </div>
+  </div>
+  <div class="card ">
+      <div class="card-header">
+          <h3 class="h3">FAQs on Multiplying Polynomials Calculator</h3>
+      </div>
+      <div class="card-body">
+          <!-- Question & Answer Starts --->
+         <p class="question"><strong>1. How do you multiply polynomials on a calculator?</strong></p>
+         <p class="answer">To multiply polynomials using a calculator follow these steps. You have to enter two polynomials in the input fields and tap on the calculate button. The exact product of polynomials with an explanation will get displayed on the screen.</p><hr>
+
+
+         <p class="question"><strong>2. What is the multiplication of polynomials?</strong></p>
+         <p class="answer">Multiplication is one of the arithmetic operations in algebra. Multiplying a thing with another means the repeated addition. In the same way polynomials, multiplication is defined as its product. So, the multiplication of two or more polynomials will be one polynomial.</p><hr>
+
+
+         <p class="question"><strong>3. Solve (3x² + 2x + 1)(5x + 4)</strong></p>
+         <p class="answer">Given expression is (3x² + 2x + 1)(5x + 4)
+          Multiply each term of the first polynomial with every term of the second polynomial.
+          (3x² + 2x + 1)(5x + 4) = 3x²(5x + 4) + 2x(5x + 4) + 1(5x + 4)
+          = 15x³ + 12x² + 10x² + 8x + 5x + 4
+          = 15x³ + 22x² + 13x + 4
+          </p><hr>
+
+
+         <p class="question"><strong>4. Where can I find the best calculator to calculate a polynomial product?</strong></p>
+         <p class="answer">You can get the best and free online calculator that helps to compute the polynomial multiplication on our page.</p>
+      </div>
+   </div>
+</div>
+<!-- <div class="card">
+  <div class="card-header">
+  <h3 class="h3">Multiplying Polynomials Calculations</h3>
+</div>
+<div class="card-body">
+  <ul>
+    {% for i,j in sk1 %}
+  <li><a  href="{{i}}" title="{{j}}">{{j}}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+</div>
+</div> -->
+{%endblock%}

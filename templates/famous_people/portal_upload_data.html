@@ -1,0 +1,48 @@
+{% extends 'famous_people/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Portal - Upload Data - Factorpolynomials.com</title>
+<meta name="description" content="Portal Upload Data.">
+
+<!-- Open Graph Meta -->
+<meta property="og:site_name" content="HowToGeeks">
+<meta property="og:url" content="{{request.build_absolute_uri}}">
+<meta property="og:title" content="Portal - Upload Data - Factorpolynomials.com">
+<meta property="og:description" content="Portal Upload Data.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://onlinecalculator.guru/static/images/logo/Online-Calculator-Guru-Fevicon.png">
+
+<!-- Twitter Meta -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="{{request.build_absolute_uri}}">
+<meta name="twitter:title" content="Portal - Upload Data - Factorpolynomials.com">
+<meta name="twitter:description" content="Portal Upload Data.">
+<meta name="twitter:image" content="https://onlinecalculator.guru/static/images/logo/Online-Calculator-Guru-Fevicon.png">
+{% endblock head %}
+
+{% block body %}
+<br>
+<div class="container text-right">
+    <a class="btn btn-primary btn-sm" href="/admin/logout/" role="button">Logout</a>
+</div>
+<div class="container col-md-4 text-center">
+    <br>
+    {% if msg %}
+    <div class="alert alert-info" role="alert">
+        <strong>{{msg|safe}}</strong>
+    </div>
+    {% endif %}
+    <h3>Upload Data For Famous People</h3>
+    <form method="post" enctype="multipart/form-data" onsubmit="$('.btn.btn-success').attr('disabled','');">
+        {% csrf_token %}
+        <input type="file" style="padding: 100px" name="json_file" class="form-control mt-2" accept=".json">
+        <span class="text-muted small d-block text-left mb-3">For large json data kindly upload file from server in temp dir and click upload directly</span>
+        <button class="btn btn-info w-100" type="submit">Upload</button>
+    </form>
+    <br>    <br>    <br>
+</div>
+{% endblock body %}
+
+{% block script %}
+{% endblock script %}

@@ -1,0 +1,88 @@
+{% extends 'famous_people/base.html' %}
+{% load static %}
+{% load custom_tags %}
+
+{% block head %}
+<title>Famous People Facts - Factorpolynomials.com</title>
+<meta name="description" content="Happy Birthday to you! We've got endless birthday ideas for all ages, you need not look any further. From DIY decorations, to at-home party inspiration and more cake ideas than you can shake a stick at, we've got it all.">
+
+<!-- Open Graph Meta -->
+<meta property="og:site_name" content="HowToGeeks">
+<meta property="og:url" content="{{request.build_absolute_uri}}">
+<meta property="og:title" content="Famous People Facts - Factorpolynomials.com">
+<meta property="og:description" content="Happy Birthday to you! We've got endless birthday ideas for all ages, you need not look any further. From DIY decorations, to at-home party inspiration and more cake ideas than you can shake a stick at, we've got it all.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://onlinecalculator.guru/static/images/logo/Online-Calculator-Guru-Fevicon.png">
+
+<!-- Twitter Meta -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="{{request.build_absolute_uri}}">
+<meta name="twitter:title" content="Famous People Facts - Factorpolynomials.com">
+<meta name="twitter:description" content="Happy Birthday to you! We've got endless birthday ideas for all ages, you need not look any further. From DIY decorations, to at-home party inspiration and more cake ideas than you can shake a stick at, we've got it all.">
+<meta name="twitter:image"
+    content="https://onlinecalculator.guru/static/images/logo/Online-Calculator-Guru-Fevicon.png">
+{% endblock head %}
+
+{% block body %}
+
+<div class="container-fluid px-5">
+    <br>
+    <div class="row justify-content-center">
+        {% for people in object_list %}
+        <div class="card m-1" style="width: 18rem;">
+            <a href="{% url 'famous_people:post_url' people.slug %}" style="color: black;text-decoration: none;">
+                <img src="{{people.image}}" class="card-img-top" style="max-height: 275px;" alt="{{people.title}}" />
+                <div class="card-body" style="padding: 5px !important;">
+                    <h3 class="card-title mb-0">{{people.title}}</h3>
+                    <p class="card-test text-muted mb-0">
+                        {% get_people_metadata people %}
+                    </p>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+<br><br>
+{% if is_paginated %}
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center" style="list-style-type: none !important;">
+        {% if page_obj.has_previous %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{page_obj.previous_page_number}}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo; Prev</span>
+                </a>
+            </li>
+            {% if page_obj.number|add:"-2" != 0 %}
+            <li class="page-item"><a class="page-link"
+                    href="?page={{page_obj.number|add:'-2'}}">{{page_obj.number|add:"-2"}}</a></li>
+            {% endif %}
+            <li class="page-item"><a class="page-link"
+                    href="?page={{page_obj.previous_page_number}}">{{page_obj.previous_page_number}}</a></li>
+        {% endif %}
+
+        <li class="page-item active"><a class="page-link" href="?page={{page_obj.number}}">{{page_obj.number}}</a></li>
+
+        {% if page_obj.has_next %}
+            <li class="page-item"><a class="page-link"
+                    href="?page={{page_obj.next_page_number}}">{{page_obj.next_page_number}}</a></li>
+            {% if page_obj.number|add:"2" != 0 and page_obj.number|add:"2" <= page_obj.paginator.num_pages %} <li
+                class="page-item"><a class="page-link"
+                    href="?page={{page_obj.number|add:'2'}}">{{page_obj.number|add:"2"}}</a></li>
+            {% endif %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{page_obj.next_page_number}}" aria-label="Next">
+                        <span aria-hidden="true">Next &raquo;</span>
+                    </a>
+                </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endif %}
+
+{% endblock body %}
+
+{% block script %}
+{% endblock script %}

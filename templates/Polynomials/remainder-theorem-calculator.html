@@ -1,0 +1,217 @@
+{%extends 'base/polynomial_base2.html'%}
+{%load static%}
+  {%block meta%}
+    <!-- HTML Defaults Broweser -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Stylesheet and Jquery, Google APIS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Online Calculator Guru Site Fevicon -->
+    <link rel="shortcut icon" href="https://factorpolynomials.com/static/images/logo/Factor-Polynomial-Com-Fevicon.png" type="icon">
+    <!-- Online Calculator Guru Project Style Sheet -->
+    {%block css%}
+    <link rel="stylesheet" href="https://factorpolynomials.com/static/style.css">
+    {%endblock%}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Meta Title, Description and Canonical URL Starts --->
+    <title>Remainder Theorem Calculator | Tool to Find Remainder of a Polynomial</title>
+    <meta name="description" content=" Polynomial Remainder Theorem Calculator calculates the remainder of a polynomial easily. Check remainder theorem formula, steps to solve polynomial remainder."/>
+    <link rel="canonical" href="{{request.build_absolute_uri}}">
+    <!-- Meta Title, Description and Canonical URL ENDS --->
+ 
+    <!-- OPEN GRAPH CONFIGURATIONS STARTS -->
+	<!--  FACEBOOK CONFIGURATION STARTS  -->
+        <meta content="https://www.facebook.com/Factor-Polynomials-102151955136428" property="og:url" />
+        <meta property="og:title" content="Remainder Theorem Calculator | Tool to Find Remainder of a Polynomial"/>
+        <meta property="og:description" content=" Polynomial Remainder Theorem Calculator calculates the remainder of a polynomial easily. Check remainder theorem formula, steps to solve polynomial remainder."/>
+        <meta content="" property="og:site_name" />
+        <meta  content="https://factorpolynomials.com/static/images/polynomials/Remainder-Theorem-Calculator.jpeg" property="og:image" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:height" content="435" />
+        <meta property="og:image:width" content="354" />
+        <!--  FACEBOOK CONFIGURATION ENDS  -->
+        <!-- TWITTER CARD CONFIGURATION STARTS  -->
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content="https://twitter.com/factorpolynomil"/>
+        <meta name="twitter:title" content="Remainder Theorem Calculator | Tool to Find Remainder of a Polynomial"/>
+        <meta name="twitter:description" content=" Polynomial Remainder Theorem Calculator calculates the remainder of a polynomial easily. Check remainder theorem formula, steps to solve polynomial remainder."/>
+        <meta name="twitter:image:src" content="https://factorpolynomials.com/static/images/polynomials/Remainder-Theorem-Calculator.jpeg"/>
+        <meta property="twitter:image:height" content="435"/>
+        <meta property="twitter:image:width" content="354"/>
+        <!-- TWITTER CARD CONFIGURATION ENDS  -->
+        <!--  LINKEDIN CONFIGURATION STARTS-->
+        <meta property='og:title' content="Remainder Theorem Calculator | Tool to Find Remainder of a Polynomial"/>
+        <meta property='og:image' content="https://factorpolynomials.com/static/images/polynomials/Remainder-Theorem-Calculator.jpeg"/>
+        <meta property='og:description' content=" Polynomial Remainder Theorem Calculator calculates the remainder of a polynomial easily. Check remainder theorem formula, steps to solve polynomial remainder."/>
+        <meta property='og:url' content="https://www.linkedin.com/in/factorpolynomials/" />
+        <!-- end of linkedin CONFIGURATIONS ENDS -->
+    <!-- OPEN GRAPH CONFIGURATION ENDS -->
+    <!-- FAQ SCHEMA STARTS -->
+    <script type="application/ld+json">{"@context": "https://schema.org","@type": "FAQPage","mainEntity": [{"@type": "Question","name":"1.
+      What is the remainder theorem formula?
+      ","acceptedAnswer": {"@type": "Answer","text":" If a polynomial f(x) is divided by the linear x - a, then the remainder of the polynomial expression is f(x) = (x-a) * q(x) + r(x). Where q(x) is the quotient, r(x) is the remainder."}	}, {"@type": "Question","name":"2.
+      How do you find the remainder theorem on a calculator?
+      ","acceptedAnswer": {"@type": "Answer","text":" You have to give the dividend polynomial and division linear function as inputs and click on the calculate button. It gives the remainder of the polynomial as output."}	}, {"@type": "Question","name":"3.
+      Is the factor theorem and remainder theorem the same?
+      ","acceptedAnswer": {"@type": "Answer","text":" According to the remainder theorem, a polynomial f(x) is divided by x-a gives the remainder as f(a). In factor theorem, if "a" is the zero of a polynomial f(x) then x-a is the factor of f(x) or vice versa."}	}, {"@type": "Question","name":"4.
+      Can you use the remainder theorem If the remainder is zero?
+      ","acceptedAnswer": {"@type": "Answer","text":" The remainder of polynomial expressions becomes zero when it is divided by factor. You can use the polynomial remainder theorem at any case of polynomial function but the divisor must be a binomial in the form of x-a."}	}]}</script>
+      
+    {%endblock%}
+    {%block content%}
+    <div class="container">
+        <div class="card c1">
+            <div class="card-header">
+                <h1 class="h1">Remainder Theorem Calculator</h1>
+            </div>
+            <div class="card-body">
+                <p>Polynomial Remainder Theorem Calculator is an online tool that displays the remainder of a polynomial easily. All you have to do is provide the input values i.e dividend polynomial and divisor linear function and hit on the calculate button to get the output within no time.</p>
+                <p><b>Ex: </b> 
+                <ul>
+                  <li><a href="/solve-x~2-3x_3-by-x_5/" title="Solve x^2-3x+3 by x+5" >Solve x^2-3x+3 by x+5</a></li>
+                  <li><a href="/solve-x~2-3x_4-by-x_7/" title="Solve x^2-3x+4 by x+7" >Solve x^2-3x+4 by x+7</a></li>
+                  <li><a href="/solve-x~2-4x_2-by-x_9/" title="Solve x^2-4x+2 by x+9" >Solve x^2-4x+2 by x+9</a></li>
+                </ul>
+                </p>
+  
+                <form method="POST">{% csrf_token %}
+       
+                  <div class="form-row align-items-center">
+                    <div class="col-auto">
+                      <label class="sr-only" for="inlineFormInputGroup">Remainder Theorem</label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><strong>Remainder Theorem </strong></div>
+                        </div>
+                        <input type="text"   name="textfield1" class="form-control" id="inlineFormInputGroup" placeholder="polynomial 1" required="" value="x^2+4x+8">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><strong> by </strong></div>
+                        </div>
+                        <input type="text"   name="textfield2" class="form-control"  id="inlineFormInputGroup" placeholder="polynomial 2" required="" value="x-5">
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary mb-2">Calculate</button>
+                    </div>
+                  </div>
+                  </form>
+                  <p><strong>Here are some samples of Remainder Theorem calculations.</strong></p>
+                  <div class='row'>
+                    <div class='col-sm-6'> <ul>
+                  <li><a href="/solve--4x~3_5x~2_8-by-x_3/" title="Solve -4x^3+5x^2+8 by x+3" >Solve -4x^3+5x^2+8 by x+3</a></li>
+                  <li><a href="/solve-4x~3_x~2_x-3-by-x_5/" title="Solve 4x^3+x^2+x-3 by x+5" >Solve 4x^3+x^2+x-3 by x+5</a></li>
+                  <li><a href="/solve-4x~3-3x~2-8x_4-by-x_1/" title="Solve 4x^3-3x^2-8x+4 by x+1" >Solve 4x^3-3x^2-8x+4 by x+1</a></li>
+                  <li><a href="/solve-5x~3_x~2_x-8-by-x_1/" title="Solve 5x^3+x^2+x-8 by x+1" >Solve 5x^3+x^2+x-8 by x+1</a></li>
+                  <li><a href="/solve-5x~3_x~2_x-9-by-x_7/" title="Solve 5x^3+x^2+x-9 by x+7" >Solve 5x^3+x^2+x-9 by x+7</a></li>
+                  <li><a href="/solve-5x~6-3x~3_8-by-x_1/" title="Solve 5x^6-3x^3+8 by x+1" >Solve 5x^6-3x^3+8 by x+1</a></li>
+                  <li><a href="/solve-5x~6-3x~3_8-by-x-1/" title="Solve 5x^6-3x^3+8 by x-1" >Solve 5x^6-3x^3+8 by x-1</a></li>
+                  <li><a href="/solve-x~2_5x_6-by-x-1/" title="Solve x^2+5x+6 by x-1" >Solve x^2+5x+6 by x-1</a></li>
+                  <li><a href="/solve-x~2-3x_3-by-x-1/" title="Solve x^2-3x+3 by x-1" >Solve x^2-3x+3 by x-1</a></li>
+                  <li><a href="/solve-x~3_3x~2_8x_12-by-x-1/" title="Solve x^3+3x^2+8x+12 by x-1" >Solve x^3+3x^2+8x+12 by x-1</a></li>
+                  <li><a href="/solve-x~3_4x~2-8x-10-by-x_1/" title="Solve x^3+4x^2-8x-10 by x+1" >Solve x^3+4x^2-8x-10 by x+1</a></li>
+                  <li><a href="/solve-x~3-7x~2_12x-10-by-x_1/" title="Solve x^3-7x^2+12x-10 by x+1" >Solve x^3-7x^2+12x-10 by x+1</a></li>
+                  <li><a href="/solve-x~3-x~2-44x_16-by-x_1/" title="Solve x^3-x^2-44x+16 by x+1" >Solve x^3-x^2-44x+16 by x+1</a></li>
+                  <li><a href="/solve-x~4_8x~3_12x~2-by-x_1/" title="Solve x^4+8x^3+12x^2 by x+1" >Solve x^4+8x^3+12x^2 by x+1</a></li>
+                  <li><a href="/solve-x~4_8x~3_12x~2-by-x_1/" title="Solve x^4+8x^3+12x^2 by x+1" >Solve x^4+8x^3+12x^2 by x+1</a></li>
+                  <li><a href="/solve-3x~6_3x~4-3x~2_6-by-x_1/" title="Solve 3x^6+3x^4-3x^2+6 by x+1" >Solve 3x^6+3x^4-3x^2+6 by x+1</a></li>
+                  <li><a href="/solve-x~3-4x~2-9x_7-by-x_1/" title="Solve x^3-4x^2-9x+7 by x+1" >Solve x^3-4x^2-9x+7 by x+1</a></li>
+                  <li><a href="/solve-x~2-2x_2-by-x_1/" title="Solve x^2-2x+2 by x+1" >Solve x^2-2x+2 by x+1</a></li>
+                  <li><a href="/solve-x~2-2x_3-by-x_1/" title="Solve x^2-2x+3 by x+1" >Solve x^2-2x+3 by x+1</a></li>
+                  <li><a href="/solve-x~2-2x_4-by-x_1/" title="Solve x^2-2x+4 by x+1" >Solve x^2-2x+4 by x+1</a></li>
+                  </ul>
+                  </div><div class="col-sm-6">
+                  <ul>
+                  <li><a href="/solve-x~2-3x_3-by-x_4/" title="Solve x^2-3x+3 by x+4" >Solve x^2-3x+3 by x+4</a></li>
+                  <li><a href="/solve-x~2-3x_4-by-x_2/" title="Solve x^2-3x+4 by x+2" >Solve x^2-3x+4 by x+2</a></li>
+                  <li><a href="/solve-x~2-4x_2-by-x_2/" title="Solve x^2-4x+2 by x+2" >Solve x^2-4x+2 by x+2</a></li>
+                  <li><a href="/solve-x~2-4x_4-by-x-2/" title="Solve x^2-4x+4 by x-2" >Solve x^2-4x+4 by x-2</a></li>
+                  <li><a href="/solve-x~2-4x_5-by-x_2/" title="Solve x^2-4x+5 by x+2" >Solve x^2-4x+5 by x+2</a></li>
+                  <li><a href="/solve-x~2-2x_2-by-x_8/" title="Solve x^2-2x+2 by x+8" >Solve x^2-2x+2 by x+8</a></li>
+                  <li><a href="/solve-x~2-2x_3-by-x_2/" title="Solve x^2-2x+3 by x+2" >Solve x^2-2x+3 by x+2</a></li>
+                  <li><a href="/solve-x~2-2x_4-by-x_2/" title="Solve x^2-2x+4 by x+2" >Solve x^2-2x+4 by x+2</a></li>
+                  <li><a href="/solve-x~2-2x_5-by-x_2/" title="Solve x^2-2x+5 by x+2" >Solve x^2-2x+5 by x+2</a></li>
+                  <li><a href="/solve-x~2-3x_2-by-x_2/" title="Solve x^2-3x+2 by x+2" >Solve x^2-3x+2 by x+2</a></li>
+                  <li><a href="/solve-x~2-3x_3-by-x_3/" title="Solve x^2-3x+3 by x+3" >Solve x^2-3x+3 by x+3</a></li>
+                  <li><a href="/solve-x~2-3x_4-by-x_2/" title="Solve x^2-3x+4 by x+2" >Solve x^2-3x+4 by x+2</a></li>
+                  <li><a href="/solve-x~2-3x_5-by-x_2/" title="Solve x^2-3x+5 by x+2" >Solve x^2-3x+5 by x+2</a></li>
+                  <li><a href="/solve-x~2-4x_2-by-x_6/" title="Solve x^2-4x+2 by x+6" >Solve x^2-4x+2 by x+6</a></li>
+                  <li><a href="/solve-x~2-4x_3-by-x_2/" title="Solve x^2-4x+3 by x+2" >Solve x^2-4x+3 by x+2</a></li>
+                  <li><a href="/solve-x~2-4x_4-by-x_2/" title="Solve x^2-4x+4 by x+2" >Solve x^2-4x+4 by x+2</a></li>
+                  <li><a href="/solve-x~2-4x_5-by-x_2/" title="Solve x^2-4x+5 by x+2" >Solve x^2-4x+5 by x+2</a></li>
+                  <li><a href="/solve-6x~4_8x~3_6x~2-4x_27-by-x_2/" title="Solve 6x^4+8x^3+6x^2-4x+27 by x+2" >Solve 6x^4+8x^3+6x^2-4x+27 by x+2</a></li>
+                  <li><a href="/solve-2x~3_4x~2-10x-9-by-x_2/" title="Solve 2x^3+4x^2-10x-9 by x+2" >Solve 2x^3+4x^2-10x-9 by x+2</a></li>
+                  <li><a href="/solve-2x~3-x~2_10x-by-x_2/" title="Solve 2x^3-x^2+10x by x+2" >Solve 2x^3-x^2+10x by x+2</a></li>
+                  </ul>
+                  </div>
+                  </div>
+        
+                <p><strong>Remainder Theorem Calculator: </strong>This simple calculator will find the remainder of a polynomial expression and shows the work involved step by step. In the following sections of this page, we have given the steps on how to compute the remainder of polynomial expression, remainder theorem definition, formula and solved examples.</p>
+            </div>
+        </div>
+    <div class="card">
+	    <div class="card-header">
+            <h2 class="h2">How to Solve Remainder of Polynomial Expressions Using Remainder Theorem?</h2>
+        </div>
+	    <div class="card-body">
+            <p>Remainder Theorem is used that when a polynomial f(x) is divided by a linear factor in the form of x-a. Go through the following steps and use them while solving the remainder of a polynomial expression in fraction of seconds.</p>
+            <ul>
+            <li>Let us take polynomial f(x) as dividend and linear expression as divisor.</li>
+            <li>The linear expression should be in the form of x-a.</li>
+            <li>Then, the remainder value of polynomial will become f(a).</li>
+            <li>So, substitute the c value in the polynomial expression and evaluate to get the remainder value.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+	    <div class="card-header">
+            <h3 class="h3">Remainder Theorem</h3>
+        </div>
+	    <div class="card-body">
+            <p>In mathematics, the remainder theorem states that when a polynomial p(x) is divided by the linear factor x-a, then the remainder of the polynomial division is equal to p(a).
+              General division formula is dividend = (divisor * quotient) + remainder
+              Remainder theorem of a polynomial formula is p(x) = (x-a) * (q(x) + r(x)
+              Where,
+              p(x) is the dividend
+              x-a is divisor
+              q(x) is the quotient
+              r(x) is the remainder.
+              </p>
+            <p><strong>Example</strong></p>
+            <p><strong>Question:  Divide polynomial x²-3x+2 by the linear expression x+2 and find the remainder.</strong></p>
+            <p><strong>Solution:</strong></p>
+            <p>Given values are</p>
+            <p>Given polynomial is f(x) = x²-3x+2</p>
+            <p>Linear expression is x+2</p>
+            <p>When x+2=0, then x=-2</p>
+            <p>Substitute x=-2 in f(x)</p>
+            <p>So, f(-2)=(-2)²-3(-2)+2</p>
+            <p>=4+6+2</p>
+            <p>The remainder of given polynomial is 3.</p>
+            <p>Get instant help with the mathematical concepts you never seemed to understand with the calculators prevailing on <a href="https://factorpolynomials.com/">factorpolynomials.com</a>
+            </p>
+            <img src="{% static 'images/polynomials/Remainder-Theorem-Calculator.jpeg' %}" alt="Remainder Theorem Calculator">
+          </div>
+    </div>
+    <div class="card">
+  	    <div class="card-header">
+      	<h3 class="h3">FAQs on Remainder Theorem Calculator</h3>
+  	    </div>
+  	    <div class="card-body">
+      	<!-- Question & Answer Starts --->
+        <p class="question"><strong>1. What is the remainder theorem formula?</strong></p>
+     	<p class="answer">If a polynomial f(x) is divided by the linear x - a, then the remainder of the polynomial expression is f(x) = (x-a) * q(x) + r(x). Where q(x) is the quotient, r(x) is the remainder.</p><hr>
+     	<p class="question"><strong>2. How do you find the remainder theorem on a calculator?</strong></p>
+     	<p class="answer">You have to give the dividend polynomial and division linear function as inputs and click on the calculate button. It gives the remainder of the polynomial as output.</p><hr>  
+        <p class="question"><strong>3. Is the factor theorem and remainder theorem the same?</strong></p>
+        <p class="answer">According to the remainder theorem, a polynomial f(x) is divided by x-a gives the remainder as f(a). In the factor theorem, if "a" is the zero of a polynomial f(x) then x-a is the factor of f(x) or vice versa.</p><hr>
+        <p class="question"><strong>4. Can you use the remainder theorem If the remainder is zero?</strong></p>
+     	<p class="answer">The remainder of polynomial expressions becomes zero when it is divided by factor. You can use the polynomial remainder theorem at any case of polynomial function but the divisor must be a binomial in the form of x-a.
+            </p><hr>
+    	</div>
+    </div>
+    </div>
+{%endblock%}

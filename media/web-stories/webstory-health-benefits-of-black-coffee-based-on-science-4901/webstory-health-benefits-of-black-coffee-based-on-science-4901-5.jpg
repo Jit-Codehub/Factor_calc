@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="396px" height="256px" viewBox="0 0 396 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1414.000000, -88.000000)">
+            <g id="Group-2" transform="translate(1420.533205, 94.000000)">
+                <path d="M64.9667952,128.5 C82.7290044,109.625537 102.117393,95.9927955 123.131959,87.6017744 C144.146526,79.2107533 166.924805,74.8434952 191.466795,74.5" id="Line" stroke="#FEF750" stroke-width="13" stroke-linecap="round"></path>
+                <path d="M21.9667952,228.5 C23.109644,218.248718 25.8249306,205.941139 30.1126551,191.577261 C34.4003797,177.213384 38.685093,166.520964 42.9667952,159.5" id="Line-2" stroke="#FEF750" stroke-width="13" stroke-linecap="round"></path>
+                <path d="M313.206704,242.730703 L382.424271,242.070025 C382.424271,235.694828 382.114537,229.387533 381.508128,223.163818 C380.747934,215.36178 379.521515,207.691088 377.854597,200.182627 C359.18457,116.085384 285.255233,52.3395854 192.216675,52.3395854 C84.2450063,52.3395854 1.13686838e-13,138.851242 1.13686838e-13,242.730703 C59.3588007,242.533687 184.297895,241.951555 283.10531,241.872558" id="Oval" stroke="#FFFD50" stroke-width="13" stroke-linecap="round"></path>
+                <circle id="Oval" stroke="#FDF650" stroke-width="12" cx="190.966795" cy="17.5" r="17.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

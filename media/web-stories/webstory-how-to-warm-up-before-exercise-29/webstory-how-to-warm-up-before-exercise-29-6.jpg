@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="526px" height="245px" viewBox="0 0 526 245" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>fit3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0.307228148%" x2="50%" y2="99.6927719%" id="linearGradient-1">
+            <stop stop-color="#FCF53C" offset="0%"></stop>
+            <stop stop-color="#F8E71C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-66.000000, -167.000000)">
+            <g id="fit3" transform="translate(326.500000, 290.000000) rotate(-45.000000) translate(-326.500000, -290.000000) translate(96.000000, 59.000000)">
+                <rect id="Rectangle" fill="#F8E71C" fill-rule="nonzero" transform="translate(51.935141, 51.485891) rotate(-45.000000) translate(-51.935141, -51.485891) " x="-7.56485864" y="44.4858909" width="119" height="14"></rect>
+                <rect id="Rectangle-Copy" fill="#F8E71C" fill-rule="nonzero" transform="translate(413.022601, 414.022601) rotate(-45.000000) translate(-413.022601, -414.022601) " x="353.522601" y="407.022601" width="119" height="14"></rect>
+                <rect id="Rectangle" stroke="#F8E71C" stroke-width="12" transform="translate(112.618896, 112.600971) rotate(-45.000000) translate(-112.618896, -112.600971) " x="-3.38110351" y="69.6009708" width="232" height="86" rx="29"></rect>
+                <path d="M173.399964,173.963919 L319.070224,321.636369 C320.219126,322.801062 320.22304,324.671505 319.079023,325.840997 L255.119588,391.224633 C248.167974,398.331041 248.293459,409.72732 255.399867,416.678934 C255.4495,416.727487 255.499414,416.775751 255.549606,416.823726 L292.042412,451.704462 C297.494016,456.915241 306.093441,456.871494 311.491747,451.605519 L452.626846,313.930141 C458.952284,307.759762 459.077984,297.629903 452.907605,291.304465 C452.890352,291.286779 452.873058,291.269132 452.855724,291.251526 L418.774403,256.636042 C411.10007,248.841429 398.587453,248.658159 390.68813,256.224669 L353.308332,292.029583" id="Line" stroke="url(#linearGradient-1)" stroke-width="14" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

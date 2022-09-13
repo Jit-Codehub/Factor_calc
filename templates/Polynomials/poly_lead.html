@@ -1,0 +1,187 @@
+{%extends 'base/polynomial_base1.html'%}
+{%load static%}
+  {%block meta%}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="{% static 'images/logo/Factor-Polynomial-Com-Fevicon.png' %}" type="icon">
+  {%block css%}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  {%endblock%}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- META DATA STARTS --->
+    <title>Leading Term of a Polynomial calculator | Free polynomial leading term tool</title>
+    <meta name="description" content="Free Online Polynomial Leading Coefficient Calculator &amp; Leading Term of a Polynomial Calculator gives instant results for the given equation.">
+    <link rel="canonical" href="{{request.build_absolute_uri}}" >
+<!-- META DATA ENDS --->
+
+<!-- OPEN GRAPH CONFIGURATIONS STARTS -->
+    <!--  FACEBOOK CONFIGURATION STARTS  -->
+    <meta content="https://www.facebook.com/Factor-Polynomials-102151955136428" property="og:url" />
+    <meta property="og:title" content="Leading Term of a Polynomial calculator | Free polynomial leading term tool"/>
+    <meta property="og:description" content="Free Online Polynomial Leading Coefficient Calculator &amp; Leading Term of a Polynomial Calculator gives instant results for the given equation."/>
+    <meta content="" property="og:site_name" />
+    <meta  content="https://factorpolynomials.com/static/images/polynomials/Leading-Term-of-a-Polynomial-Calculator.jpeg" property="og:image" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="435" />
+    <meta property="og:image:width" content="354" />
+    <!--  FACEBOOK CONFIGURATION ENDS  -->
+    <!-- TWITTER CARD CONFIGURATION STARTS  -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="https://twitter.com/factorpolynomil"/>
+    <meta name="twitter:title" content="Leading Term of a Polynomial calculator | Free polynomial leading term tool"/>
+    <meta name="twitter:description" content="Free Online Polynomial Leading Coefficient Calculator &amp; Leading Term of a Polynomial Calculator gives instant results for the given equation."/>
+    <meta name="twitter:image:src" content="https://factorpolynomials.com/static/images/polynomials/Leading-Term-of-a-Polynomial-Calculator.jpeg"/>
+    <meta property="twitter:image:height" content="435"/>
+    <meta property="twitter:image:width" content="354"/>
+    <!-- TWITTER CARD CONFIGURATION ENDS  -->
+    <!--  LINKEDIN CONFIGURATION STARTS-->
+    <meta property='og:title' content="Leading Term of a Polynomial calculator | Free polynomial leading term tool"/>
+    <meta property='og:image' content="https://factorpolynomials.com/static/images/polynomials/Leading-Term-of-a-Polynomial-Calculator.jpeg"/>
+    <meta property='og:description' content="Free Online Polynomial Leading Coefficient Calculator &amp; Leading Term of a Polynomial Calculator gives instant results for the given equation."/>
+    <meta property='og:url' content="https://www.linkedin.com/in/factorpolynomials/" />
+    <!-- end of linkedin CONFIGURATIONS ENDS -->
+<!-- OPEN GRAPH CONFIGURATION ENDS -->
+<!-- FAQ SCHEMA STARTS -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you calculate the leading term of a polynomial?","acceptedAnswer":{"@type":"Answer","text":"The term with the largest degree is known as the leading term of a polynomial. As it is written at first. You can calculate the leading term value by finding the highest degree of the variable occurs in the given polynomial."}},{"@type":"Question","name":"What is the Leading Coefficient of a polynomial?","acceptedAnswer":{"@type":"Answer","text":"The leading coefficient of a polynomial is the coefficient of the leading term."}},{"@type":"Question","name":" How to find polynomial leading terms using a calculator?","acceptedAnswer":{"@type":"Answer","text":"Finding the leading term of a polynomial is simple & easy to perform by using our free online leading term of a polynomial calculator. Simply provide the input expression and get the output in no time along with detailed solution steps."}},{"@type":"Question","name":" Which is the best website to offer the leading term of a polynomial calculator?","acceptedAnswer":{"@type":"Answer","text":"factorpolynomials.com is a trustworthy & reliable website that offers polynomial calculators like a leading term of a polynomial calculator, addition, subtraction polynomial tools, etc. to help users find their result in just fraction of seconds along with an elaborate solution."}}]}</script><!--FAQPage Code Generated by https://saijogeorge.com/json-ld-schema-generator/faq/-->
+{%endblock%}
+{%block content%}
+<div class="container">
+    <div class="card c1">
+      <div class="card-header">
+  <h1 class="h1">Leading Term of a Polynomial Calculator</h1>
+  </div>
+  <div class="card-body">
+    <p>A minute online Leading Term of a Polynomial Calculator tool is used to find the leading term &amp; coefficient of the given polynomial in just seconds. Give the input polynomial equation and tap on the calculate button to get the output at a faster pace.</p>
+    <form method="POST">{% csrf_token %}
+      <div class="form-row align-items-center">
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInputGroup">Leading Term of a Polynomial</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><strong>Determine Leading Term of Polynomial: </strong></div>
+            </div>
+            <input type="text" class="form-control" name="textfield1" id="inlineFormInputGroup" placeholder="Enter Polynomials" value="x^2-16xy+14y^2">
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-2">Calculate</button>
+        </div>
+      </div>
+    </form>
+    <p>{{ cont|default:" "}}</p>
+    <br>
+    <p><strong>Here are some samples of Leading term of a polynomial calculations.</strong></p>
+ <div class='row'>
+  <div class='col-sm-6'> <ul>
+<li><a href="/leading-term-of-a-polynomial-x~2_12x-13/" title="Leading term of a polynomial x^2+12x-13" >Leading term of a polynomial x^2+12x-13</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-1.3~2/" title="Leading term of a polynomial x^2-1.3^2" >Leading term of a polynomial x^2-1.3^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_10xy_21y~2/" title="Leading term of a polynomial x^2+10xy+21y^2" >Leading term of a polynomial x^2+10xy+21y^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_10xy_25y~2/" title="Leading term of a polynomial x^2+10xy+25y^2" >Leading term of a polynomial x^2+10xy+25y^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_14xy_49y~2/" title="Leading term of a polynomial x^2+14xy+49y^2" >Leading term of a polynomial x^2+14xy+49y^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_15x/" title="Leading term of a polynomial x^2+15x" >Leading term of a polynomial x^2+15x</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_144/" title="Leading term of a polynomial x^2+144" >Leading term of a polynomial x^2+144</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_13xy_36y~2/" title="Leading term of a polynomial x^2+13xy+36y^2" >Leading term of a polynomial x^2+13xy+36y^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_14x_40/" title="Leading term of a polynomial x^2+14x+40" >Leading term of a polynomial x^2+14x+40</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_12xy_32y~2/" title="Leading term of a polynomial x^2+12xy+32y^2" >Leading term of a polynomial x^2+12xy+32y^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_13x_47/" title="Leading term of a polynomial x^2+13x+47" >Leading term of a polynomial x^2+13x+47</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_11x_121-div-4/" title="Leading term of a polynomial x^2+11x+121/4" >Leading term of a polynomial x^2+11x+121/4</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_16xy_64y~2/" title="Leading term of a polynomial x^2+16xy+64y^2" >Leading term of a polynomial x^2+16xy+64y^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_16x_60/" title="Leading term of a polynomial x^2+16x+60" >Leading term of a polynomial x^2+16x+60</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_16x_4/" title="Leading term of a polynomial x^2+16x+4" >Leading term of a polynomial x^2+16x+4</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_18xy_81y~2/" title="Leading term of a polynomial x^2+18xy+81y^2" >Leading term of a polynomial x^2+18xy+81y^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_20x_100-x~4/" title="Leading term of a polynomial x^2+20x+100-x^4" >Leading term of a polynomial x^2+20x+100-x^4</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_20x/" title="Leading term of a polynomial x^2+20x" >Leading term of a polynomial x^2+20x</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2_21/" title="Leading term of a polynomial x^2+21" >Leading term of a polynomial x^2+21</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2y~2-12xy_36/" title="Leading term of a polynomial x^2y^2-12xy+36" >Leading term of a polynomial x^2y^2-12xy+36</a></li>
+</ul>
+</div><div class="col-sm-6">
+<ul>
+<li><a href="/leading-term-of-a-polynomial-x~2-4xy-12y~2/" title="Leading term of a polynomial x^2-4xy-12y^2" >Leading term of a polynomial x^2-4xy-12y^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-5/" title="Leading term of a polynomial x^2-5" >Leading term of a polynomial x^2-5</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-4x-24/" title="Leading term of a polynomial x^2-4x-24" >Leading term of a polynomial x^2-4x-24</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-4x_24/" title="Leading term of a polynomial x^2-4x+24" >Leading term of a polynomial x^2-4x+24</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2*(4x)-21/" title="Leading term of a polynomial x^2*(4x)-21" >Leading term of a polynomial x^2*(4x)-21</a></li>
+<li><a href="/leading-term-of-a-polynomial-~2-8xy-20y~2/" title="Leading term of a polynomial ^2-8xy-20y^2" >Leading term of a polynomial ^2-8xy-20y^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-8x-33/" title="Leading term of a polynomial x^2-8x-33" >Leading term of a polynomial x^2-8x-33</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-9y~2/" title="Leading term of a polynomial x^2-9y^2" >Leading term of a polynomial x^2-9y^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-8x_16/" title="Leading term of a polynomial x^2-8x+16" >Leading term of a polynomial x^2-8x+16</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-8x_2/" title="Leading term of a polynomial x^2-8x+2" >Leading term of a polynomial x^2-8x+2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-9x_81/" title="Leading term of a polynomial x^2-9x+81" >Leading term of a polynomial x^2-9x+81</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-x_4/" title="Leading term of a polynomial x^2-x+4" >Leading term of a polynomial x^2-x+4</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-8xy_12y~2/" title="Leading term of a polynomial x^2-8xy+12y^2" >Leading term of a polynomial x^2-8xy+12y^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-7x_49/" title="Leading term of a polynomial x^2-7x+49" >Leading term of a polynomial x^2-7x+49</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-6xy_36y~2/" title="Leading term of a polynomial x^2-6xy+36y^2" >Leading term of a polynomial x^2-6xy+36y^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-6xy_5y~2/" title="Leading term of a polynomial x^2-6xy+5y^2" >Leading term of a polynomial x^2-6xy+5y^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-6xy_8y~2/" title="Leading term of a polynomial x^2-6xy+8y^2" >Leading term of a polynomial x^2-6xy+8y^2</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-5x-50/" title="Leading term of a polynomial x^2-5x-50" >Leading term of a polynomial x^2-5x-50</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-6x_7/" title="Leading term of a polynomial x^2-6x+7" >Leading term of a polynomial x^2-6x+7</a></li>
+<li><a href="/leading-term-of-a-polynomial-x~2-6x-8/" title="Leading term of a polynomial x^2-6x-8" >Leading term of a polynomial x^2-6x-8</a></li>
+</ul>
+</div>
+</div>
+<p><strong>Leading Term of a Polynomial Calculator:</strong> If you are searching for the best and simple ways to calculate the polynomial leading term &amp; coefficient then using our free &amp; instant polynomials calculator is the perfect option. Also, you can get more information like what is leading term of a polynomial, how to find it manually with steps from our page with Online Leading Coefficient of a Polynomial Calculator.</p>
+<p>Learn efficiently by taking the help of our handy polynomial leading coefficient calculator and finding the degree, leading term, a leading coefficient of the given polynomial in no time.</p>
+
+    </div></div>
+  <div class="card ">
+    <div class="card-header"><h2 class="h2">What is Meant by Leading Term and Leading Coefficient?</h2></div>
+    <div class="card-body">
+      <p>The leading term of a polynomial is defined as the term which is having the highest degree in the expression. The coefficient of the highest degree of a polynomial is called the leading coefficient of the polynomial. The greatest exponential value of the individual term in the expression is called the degree of a polynomial.</p>
+      <h3>How to Solve the Leading Term &amp; Coefficient of a Polynomial?</h3>
+      <p>The small steps that are required to follow while calculating the leading term and leading coefficient of a polynomial are listed below:</p>
+      <ul>
+      <li>Initially, Find the highest exponent of the variable in the given polynomial to define the degree.</li>
+      <li>Now, identify the term including the highest power of variable to solve the leading term.</li>
+      <li>To solve the leading coefficient, identify the coefficient of the leading term.</li>
+      </ul>
+      <p>We hope the steps cleared all your doubts regarding how to find the leading term of a polynomial if not then take a look at the solved example below.</p>
+      <p><strong>Example:</strong> </p>
+      <p>Find the degree, the leading coefficient, and the leading term of 6x^6+5x^6-4x^4+2x^3+3x^2+6x+20.</p>
+      <p><strong>Solution:</strong></p>
+      <p>Given polynomial expression is 5x^5-4x^4+2x^3+3x^2+6x+20</p>
+      <p>The degree of the polynomial is the greatest exponent value in the given polynomial terms. Here, the degree is <strong>6.</strong></p>
+      <p>The leading term is the term with the highest degree. Here, <strong>5x^6</strong> is the leading term. </p>
+      <p>The leading coefficient is the coefficient of the leading term. Here, <strong>5</strong> is the leading coefficient.</p>
+
+      </div>
+  </div>
+
+  <div class="card ">
+      <div class="card-header">
+          <h3 class="h3">FAQs on Leading Term of a Polynomial Calculator</h3>
+      </div>
+      <div class="card-body">
+          <!-- Question & Answer Starts -->
+          <p class="question"><strong>1. What is the leading coefficient of the polynomial?</strong></p>
+          <p>The coefficient value of the leading term is called the leading coefficient.</p>
+          <p class="question"><strong>2. How do you find the leading term of a polynomial?</strong></p>
+          <p>First, we have to find the degree of the polynomial. Then, the term with the highest degree is the leading term of the polynomial. </p>
+          <p class="question"><strong>3. How to find a free online tool for finding the polynomial leading term &amp; coefficient?</strong></p>
+          <p>Visit the factorpolynomials.com and easily get the free online calculator tool to find the leading term &amp; coefficient of a polynomial.</p>
+          <p class="question"><strong>4. How to use the leading term of a polynomial calculator with steps?</strong></p>
+          <p>The steps to use the leading term of a polynomial calculator are as follows:</p>
+          <ol>
+          <li>First, open the leading term of a polynomial calculator on the factorpolynomials.com page.</li>
+          <li>Enter the input polynomial in the respective input fields.</li>
+          <li>Tap on the calculate button and wait for a while.</li>
+          <li>Instantly, it displays the results with a detailed explanation.</li>
+          </ol>
+        </div>
+   </div>
+</div>
+<!-- <div class="card">
+  <div class="card-header">
+  <h3 class="h3">Multiplying Polynomials Calculations</h3>
+</div>
+<div class="card-body">
+  <ul>
+    {% for i,j in sk1 %}
+  <li><a  href="{{i}}" title="{{j}}">{{j}}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+</div>
+</div> -->
+{%endblock%}

@@ -1,0 +1,241 @@
+{%extends 'base/polynomial_base2.html'%}
+{%load static%}
+  {%block meta%}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="{% static 'images/logo/Factor-Polynomial-Com-Fevicon.png' %}" type="icon">
+  {%block css%}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  {%endblock%}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- META DATA STARTS -->
+    <title>Binomial Expansion Calculator | Steps to Expand Binomials</title>
+    <meta name="description" content=" Free Binomial Expansion Calculator computes the expansion of binomial theorem for the given polynomial quickly. Get the steps to find expansion of binomials, formula.">
+    <link rel="canonical" href="{{request.build_absolute_uri}}" >
+<!-- META DATA ENDS --->
+
+<!-- OPEN GRAPH CONFIGURATIONS STARTS -->
+    <!--  FACEBOOK CONFIGURATION STARTS  -->
+    <meta content="https://www.facebook.com/Factor-Polynomials-102151955136428" property="og:url" />
+    <meta property="og:title" content=" Binomial Expansion Calculator | Steps to Expand Binomials"/>
+    <meta property="og:description" content=" Free Binomial Expansion Calculator computes the expansion of binomial theorem for the given polynomial quickly. Get the steps to find expansion of binomials, formula."/>
+    <meta content="" property="og:site_name" />
+    <meta  content="https://factorpolynomials.com/static/images/polynomials/Expand-using-the-Binomial-Theorem-Calculator.jpeg" property="og:image" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="435" />
+    <meta property="og:image:width" content="354" />
+    <!--  FACEBOOK CONFIGURATION ENDS  -->
+    <!-- TWITTER CARD CONFIGURATION STARTS  -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="https://twitter.com/factorpolynomil"/>
+    <meta name="twitter:title" content="Binomial Expansion Calculator | Steps to Expand Binomials"/>
+    <meta name="twitter:description" content="Free Binomial Expansion Calculator computes the expansion of binomial theorem for the given polynomial quickly. Get the steps to find expansion of binomials, formula."/>
+    <meta name="twitter:image:src" content="https://factorpolynomials.com/static/images/polynomials/Expand-using-the-Binomial-Theorem-Calculator.jpeg"/>
+    <meta property="twitter:image:height" content="435"/>
+    <meta property="twitter:image:width" content="354"/>
+    <!-- TWITTER CARD CONFIGURATION ENDS  -->
+    <!--  LINKEDIN CONFIGURATION STARTS-->
+    <meta property='og:title' content="Binomial Expansion Calculator | Steps to Expand Binomials"/>
+    <meta property='og:image' content="https://factorpolynomials.com/static/images/polynomials/Expand-using-the-Binomial-Theorem-Calculator.jpeg"/>
+    <meta property='og:description' content="Free Binomial Expansion Calculator computes the expansion of binomial theorem for the given polynomial quickly. Get the steps to find expansion of binomials, formula."/>
+    <meta property='og:url' content="https://www.linkedin.com/in/factorpolynomials/" />
+    <!-- end of linkedin CONFIGURATIONS ENDS -->
+<!-- OPEN GRAPH CONFIGURATION ENDS -->
+<!-- FAQ SCHEMA STARTS -->
+<script type="application/ld+json">{"@context": "https://schema.org","@type": "FAQPage","mainEntity": [{"@type": "Question","name":"1.
+  What is the binomial expansion formula?
+  ","acceptedAnswer": {"@type": "Answer","text":" The formula to find the expansion of a binomial is (a + b)^n = ∑<sup>n</sup><sub>k=0</sub> (n k) a<sup>n - k</sup> b<sup>k</sup>, where (n k) = n!/[(n - k)! k!] and n! = 1 . 2 . 3 ... n."}	}, {"@type": "Question","name":"2.
+  Define binomial expansion theorem?
+  ","acceptedAnswer": {"@type": "Answer","text":" A polynomial with 2 terms is called binomial. Those two terms are separated by either plus or minus symbols. The binomial theorem is the binomial expansion of the term. It is a mathematical theorem that gives the expansion of binomial when it is raised to the positive integral power."}	}, {"@type": "Question","name":"3.
+  How to solve the expansion of binomials?
+  ","acceptedAnswer": {"@type": "Answer","text":" To solve the binomial expansion of a term, you have to substitute the values in the expansion of the binomial formula and solve to get the answer."}	}, {"@type": "Question","name":"4.
+  How to use the binomial expansion calculator?
+  ","acceptedAnswer": {"@type": "Answer","text":" Enter the binomial in the input field of the calculator and press the calculate button to avail the given term expansion in a matter of seconds."}	}]}</script>
+  
+{%endblock%}
+{%block content%}
+<div class="container">
+    <div class="card c1">
+      <div class="card-header">
+  <h1 class="h1">Binomial Expansion Calculator</h1>
+  </div>
+  <div class="card-body">
+    <p>Free Handy Binomial Expansion Tool is designed to expand the binomial term in a short span of time. All you have to do provide the binomial term as input and tap on the calculate button to get the result quickly along with the detailed steps</p>
+    <br>
+    <p><b>Ex: </b> 
+      <ul>
+        <li><a href="/binomial-expansion-of-(2_h)~3/" title="Binomial Expansion of (2+h)^3" >Binomial Expansion of (2+h)^3</a></li>
+      <li><a href="/binomial-expansion-of-(2_i)~4/" title="Binomial Expansion of (2+i)^4" >Binomial Expansion of (2+i)^4</a></li>
+      <li><a href="/binomial-expansion-of-(2_x)~2/" title="Binomial Expansion of (2+x)^2" >Binomial Expansion of (2+x)^2</a></li>
+  
+      </ul>
+    
+    </p>
+    <form method="POST">{% csrf_token %}
+      <div class="form-row align-items-center">
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInputGroup">Binomial Expansion</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><strong>Binomial Expansion of:</strong></div>
+            </div>
+            
+            <input type="text" class="form-control" name="textfield1" id="inlineFormInputGroup" placeholder="Enter Polynomials" value="{{input}}">
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-2">Calculate</button>
+        </div>
+      </div>
+    </form>
+    <p>{{ cont|default:" "}}</p>
+    <br>
+    <p><strong>Here are some samples of Binomial Expansion calculations.</strong></p>
+	
+	<div class='row'>
+      <div class='col-sm-6'> <ul>
+    <li><a href="/binomial-expansion-of-(1_2x)~10/" title="Binomial Expansion of (1+2x)^10" >Binomial Expansion of (1+2x)^10</a></li>
+    <li><a href="/binomial-expansion-of-(1_2x)~3/" title="Binomial Expansion of (1+2x)^3" >Binomial Expansion of (1+2x)^3</a></li>
+    <li><a href="/binomial-expansion-of-(1_2x~3)~5/" title="Binomial Expansion of (1+2x^3)^5" >Binomial Expansion of (1+2x^3)^5</a></li>
+    <li><a href="/binomial-expansion-of-(1_3x)~4/" title="Binomial Expansion of (1+3x)^4" >Binomial Expansion of (1+3x)^4</a></li>
+    <li><a href="/binomial-expansion-of-(1_4x)~6/" title="Binomial Expansion of (1+4x)^6" >Binomial Expansion of (1+4x)^6</a></li>
+    <li><a href="/binomial-expansion-of-(1_5i)~4/" title="Binomial Expansion of (1+5i)^4" >Binomial Expansion of (1+5i)^4</a></li>
+    <li><a href="/binomial-expansion-of-(1_h)~3/" title="Binomial Expansion of (1+h)^3" >Binomial Expansion of (1+h)^3</a></li>
+    <li><a href="/binomial-expansion-of-(1_x)~10/" title="Binomial Expansion of (1+x)^10" >Binomial Expansion of (1+x)^10</a></li>
+    <li><a href="/binomial-expansion-of-(1_x)~2/" title="Binomial Expansion of (1+x)^2" >Binomial Expansion of (1+x)^2</a></li>
+    <li><a href="/binomial-expansion-of-(1_x)~3/" title="Binomial Expansion of (1+x)^3" >Binomial Expansion of (1+x)^3</a></li>
+    <li><a href="/binomial-expansion-of-(1_x)~4/" title="Binomial Expansion of (1+x)^4" >Binomial Expansion of (1+x)^4</a></li>
+    <li><a href="/binomial-expansion-of-(1_x)~5/" title="Binomial Expansion of (1+x)^5" >Binomial Expansion of (1+x)^5</a></li>
+    <li><a href="/binomial-expansion-of-(1_x)~8/" title="Binomial Expansion of (1+x)^8" >Binomial Expansion of (1+x)^8</a></li>
+    <li><a href="/binomial-expansion-of-(10_7x)~2/" title="Binomial Expansion of (10+7x)^2" >Binomial Expansion of (10+7x)^2</a></li>
+    <li><a href="/binomial-expansion-of-(10-5b)~3/" title="Binomial Expansion of (10-5b)^3" >Binomial Expansion of (10-5b)^3</a></li>
+    <li><a href="/binomial-expansion-of-(10a_b)~6/" title="Binomial Expansion of (10a+b)^6" >Binomial Expansion of (10a+b)^6</a></li>
+    <li><a href="/binomial-expansion-of-(10x_y)~3/" title="Binomial Expansion of (10x+y)^3" >Binomial Expansion of (10x+y)^3</a></li>
+    <li><a href="/binomial-expansion-of-(10x-3y)~3/" title="Binomial Expansion of (10x-3y)^3" >Binomial Expansion of (10x-3y)^3</a></li>
+    <li><a href="/binomial-expansion-of-(10x-y)~2/" title="Binomial Expansion of (10x-y)^2" >Binomial Expansion of (10x-y)^2</a></li>
+    <li><a href="/binomial-expansion-of-(11-6x)~2/" title="Binomial Expansion of (11-6x)^2" >Binomial Expansion of (11-6x)^2</a></li>
+    </ul>
+    </div><div class="col-sm-6">
+    <ul>
+    <li><a href="/binomial-expansion-of-(11x_y)~3/" title="Binomial Expansion of (11x+y)^3" >Binomial Expansion of (11x+y)^3</a></li>
+    <li><a href="/binomial-expansion-of-(1-2x)~2/" title="Binomial Expansion of (1-2x)^2" >Binomial Expansion of (1-2x)^2</a></li>
+    <li><a href="/binomial-expansion-of-(1-2x)~5/" title="Binomial Expansion of (1-2x)^5" >Binomial Expansion of (1-2x)^5</a></li>
+    <li><a href="/binomial-expansion-of-(12x_y)~3/" title="Binomial Expansion of (12x+y)^3" >Binomial Expansion of (12x+y)^3</a></li>
+    <li><a href="/binomial-expansion-of-(12x-yz)~3/" title="Binomial Expansion of (12x-yz)^3" >Binomial Expansion of (12x-yz)^3</a></li>
+    <li><a href="/binomial-expansion-of-(1-2y)~2/" title="Binomial Expansion of (1-2y)^2" >Binomial Expansion of (1-2y)^2</a></li>
+    <li><a href="/binomial-expansion-of-(12y-5)~2/" title="Binomial Expansion of (12y-5)^2" >Binomial Expansion of (12y-5)^2</a></li>
+    <li><a href="/binomial-expansion-of-(13-2x)~2/" title="Binomial Expansion of (13-2x)^2" >Binomial Expansion of (13-2x)^2</a></li>
+    <li><a href="/binomial-expansion-of-(1-3x)~7/" title="Binomial Expansion of (1-3x)^7" >Binomial Expansion of (1-3x)^7</a></li>
+    <li><a href="/binomial-expansion-of-(15-4x)~3/" title="Binomial Expansion of (15-4x)^3" >Binomial Expansion of (15-4x)^3</a></li>
+    <li><a href="/binomial-expansion-of-(1-b~3)~3/" title="Binomial Expansion of (1-b^3)^3" >Binomial Expansion of (1-b^3)^3</a></li>
+    <li><a href="/binomial-expansion-of-(1-i)~10/" title="Binomial Expansion of (1-i)^10" >Binomial Expansion of (1-i)^10</a></li>
+    <li><a href="/binomial-expansion-of-(1-x)~3/" title="Binomial Expansion of (1-x)^3" >Binomial Expansion of (1-x)^3</a></li>
+    <li><a href="/binomial-expansion-of-(1-x)~4/" title="Binomial Expansion of (1-x)^4" >Binomial Expansion of (1-x)^4</a></li>
+    <li><a href="/binomial-expansion-of-(1-x)~5/" title="Binomial Expansion of (1-x)^5" >Binomial Expansion of (1-x)^5</a></li>
+    <li><a href="/binomial-expansion-of-(1-x)~6/" title="Binomial Expansion of (1-x)^6" >Binomial Expansion of (1-x)^6</a></li>
+    <li><a href="/binomial-expansion-of-(1-x~2)~2/" title="Binomial Expansion of (1-x^2)^2" >Binomial Expansion of (1-x^2)^2</a></li>
+    <li><a href="/binomial-expansion-of-(2_4i)~4/" title="Binomial Expansion of (2+4i)^4" >Binomial Expansion of (2+4i)^4</a></li>
+    <li><a href="/binomial-expansion-of-(2_5n~2)~2/" title="Binomial Expansion of (2+5n^2)^2" >Binomial Expansion of (2+5n^2)^2</a></li>
+    <li><a href="/binomial-expansion-of-(2_h)~2/" title="Binomial Expansion of (2+h)^2" >Binomial Expansion of (2+h)^2</a></li>
+    </ul>
+    </div>
+    </div>
+    <p><strong>Binomial Expansion Calculator: </strong>Feeling that the binomial expansion is difficult then you are wrong because expansion using the binomial theorem is quite easy. If not, make use of our Binomial Expansion Calculator and make your lengthy & complex expansion calculations faster & easier. Here, we have curated needy information on what is meant by binomial expansion and how to do it manually in detail.</p>
+</div></div>
+  <div class="card ">
+    <div class="card-header"><h2 class="h2">What is Binomial Theorem Expansion?</h2></div>
+    <div class="card-body">
+      <p>The binomial theorem is a method that is used to expand an expression that has been raised to a finite power. It has applications in algebra, probability and others. A binomial is a polynomial that has two dissimilar terms. The important points of the binomial expansion are given here. For an expansion of (a + b)<sup>n</sup>, the total number of terms are (n + 1). The sum of exponents a, b is always n</p>
+      <p>The formula for the expansion of a binomial defined by binomial theorem is given as:
+      </p>
+      <img src="https://drive.google.com/file/d/1wesID0Fse7UF1BgDh361UhtMt4CmyAUA/view?usp=sharing" alt="Binomial Expansion">
+    </div>
+  </div>
+
+  <div class="card ">
+    <div class="card-header"><h3 class="h3">Steps to Expand Term Using Binomial Theorem</h3></div>
+    <div class="card-body">
+      <p>The step by step process to expand a binomial term is listed here:</p>
+      <p>1. Get any binomial expression that has a fine power.</p>
+      
+      <p>2. Substitute the values in the formula of binomial expansion theorem.</p>
+      <p>3. Solve the question to get the answer.</p>
+      <p>You can even find various maths free online calculators on our website <a href="{%url 'polynomials_calculator'%}">factorpolynomials.com</a> by just clicking on this link. Make all your complex geometry & algebra calculations quite easy and quick by using our provided calculators.</p>
+      <img src="{% static 'images/polynomials/Expand-using-the-Binomial-Theorem-Calculator.jpeg' %}" alt="Expand using the Binomial Expansion Calculator">
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+          <h3 class="h3">Expand Binomial with Example</h3>
+      </div>
+    <div class="card-body">
+          <p><strong>Example</strong></p>
+          <p><strong>Question: Expand binomial (x+5)^4.</strong></p>
+          <p><strong>Solution:</strong></p>
+          <p>Given binomial is (x + 5)^4</p>
+          <p>The binomial expansion formula is (a+b)^n = \sum_{k=0}^{n} {^nC_k}(a^{n-k}b^{k})
+            So (x + 5)^4 = \sum_{k=0}^4 {^4C_k}((x)^{4-k}(5)^{k})
+            </p>
+          <p>By expanding the summation:</p>
+          <p>\frac{4!}{(4-0)!0!}(x)^{4-0}\times{}(5)^0+\frac{4!}{(4-1)!1!}(x)^{4-1}\times{}(5)^1+\frac{4!}{(4-2)!2!}(x)^{4-2}\times{}(5)^2+\frac{4!}{(4-3)!3!}(x)^{4-3}\times{}(5)^3+\frac{4!}{(4-4)!4!}(x)^{4-4}\times{}(5)^4
+          </p>
+          <p>=\frac{24}{(24)1}(x)^{4-0}\times{}(5)^0+\frac{24}{(6)1}(x)^{4-1}\times{}(5)^1+\frac{24}{(2)2}(x)^{4-2}\times{}(5)^2+\frac{24}{(1)6}(x)^{4-3}\times{}(5)^3+\frac{24}{(1)24}(x)^{4-4}\times{}(5)^4
+            =1(x)^{4-0}\times{}(5)^0+4(x)^{4-1}\times{}(5)^1+6(x)^{4-2}\times{}(5)^2+4(x)^{4-3}\times{}(5)^3+1(x)^{4-4}\times{}(5)^4
+            </p>
+          <p>=(x)^{4-0}\times{}(5)^0+(4)(x)^{4-1}\times{}(5)^1+(6)(x)^{4-2}\times{}(5)^2+(4)(x)^{4-3}\times{}(5)^3+(x)^{4-4}\times{}(5)^4
+          </p>
+          <p>=(x)^{4}\times{}(5)^0+(4)(x)^{3}\times{}(5)^1+(6)(x)^{2}\times{}(5)^2+(4)(x)^{1}\times{}(5)^3+(x)^{0}\times{}(5)^4
+          </p>
+          <p>=(x)^{4}\times{}1+(4)(x)^{3}\times{}(5)^1+(6)(x)^{2}\times{}(5)^2+(4)(x)^{1}\times{}(5)^3+1\times{}(5)^4</p>
+          <p>= x^4\times{}(1)+(4)x^3\times{}(5)+(6)x^2\times{}(25)+(4)x\times{}(125)+1\times{}(625)</p>
+          <p>= x^4 + 20x^3 + 150x^2 + 500x + 625</p>
+          </div>
+  </div>
+
+  <a href="https://factorpolynomials.com/">factorpolynomials.com</a> is absolutely free and includes calculator tools for solving problems. Learning will be much fun with simple tools.
+
+  <div class="card ">
+      <div class="card-header">
+          <h3 class="h3">FAQs on Binomial Expansion Calculator</h3>
+      </div>
+      <div class="card-body">
+          <!-- Question & Answer Starts --->
+         <p class="question"><strong>1. What is the binomial expansion formula?</strong></p>
+         <p class="answer">The formula to find the expansion of a binomial is (a + b)^n = ∑<sup>n</sup><sub>k=0</sub> (n k) a<sup>n - k</sup> b<sup>k</sup>, where (n k) = n!/[(n - k)! k!] and n! = 1 . 2 . 3 ... n.</p><hr>
+        
+
+         <p class="question"><strong>2. Define binomial expansion theorem?
+        </strong></p>
+         <p class="answer">A polynomial with 2 terms is called binomial. Those two terms are separated by either plus or minus symbols. The binomial theorem is the binomial expansion of the term. It is a mathematical theorem that gives the expansion of binomial when it is raised to the positive integral power.
+        </p><hr>
+
+
+         <p class="question"><strong>3. How to solve the expansion of binomials?</strong></p>
+         <p class="answer">To solve the binomial expansion of a term, you have to substitute the values in the expansion of the binomial formula and solve to get the answer.
+        </p><hr>
+        <p class="question"><strong>4. How to use the binomial expansion calculator?</strong></p>
+         <p class="answer">Enter the binomial in the input field of the calculator and press the calculate button to avail the given term expansion in a matter of seconds.
+        </p><hr>
+
+          </div>
+   </div>
+</div>
+<!-- <div class="card">
+  <div class="card-header">
+  <h3 class="h3">Adding Polynomials Calculations</h3>
+</div>
+<div class="card-body">
+  <ul>
+    {% for i,j in sk1 %}
+  <li><a  href="{{i}}" title="{{j}}">{{j}}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+</div>
+</div> -->
+{%endblock%}

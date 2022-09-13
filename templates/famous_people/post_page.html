@@ -1,0 +1,108 @@
+{% extends 'famous_people/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>{{famous_people_obj.title}} - Famous People Facts - Factorpolynomials.com</title>
+<meta name="description" content="{{famous_people_obj.meta_description}}">
+
+<!-- Open Graph Meta -->
+<meta property="og:site_name" content="HowToGeeks">
+<meta property="og:url" content="{{request.build_absolute_uri}}">
+<meta property="og:title" content="{{famous_people_obj.title}} - Famous People Facts - Factorpolynomials.com">
+<meta property="og:description" content="{{famous_people_obj.meta_description}}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{request.scheme}}://{{request.get_host}}{{famous_people_obj.image}}">
+
+<!-- Twitter Meta -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="{{request.build_absolute_uri}}">
+<meta name="twitter:title" content="{{famous_people_obj.title}} - Famous People Facts - Factorpolynomials.com">
+<meta name="twitter:description" content="{{famous_people_obj.meta_description}}">
+<meta name="twitter:image" content="{{request.scheme}}://{{request.get_host}}{{famous_people_obj.image}}">
+{% endblock head %}
+
+{% block body %}
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-transparent my-2" style="font-size: larger;">
+            <li class="breadcrumb-item"><a href="{% url 'famous_people:home_url' %}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{famous_people_obj.title}}</li>
+        </ol>
+    </nav>
+    <div class="row">
+        <div class="col-lg-8">
+            <h1>
+                {{famous_people_obj.title}}
+                <br>
+                {{famous_people_obj.subtitle}}
+            </h1>
+            <hr>
+            <ul class="jump-links">
+                {% for jump_link in jump_links %}
+                <li><a href="#{{jump_link|slugify}}">{{jump_link}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-lg-4 mt-auto mb-auto">
+            <img src="{{famous_people_obj.image}}" alt="{{famous_people_obj.title}}">
+        </div>
+    </div>
+    <br>
+
+
+    <div id="birthday-highlights" class="card bg-light mb-3">
+        <div class="card-header text-dark" style="background-color: rgba(211, 211, 211, 0.216);">
+            <h2>{{famous_people_obj.title}}'s Birthday Highlights</h2>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                {% for items in birthday_highlights.items %}
+                <div class="col-md-4 mb-4" style="font-size: larger;">
+                    {% if items.0 == "Age" %}
+                        <strong>{{famous_people_obj.title}}'s {{items.0}}</strong>
+                    {% else %}
+                        <strong>{{items.0}}</strong>
+                    {% endif %}
+                    <br>
+                    <span>{{items.1}}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <div id="facts" class="card bg-light mb-3">
+        <div class="card-header text-dark" style="background-color: rgba(211, 211, 211, 0.216);">
+            <h2>{{famous_people_obj.title}} Facts</h2>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                {% for items in facts.items %}
+                <div class="col-md-4 mb-4" style="font-size: larger;">
+                    <strong>{{items.0}}</strong>
+                    <br>
+                    <span>{{items.1}}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div id="post-content" class="container col-md-10 ml-0">
+        {{famous_people_obj.content|safe}}
+    </div>
+    <br>
+</div>
+{% endblock body %}
+
+{% block script %}
+<script>
+    $(document).ready(function () {
+        $("#post-content h2").before("<br/>");
+        $(".mv-ad-box").remove();
+    });
+</script>
+{% endblock script %}

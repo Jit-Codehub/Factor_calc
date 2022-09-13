@@ -1,0 +1,346 @@
+{%extends 'base/polynomial_base1.html'%}
+{%load static%}
+  {%block meta%}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="{% static 'images/logo/Factor-Polynomial-Com-Fevicon.png' %}" type="icon">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/4083775673.js"></script>
+  {%block css%}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  {%endblock%}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- META DATA STARTS --->
+    <title>Polynomials Calculator | Free tools to solve the Polynomial Equations Easy</title>
+    <meta name="description" content="Online Polynomials Calculator determines the factors, GCF, order & degree of polynomial. Learn how to perform arithmetic operations on polynomials, solving equations, etc.">
+    <link rel="canonical" href="{{request.build_absolute_uri}}" >
+<!-- META DATA ENDS --->
+
+<!-- OPEN GRAPH CONFIGURATIONS STARTS -->
+    <!--  FACEBOOK CONFIGURATION STARTS  -->
+    <meta content="https://www.facebook.com/Factor-Polynomials-102151955136428" property="og:url" />
+    <meta property="og:title" content="Polynomials Calculator | Free tools to solve the Polynomial Equations Easy"/>
+    <meta property="og:description" content="Online Polynomials Calculator determines the factors, GCF, order & degree of polynomial. Learn how to perform arithmetic operations on polynomials, solving equations, etc."/>
+    <meta content="" property="og:site_name" />
+    <meta  content="static/images/base/Polynomials-Calculator.jpeg" property="og:image" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="435" />
+    <meta property="og:image:width" content="354" />
+    <!--  FACEBOOK CONFIGURATION ENDS  -->
+    <!-- TWITTER CARD CONFIGURATION STARTS  -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="https://twitter.com/factorpolynomil"/>
+    <meta name="twitter:title" content="Polynomials Calculator | Free tools to solve the Polynomial Equations Easy"/>
+    <meta name="twitter:description" content="Online Polynomials Calculator determines the factors, GCF, order & degree of polynomial. Learn how to perform arithmetic operations on polynomials, solving equations, etc."/>
+    <meta name="twitter:image:src" content="static/images/base/Polynomials-Calculator.jpeg"/>
+    <meta property="twitter:image:height" content="435"/>
+    <meta property="twitter:image:width" content="354"/>
+    <!-- TWITTER CARD CONFIGURATION ENDS  -->
+    <!--  LINKEDIN CONFIGURATION STARTS-->
+    <meta property='og:title' content="Polynomials Calculator | Free tools to solve the Polynomial Equations Easy"/>
+    <meta property='og:image' content="static/images/base/Polynomials-Calculator.jpeg"/>
+    <meta property='og:description' content="Online Polynomials Calculator determines the factors, GCF, order & degree of polynomial. Learn how to perform arithmetic operations on polynomials, solving equations, etc."/>
+    <meta property='og:url' content="https://www.linkedin.com/in/factorpolynomials/" />
+    <!-- end of linkedin CONFIGURATIONS ENDS -->
+<!-- OPEN GRAPH CONFIGURATION ENDS -->
+<!-- FAQ SCHEMA STARTS -->
+<script type="application/ld+json">{"@context": "https://schema.org","@type": "FAQPage","mainEntity": [{"@type": "Question","name":"1.
+  How to solve polynomial equations online?
+  ","acceptedAnswer": {"@type": "Answer","text":" To solve polynomial equation problems, choose Polynomial Equation Solver Calculator and enter the polynomial expression. Tap on the calculate button to get the values of the variable in less time."}	}, {"@type": "Question","name":"2.
+  What is the polynomial formula?
+  ","acceptedAnswer": {"@type": "Answer","text":" The polynomial formula has variables with different powers, the highest power of the variable is called the degree of the polynomial. The general polynomial formula is given as ax<sip>n</sup> + bx<sup>n-1</sup> + cx<sup>n-3</sup> + .... + rx + s. Here, a, b, c .. are coefficients, n is the degree of polynomial and x is the variable."}	}, {"@type": "Question","name":"3.
+  How to use polynomials calculator?
+  ","acceptedAnswer": {"@type": "Answer","text":" All you need to do is provide the polynomial details in the mentioned input sections of the respective Polynomial Calculator and press the calculate button. You will get the output in a fraction of seconds."}	}, {"@type": "Question","name":"4.
+  How do you factor polynomials?
+  ","acceptedAnswer": {"@type": "Answer","text":" To find factors of the polynomials easily, visit trusted website factorpolynomials.com and check for the online calculator to obtain the result quickly."}	}]}</script>
+  
+{%endblock%}
+{%block content%}
+<div class="container">
+    <div class="card c1">
+      <div class="card-header">
+  <h1 class="h1">Polynomials Calculator</h1>
+  </div>
+  <div class="card-body">
+<p>Finding the solutions for polynomial problems is not an easy task without knowing the formulas & other details. But our free Polynomials Calculator page makes it a piece of cake. The list of calculators provided here gives the exact answer along with the detailed step by step explanation involved in solving the question. You can get addition, subtraction, multiplication and division of polynomials, factoring polynomials and so on for free of cost.</p>
+</div>
+</div>
+  <div class="card">
+    <div class="card-header"><h2 class="h2"><a id="Polynomials_Calculator"></a>List of Free Online Polynomials Calculator</h2></div>
+    <div class="card-body" id="formula-list">
+    <p>All polynomial calculations can be solved with our user-friendly calculators. The list of calculators includes almost all topics related to polynomials. Use the links provided here and understand the concept and make your calculations easily within less amount of time.</p>
+    <ul class="ul-format">
+      <div class="row">
+          <div class="col-sm-6">
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/adding-polynomials-calculator/">Polynomials Addition</a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/subtracting-polynomials-calculator/">Polynomials Subtraction</a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/multiplying-polynomials-calculator/">Polynomials Multiplication</a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/dividing-polynomials-calculator/">Polynomials Division</a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/determining-if-the-expression-is-a-polynomial-calculator/">Check for Polynomial</a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/degree-of-a-polynomial-calculator/">Degree of Polynomial</a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/polynomial-equation-solver-calculator/">Polynomial Equation Solver Calculator</a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/leading-term-of-a-polynomial-calculator/">Leading Term of a Polynomial Calculator </a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/polynomial-in-ascending-order-calculator/">Ascending of a Polynomial</a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/polynomial-in-descending-order-calculator/">Descending of a Polynomial</a></li>
+          </div>
+          <div class="col-sm-6">
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/factoring-multi-variable-polynomials-calculator/">Factoring Over Multivariable Polynomials</a></li> 
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/gcf-of-polynomials-calculator/">GCF of Polynomials</a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/factor-out-gcf-from-polynomials-calculator/">Factor Out GCF from Polynomials</a></li>            
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/determining-if-polynomial-is-prime-calculator/">Determining if Polynomial is Prime</a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/lcm-of-polynomials-using-gcf-calculator/">Finding the LCM using GCF</a></li>            
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/factoring-binomials-as-sum-or-difference-of-cubes-calculator/">Factoring Binomials as Sum or Difference of cube</a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/factoring-difference-square-polynomial-calculator/">Factoring Binomials as Difference of Squares</a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/polynomial-root-calculator/">Polynomial Root Calculator</a></li>            
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/binomial-expansion-calculator/">Expand using the Binomial Theorem</a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/factoring-over-complex-numbers-calculator/">Factoring over the Complex Numbers</a></li>
+              <li><span style="color: #8CC63E"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span><a href="/remainder-theorem-calculator/">Remainder Theorem Calculator</a></li>
+          </div>
+      </div>
+      <div class="clearfix"></div>
+      </ul>
+  </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="h3">Polynomials Addition Calcualtor</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Ex:Add polynomials x⁴+3x²+5x⁴+10x³+x+5+12x³+7x²+8x</strong></p>
+      <p>The given expression is x⁴+3x²+5x⁴+10x³+x+5+12x³+7x²+8x</p>
+      <p>Group the similar terms x⁴+5x⁴+10x³+12x³+3x²+7x²+x+8x+5
+      </p>
+      <p>Combine the similar terms 6x⁴+22x³+10x²+9x+5</p>
+      <p>Addition of x⁴+3x²+5x⁴+10x³+x+5+12x³+7x²+8x is 6x⁴+22x³+10x²+9x+5.</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="h3">Polynomials Subtraction Calcualtor</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Example: Subtract polynomials (6u²+5u²v²-3uv²)-(4u⁴+5u²v²-5uv).</strong></p>
+      <p>The given polynomial expression is (6u²+5u²v²-3uv²)-(4u⁴+5u²v²-5uv)</p>
+      <p>Remove all braces 6u²+5u²v²-3uv²-4u⁴-5u²v²+5uv</p>
+      <p>Group the similar terms -4u⁴+5u²v²-5u²v²+6u²-3uv²-5uv</p>
+      <p>After combining similar terms we get x^2 - x - 8 + 2</p>
+      <p>Combine the similar terms -4u⁴+6u²-3uv²-5uv</p>
+      <p>Subtraction of (6u²+5u²v²-3uv²)-(4u⁴+5u²v²-5uv) is -4u⁴+6u²-3uv²-5uv</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="h3">Polynomials Multiplication Calcualtor</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Example: Multiply polynomials (3x²+5x+10)(x²-3x-1)</strong></p>
+      <p>The given polynomial is (3x²+5x+10)(x²-3x-1)</p>
+      <p>Multiply each term of the first polynomial with every term of the second polynomial.</p>
+      <p>(3x²+5x+10)(x²-3x-1) = 3x²(x²-3x-1)+5x(x²-3x-1)+10(x²-3x-1)</p>
+      <p>= 3x²(x²)-3x²(3x)-1(3x²)+5x(x²)+5x(-3x)+5x(-1)+10(x²)-3x(10)+10(-1)</p>
+      <p>= 3x⁴+9x³-3x²+5x³-15x²-5x+10x²-30x-10</p>
+      <p>== 3x⁴+9x³+5x³-3x²-15x²+10x²-5x-30x-10
+      </p>
+      <p>= 3x⁴+14x³-8x²-35x-10</p>
+      <p>Multiplication of (3x²+5x+10)(x²-3x-1) is 3x⁴+14x³-8x²-35x-10.</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="h3">Polynomials Division Calcualtor</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Ex: Polynomial Division of (x^4+2x+8)/(x+6)</strong></p>
+      <p>The given expression is (x^4+2x+8)/(x+6)</p><br>The Divident is x^4 + 2 x + 8 and Divisor is x + 6<br><br>x + 6)x^4 + 2 x + 8(x^3 - 6 x^2 + 36 x - 214<br>&emsp;&emsp;&emsp;&emsp;&emsp;- x^4 - 6 x^3<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;-----------------<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- 6 x^3 + 2 x + 8<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;6 x^3 + 36 x^2<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;------------------<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;36 x^2 + 2 x + 8<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- 36 x^2 - 216 x<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;------------------<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;8 - 214 x<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;214 x + 1284<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;------------<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1292<br><br>
+      <p>After the division the quotient is x^3 - 6 x^2 + 36 x - 214 and reminder is 1292</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="h3">Check for Polynomial Calcualtor</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Ex: Determining x^5+3x^5+1+x^6+x^3+x Expression is a Polynomial</strong></p>
+      <p>The expression can be written as x^6 + 4 x^5 + x^3 + x + 1 </p>
+      <p>polynomial is a combination of terms separated using + or − signs. Polynomials cannot contain any of the following: </p>
+      <p>i)Variables raised to a negative or fractional exponent. </p><p>i)Variables in the denominator. </p>
+      <p>iii)Variables under a radical.  </p>
+      <p>iv)Special features. (trig functions, absolute values, logarithms, … ). </p>
+      <p>x^5+3x^5+1+x^6+x^3+x is  a polynomial.</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="h3">Ascending of a Polynomial Calcualtor</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Ex 1: Finding Polynomial x^5+x^5+1+x^5+x^3+x in Ascending Order</strong></p>
+      <p>The Given Polynomial is x^5+x^5+1+x^5+x^3+x<br>The ascending Order of polynimial is 1+x+x^3+3 x^5</p>
+      <p><strong>Ex 2: Find the Polynomial x^5+3x^5+1+x^6+x^3+x in Ascending Order</strong></p>
+      <p>The Given Polynomial is x^5+3x^5+1+x^6+x^3+x<br>The ascending Order of polynimial is 1+x+x^3+4 x^5+x^6</p>
+      <p><strong>Ex 3: Find the Polynomial x^3+x^5+1+x^3+x^3+x in Ascending Order</strong></p>
+      <p>The Given Polynomial is x^3+x^5+1+x^3+x^3+x<br>The ascending Order of polynimial is 1+x+3 x^3+x^5</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="h3">Descending of a Polynomial Calcualtor</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Ex 1: Determining Polynomial of Descending Order of x^5+x^5+1+x^5+x^3+x</strong></p>
+      <p>The Given Polynomial is x^5+x^5+1+x^5+x^3+x<br>The descending Order of polynimial is 3 x^5 + x^3 + x + 1</p>
+      <p><strong>Ex 2: Determining Polynomial of Descending Order of x^5+3x^5+1+x^6+x^3</strong></p>
+      <p>The Given Polynomial is x^5+3x^5+1+x^6+x^3<br>The descending Order of polynimial is x^6 + 4 x^5 + x^3 + 1</p>
+      <p><strong>Ex 3: Determining Polynomial of Descending Order of x^3+x^5+1+x^3+x^3+x</strong></p>
+      <p>The Given Polynomial is x^3+x^5+1+x^3+x^3+x<br>The descending Order of polynimial is x^5 + 3 x^3 + x + 1</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="h3">Degree of Polynomial Calcualtor</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Ex 1: Degree of a Polynomial x^3+x^5+1+x^3+x^3+x</strong></p>
+      <p><p>The given expression is x^3+x^5+1+x^3+x^3+x</p>
+      <ul>
+        <li>The degree of x is 1</li>
+        <li>The degree of x^3 is 3</li>
+        <li>The degree of x^3 is 3</li>
+        <li>The degree of x^5 is 5</li>
+        <li>The degree of x^3 is 3</li>
+        <li>The degree of 1 is 0</li>
+      </ul>
+      <p>But the degree of  expression  will the highest degree of the indivisual expression of above i.e  5</p></p>
+      <p><strong>Ex 2: Degree of a Polynomial x^5+3x^5+1+x^6+x^3+x</strong></p>
+      <p>The given expression is x^5+3x^5+1+x^6+x^3+x</p>
+      <ul>
+        <li>The degree of x is 1</li>
+        <li>The degree of x^3 is 3</li>
+        <li>The degree of x^6 is 6</li>
+        <li>The degree of x^5 is 5</li>
+        <li>The degree of 3 x^5 is 5</li>
+        <li>The degree of 1 is 0</li>
+      </ul>
+      <p>But the degree of  expression  will the highest degree of the indivisual expression of above i.e  6</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="h3">Leading Term of a Polynomial Calculator</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Ex 1: Determining the Leading Term of a Polynomial x^5+3x^5+1+x^6+x^3+x</strong></p>
+      <p>The given input is x^5+3x^5+1+x^6+x^3+x</p><p>The term can be simplified as x^6 + 4 x^5 + x^3 + x + 1</p><p>-- 1 term has  degree 0 . </p><br><p>-- x term has  degree 1 . </p><br><p>-- x^3 term has  degree 3 . </p><br><p>-- x^6 term has  degree 6 . </p><br><p>-- 4 x^5 term has  degree 5 . </p><br><p>--Here highest degree is maximum of all degrees of terms i.e 6 .</p><br><p>--Hence the leading term of the polynomial will be the terms having highest degree i.e x^6 .<br></p><p>--x^6 has coefficient 1 .</br></p><br>
+      <p><strong>Ex 2: Determining the Leading Term of a Polynomial xx^3+x^5+1+x^3+x^3+x</strong></p>
+      <p>The given input is x^3+x^5+1+x^3+x^3+x</p><p>The term can be simplified as x^5 + 3 x^3 + x + 1</p><p>-- 1 term has  degree 0 . </p><br><p>-- x term has  degree 1 . </p><br><p>-- x^5 term has  degree 5 . </p><br><p>-- 3 x^3 term has  degree 3 . </p><br><p>--Here highest degree is maximum of all degrees of terms i.e 5 .</p><br><p>--Hence the leading term of the polynomial will be the terms having highest degree i.e x^5 .<br></p><p>--x^5 has coefficient 1 .</br></p><br>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="h3">Factoring over Multivariable Polynomials Calcualtor</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Ex 1: How to Find Factoring Multi Variable Polynomials for a^2-b^2?</strong></p>
+      <p><p>The given polynomial is a^2-b^2</p><p>The polynomial can be written as a^2 - b^2</p><p>=(a)(a)+(b)(a)+(a)(-b)+(b)(-b)</p><p>=(a)((a - b))+(b)((a - b))</p><p>=(a - b) (a + b)</p></p>
+      <p><strong>Ex 2: How to Find Factoring Multi Variable Polynomials for a^3-b^3?</strong></p>
+      <p>The given polynomial is a^3-b^3</p><p>The polynomial can be written as a^3 - b^3</p><p>=(a)(a^2)+(-b)(a^2)+(a)(ab)+(-b)(ab)+(a)(b^2)+(-b)(b^2)</p><p>=(a)((a2 + ab + b2))+(-b)((a2 + ab + b2))</p><p>=(a - b) (a^2 + a b + b^2)</p>
+      <p><strong>Ex 3: How to Find Factoring Multi Variable Polynomials for abc+8ab+ac+8a+bc+8b+c+8?</strong></p>
+      <p>The given polynomial is abc+8ab+ac+8a+bc+8b+c+8</p><p>The polynomial can be written as a b c + 8 a b + a c + 8 a + b c + 8 b + c + 8</p><p>=((ab)((c + 8))+(a)((c + 8))+(b)((c + 8))+(1)((c + 8)))</p><p>=((ab)((c + 8))+(a)((c + 8))+(b)((c + 8))+(1)((c + 8)))</p><p>=((a)(b)+(1)(b)+(a)(1)+(1)(1))(c + 8)</p><p>=((a)((b + 1))+(1)((b + 1)))(c + 8)</p><p>=(a + 1) (b + 1) (c + 8)</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="h3">GCF of Polynomials Calcualtor</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Ex 1: Find the GCF of Polynomials x^2+2x+1,x+1</strong></p>
+      <p>The given input is x^2+2x+1,x+1</p><p>x^2+2x+1 has factors i.e (x + 1)^2</p><p>x+1 has factors i.e x + 1</p><p>By verifying each polynomial factor we get the GCF i.e common factor of the polynomial is x + 1 and simplified as x + 1</p>
+      <p><strong>Ex 2: Find the GCF of Polynomials x^2-1,x-1</strong></p>
+      <p><p>The given input is x^2-1,x-1</p><p>x^2-1 has factors i.e (x - 1) (x + 1)</p><p>x-1 has factors i.e x - 1</p><p>By verifying each polynomial factor we get the GCF i.e common factor of the polynomial is x - 1 and simplified as x - 1</p></p>
+      <p><strong>Ex 3: Find the GCF of Polynomials x^3-1,x+1</strong></p>
+      <p>The given input is x^3-1,x+1</p><p>x^3-1 has factors i.e (x - 1) (x^2 + x + 1)</p><p>x+1 has factors i.e x + 1</p><p>By verifying each polynomial factor we get the GCF i.e common factor of the polynomial is 1 and simplified as 1</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="h3">Factor out GCF from Polynomials Calcualtor</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Ex 1: Find the Factor out GCF of Polynomials x^2+2x+1,x+1</strong></p>
+      <p>The given input is x^2+2x+1,x+1</p><p>x^2+2x+1 has factors i.e (x + 1)^2</p><p>x+1 has factors i.e x + 1</p><p>By verifying each polynomial factor we get the GCF i.e common factor of the polynomial is x + 1 and simplified as x + 1</p><p>Factor form of GCF is x + 1 </p>
+      <p><strong>Ex 2: Find the Factor out GCF of Polynomials x^2-1,x-1</strong></p>
+      <p>The given input is x^2-1,x-1</p><p>x^2-1 has factors i.e (x - 1) (x + 1)</p><p>x-1 has factors i.e x - 1</p><p>By verifying each polynomial factor we get the GCF i.e common factor of the polynomial is x - 1 and simplified as x - 1</p><p>Factor form of GCF is x - 1 </p>
+      <p><strong>Ex 3: Find the Factor out GCF of Polynomials x^3-1,x+1</strong></p>
+      <p>The given input is x^3-1,x+1</p><p>x^3-1 has factors i.e (x - 1) (x^2 + x + 1)</p><p>x+1 has factors i.e x + 1</p><p>By verifying each polynomial factor we get the GCF i.e common factor of the polynomial is 1 and simplified as 1</p><p>Factor form of GCF is 1 </p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="h3">Determining if Polynomial is Prime Calcualtor</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Ex 1: Finding Is x^5+x^5+1+x^5+x^3+x Prime Polynomial</strong></p>
+      <p>The given polynomial is x^5 + x^5 + x^5 + x^3 + x + 1</p><p>So x^5 + x^5 + x^5 + x^3 + x + 1  =  3 x^5 + x^3 + x + 1</p><p>It is a prime polynomial because it has only two factors i.e 1 and 3 x^5 + x^3 + x + 1</p>
+      <p><strong>Ex 2: Finding Is x^5+3x^5+1+x^6+x^3+x Prime Polynomial</strong></p>
+      <p>The given polynomial is x^6 + x^5 + 3 x^5 + x^3 + x + 1</p><p>So x^6 + x^5 + 3 x^5 + x^3 + x + 1  =  x^6 + 4 x^5 + x^3 + x + 1</p><p>It is a prime polynomial because it has only two factors i.e 1 and x^6 + 4 x^5 + x^3 + x + 1</p>
+      <p><strong>Ex 3: Finding Is x^3+x^5+1+x^3+x^3+x Prime Polynomial</strong></p>
+      <p>The given polynomial is x^5 + x^3 + x^3 + x^3 + x + 1</p><p>So x^5 + x^3 + x^3 + x^3 + x + 1  =  x^5 + 3 x^3 + x + 1</p><p>It is a prime polynomial because it has only two factors i.e 1 and x^5 + 3 x^3 + x + 1</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="h3">Finding the LCM using GCF Calcualtor</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Ex 1: Finding LCM of Polynomials x^2+2x+1, x+1 Using GCF</strong></p>
+      <p>The given Expressions are x^2+2x+1,x+1</p><p>x^2+2x+1 has factors i.e (x + 1)^2</p><p>x+1 has factors i.e x + 1</p><p>By finding the GCF of given expressions we get that the gcf is x + 1</p><p>There are 2 number of expressions are given.</p><p>To find the LCM we have to first multiply all the expressions (x^2+2x+1)(x+1) = x^3 + 3x^2 + 3x + 1</p><p>To find the LCM we have devide 2-1 power of gcf from x^3 + 3x^2 + 3x + 1</p><p>So by dividing x + 1 from x^3 + 3x^2 + 3x + 1 = (x^3 + 3x^2 + 3x + 1)/(x + 1) =   x^2 + 2x + 1</p><p>So the LCM of x^2+2x+1,x+1 is x^2 + 2x + 1</p>
+      <p><strong>Ex 2: Finding LCM of Polynomials x^2-1, x-1 Using GCF</strong></p>
+      <p>The given Expressions are x^2-1,x-1</p>
+      <p>x^2-1 has factors i.e (x - 1)(x + 1)</p>
+      <p>x-1 has factors i.e x - 1</p>
+      <p>By finding the GCF of given expressions we get that the gcf is x - 1</p>
+      <p>There are 2 number of expressions are given.</p>
+      <p>To find the LCM we have to first multiply all the expressions (x^2-1)(x-1) = x^3 - x^2 - x + 1</p>
+      <p>To find the LCM we have devide 2-1 power of gcf from x^3 - x^2 - x + 1</p>
+      <p>So by dividing x - 1 from x^3 - x^2 - x + 1 = (x^3 - x^2 - x + 1)/(x - 1) =   x^2 - 1</p>
+      <p>So the LCM of x^2-1,x-1 is x^2 - 1</p>
+      <p><strong>Ex 3: Finding LCM of Polynomials x^3-1, x+1 Using GCF</strong></p>
+      <p>The given Expressions are x^3-1,x+1</p>
+      <p>x^3-1 has factors i.e (x - 1)(x^2 + x + 1)</p> 
+      <p>x+1 has factors i.e x + 1</p>
+      <p>By finding the GCF of given expressions we get that the gcf is 1</p><p>There are 2 number of expressions are given.</p><p>To find the LCM we have to first multiply all the expressions (x^3-1)(x+1) = x^4 + x^3 - x - 1</p><p>To find the LCM we have devide 2-1 power of gcf from x^4 + x^3 - x - 1</p><p>So by dividing 1 from x^4 + x^3 - x - 1 = (x^4 + x^3 - x - 1)/(1) =   x^4 + x^3 - x - 1</p><p>So the LCM of x^3-1,x+1 is x^4 + x^3 - x - 1</p>
+    </div>
+  </div>
+<div class="faq">
+  <div class="card">
+      <div class="card-header">
+          <h3 class="h3">FAQs on Polynomials Calculator</h3>
+      </div>
+      <div class="card-body">
+          <!-- Question & Answer Starts --->
+         <p class="question"><strong>1. How to solve polynomial equations online?</strong></p>
+         <p class="answer">To solve polynomial equation problems, choose Polynomial Equation Solver Calculator and enter the polynomial expression. Tap on the calculate button to get the values of the variable in less time.</p><hr>
+
+
+         <p class="question"><strong>2. What is the polynomial formula?</strong></p>
+         <p class="answer">The polynomial formula has variables with different powers, the highest power of the variable is called the degree of the polynomial. The general polynomial formula is given as ax<sip>n</sup> + bx<sup>n-1</sup> + cx<sup>n-3</sup> + .... + rx + s. Here, a, b, c .. are coefficients, n is the degree of the polynomial and x is the variable.</p><hr>
+
+
+         <p class="question"><strong>3. How to use polynomials calculator?</strong></p>
+         <p class="answer">All you need to do is provide the polynomial details in the mentioned input sections of the respective Polynomial Calculator and press the calculate button. You will get the output in a fraction of seconds.</p><hr>
+
+
+         <p class="question"><strong>4. How do you factor polynomials?
+        </strong></p>
+         <p class="answer">To find factors of the polynomials easily, visit trusted website <a href="https://factorpolynomials.com/">factorpolynomials.com</a> and check for the online calculator to obtain the result quickly.</p>
+         <img src="{% static 'images/base/Polynomials-Calculator.jpeg' %}" alt="Polynomials Calculator">
+        </div>
+   </div>
+</div>
+</div>
+{%endblock%}

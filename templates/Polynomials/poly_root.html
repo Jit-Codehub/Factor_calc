@@ -1,0 +1,239 @@
+{%extends 'base/polynomial_base2.html'%}
+{%load static%}
+  {%block meta%}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="{% static 'images/logo/Factor-Polynomial-Com-Fevicon.png' %}" type="icon">
+  {%block css%}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  {%endblock%}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- META DATA STARTS -->
+    <title>Polynomial Root Calculator | How to Find Root of a Polynomial?</title>
+    <meta name="description" content="User-friendly Polynomial Root Calculator helps to calculate the root of a polynomial easily. Provide the polynomial as input & get its root as output quickly">
+    <link rel="canonical" href="{{request.build_absolute_uri}}" >
+<!-- META DATA ENDS --->
+
+<!-- OPEN GRAPH CONFIGURATIONS STARTS -->
+    <!--  FACEBOOK CONFIGURATION STARTS  -->
+    <meta content="https://www.facebook.com/Factor-Polynomials-102151955136428" property="og:url" />
+    <meta property="og:title" content="Polynomial Root Calculator | How to Find Root of a Polynomial?"/>
+    <meta property="og:description" content="User-friendly Polynomial Root Calculator helps to calculate the root of a polynomial easily. Provide the polynomial as input & get its root as output quickly."/>
+    <meta content="" property="og:site_name" />
+    <meta  content="https://factorpolynomials.com/static/images/polynomials/Polynomial-Root-Calculator.jpeg" property="og:image" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="435" />
+    <meta property="og:image:width" content="354" />
+    <!--  FACEBOOK CONFIGURATION ENDS  -->
+    <!-- TWITTER CARD CONFIGURATION STARTS  -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="https://twitter.com/factorpolynomil"/>
+    <meta name="twitter:title" content="Polynomial Root Calculator | How to Find Root of a Polynomial?"/>
+    <meta name="twitter:description" content="User-friendly Polynomial Root Calculator helps to calculate the root of a polynomial easily. Provide the polynomial as input & get its root as output quickly.."/>
+    <meta name="twitter:image:src" content="https://factorpolynomials.com/static/images/polynomials/Polynomial-Root-Calculator.jpeg"/>
+    <meta property="twitter:image:height" content="435"/>
+    <meta property="twitter:image:width" content="354"/>
+    <!-- TWITTER CARD CONFIGURATION ENDS  -->
+    <!--  LINKEDIN CONFIGURATION STARTS-->
+    <meta property='og:title' content="Polynomial Root Calculator | How to Find Root of a Polynomial?"/>
+    <meta property='og:image' content="https://factorpolynomials.com/static/images/polynomials/Polynomial-Root-Calculator.jpeg"/>
+    <meta property='og:description' content="User-friendly Polynomial Root Calculator helps to calculate the root of a polynomial easily. Provide the polynomial as input & get its root as output quickly."/>
+    <meta property='og:url' content="https://www.linkedin.com/in/factorpolynomials/" />
+    <!-- end of linkedin CONFIGURATIONS ENDS -->
+<!-- OPEN GRAPH CONFIGURATION ENDS -->
+<!-- FAQ SCHEMA STARTS -->
+<script type="application/ld+json">{"@context": "https://schema.org","@type": "FAQPage","mainEntity": [{"@type": "Question","name":"1.
+  How do you find the roots of a polynomial?
+  ","acceptedAnswer": {"@type": "Answer","text":" The steps to find the polynomial roots are given here. Make the equation P(x) = 0 by putting each factor value equal to 0 and solving for x."}	}, {"@type": "Question","name":"2.
+  How to get the discriminant?
+  ","acceptedAnswer": {"@type": "Answer","text":" The formula to find the discriminant of a 2nd order polynomial is Δ = b² − 4ac. So, use this formula and substitute the values to obtain the discriminant of the equation."}	}, {"@type": "Question","name":"3.
+  What is meant by the polynomial equation?
+  ","acceptedAnswer": {"@type": "Answer","text":" In mathematics, a polynomial equation is defined as the algebraic equation that has variables, coefficients, constants, mathematical operators. A polynomial equation can have many terms with different exponents. The higher exponent value of the variable is called the degree of the equation."}	}, {"@type": "Question","name":"4.
+  Find the roots of the polynomial equation 15x² + 8x + 3?
+  ","acceptedAnswer": {"@type": "Answer","text":" Given polynomial equation is 15x² + 8x + 3
+  It is a quadratic equation in the form of ax² + bx + c. So, a = 15, b = 8, c = 3
+  The formula to find the roots of the quadratic equation is x = [-b ± √(b² − 4ac)]/(2a)
+  x = [-8 ± √(8² − 4 * 15 * 3)]/(2 * 15)
+  = [-8 ± √(64 − 180)]/(30)
+  = [-8 ± √(-116)]/(30)
+  = [-8 + √116i]/(30) and [-8 - √116i]/(30)"}	}]}</script>
+{%endblock%}
+{%block content%}
+<div class="container">
+    <div class="card c1">
+      <div class="card-header">
+  <h1 class="h1">Polynomial Root Calculator</h1>
+  </div>
+  <div class="card-body">
+    <p>Free Polynomial Root Calculator determines the roots of a polynomial in a fraction of seconds. Just enter the polynomial expression details in the below-mentioned input field of the calculator and tap on the calculate button. The polynomial roots with explanation will appear on the screen as output.</p>
+    <br>
+    <p><b>Ex: </b> 
+    <ul>
+      <li><a href="/polynomial-root-of-t~2_5t_6/" title="Polynomial Root of t^2+5t+6" >Polynomial Root of t^2+5t+6</a></li>
+    <li><a href="/polynomial-root-of--16t~2_24t_6/" title="Polynomial Root of -16t^2+24t+6" >Polynomial Root of -16t^2+24t+6</a></li>
+    <li><a href="/polynomial-root-of--16t~2_29t-12/" title="Polynomial Root of -16t^2+29t-12" >Polynomial Root of -16t^2+29t-12</a></li>
+
+    </ul>
+    </p>
+    <form method="POST">{% csrf_token %}
+      <div class="form-row align-items-center">
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInputGroup">Polynomial Root Calculator:</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><strong>Polynomial Root Calculator: </strong></div>
+            </div>
+            <input type="text" class="form-control" name="textfield1" id="inlineFormInputGroup" placeholder="Enter Polynomials" value="t^2+6t+8">
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-2">Calculate</button>
+        </div>
+      </div>
+    </form>
+    <p>{{ cont|default:" "}}</p>
+    <br>
+    <p><strong>Here are some samples of Polynomial Root calculations.</strong></p>
+    <div class='row'>
+      <div class='col-sm-6'> <ul>
+    <li><a href="/polynomial-root-of-10b~4_3b~2-11/" title="Polynomial Root of 10b^4+3b^2-11" >Polynomial Root of 10b^4+3b^2-11</a></li>
+    <li><a href="/polynomial-root-of-10x~2_4x_12/" title="Polynomial Root of 10x^2+4x+12" >Polynomial Root of 10x^2+4x+12</a></li>
+    <li><a href="/polynomial-root-of-10x~2-2x-3/" title="Polynomial Root of 10x^2-2x-3" >Polynomial Root of 10x^2-2x-3</a></li>
+    <li><a href="/polynomial-root-of-10x~2-5x_10/" title="Polynomial Root of 10x^2-5x+10" >Polynomial Root of 10x^2-5x+10</a></li>
+    <li><a href="/polynomial-root-of-10x~2-9x-6/" title="Polynomial Root of 10x^2-9x-6" >Polynomial Root of 10x^2-9x-6</a></li>
+    <li><a href="/polynomial-root-of-10x~2-x_9/" title="Polynomial Root of 10x^2-x+9" >Polynomial Root of 10x^2-x+9</a></li>
+    <li><a href="/polynomial-root-of-11x~2_3x_1/" title="Polynomial Root of 11x^2+3x+1" >Polynomial Root of 11x^2+3x+1</a></li>
+    <li><a href="/polynomial-root-of-11x~2_5x_1/" title="Polynomial Root of 11x^2+5x+1" >Polynomial Root of 11x^2+5x+1</a></li>
+    <li><a href="/polynomial-root-of-11x~2-12x-10/" title="Polynomial Root of 11x^2-12x-10" >Polynomial Root of 11x^2-12x-10</a></li>
+    <li><a href="/polynomial-root-of-11x~2-4x-1/" title="Polynomial Root of 11x^2-4x-1" >Polynomial Root of 11x^2-4x-1</a></li>
+    <li><a href="/polynomial-root-of--12.31x~2_1.32x_31.02/" title="Polynomial Root of -12.31x^2+1.32x+31.02" >Polynomial Root of -12.31x^2+1.32x+31.02</a></li>
+    <li><a href="/polynomial-root-of-128_112t-16t~2/" title="Polynomial Root of 128+112t-16t^2" >Polynomial Root of 128+112t-16t^2</a></li>
+    <li><a href="/polynomial-root-of-12x~2-120x_209/" title="Polynomial Root of 12x^2-120x+209" >Polynomial Root of 12x^2-120x+209</a></li>
+    <li><a href="/polynomial-root-of-12x~2-132x_252/" title="Polynomial Root of 12x^2-132x+252" >Polynomial Root of 12x^2-132x+252</a></li>
+    <li><a href="/polynomial-root-of-12x~2-144x_299/" title="Polynomial Root of 12x^2-144x+299" >Polynomial Root of 12x^2-144x+299</a></li>
+    <li><a href="/polynomial-root-of-12x~2-156x_480/" title="Polynomial Root of 12x^2-156x+480" >Polynomial Root of 12x^2-156x+480</a></li>
+    <li><a href="/polynomial-root-of-12x~2-168x_405/" title="Polynomial Root of 12x^2-168x+405" >Polynomial Root of 12x^2-168x+405</a></li>
+    <li><a href="/polynomial-root-of-12x~2-192x_527/" title="Polynomial Root of 12x^2-192x+527" >Polynomial Root of 12x^2-192x+527</a></li>
+    <li><a href="/polynomial-root-of-12x~2-228x_740/" title="Polynomial Root of 12x^2-228x+740" >Polynomial Root of 12x^2-228x+740</a></li>
+    <li><a href="/polynomial-root-of-12x~2-240x_819/" title="Polynomial Root of 12x^2-240x+819" >Polynomial Root of 12x^2-240x+819</a></li>
+    </ul>
+    </div><div class="col-sm-6">
+    <ul>
+    <li><a href="/polynomial-root-of-12x~2-264x_989/" title="Polynomial Root of 12x^2-264x+989" >Polynomial Root of 12x^2-264x+989</a></li>
+    <li><a href="/polynomial-root-of-12x~2-4x-10/" title="Polynomial Root of 12x^2-4x-10" >Polynomial Root of 12x^2-4x-10</a></li>
+    <li><a href="/polynomial-root-of-12x~2-72x_77/" title="Polynomial Root of 12x^2-72x+77" >Polynomial Root of 12x^2-72x+77</a></li>
+    <li><a href="/polynomial-root-of-12x~2-9x_4/" title="Polynomial Root of 12x^2-9x+4" >Polynomial Root of 12x^2-9x+4</a></li>
+    <li><a href="/polynomial-root-of--13x~2-130x-273/" title="Polynomial Root of -13x^2-130x-273" >Polynomial Root of -13x^2-130x-273</a></li>
+    <li><a href="/polynomial-root-of-14x~2_42x_70/" title="Polynomial Root of 14x^2+42x+70" >Polynomial Root of 14x^2+42x+70</a></li>
+    <li><a href="/polynomial-root-of-154-10t-16t~2/" title="Polynomial Root of 154-10t-16t^2" >Polynomial Root of 154-10t-16t^2</a></li>
+    <li><a href="/polynomial-root-of--16t~2_105t-34/" title="Polynomial Root of -16t^2+105t-34" >Polynomial Root of -16t^2+105t-34</a></li>
+    <li><a href="/polynomial-root-of--16t~2_12t_40/" title="Polynomial Root of -16t^2+12t+40" >Polynomial Root of -16t^2+12t+40</a></li>
+    <li><a href="/polynomial-root-of--16t~2_12t_900/" title="Polynomial Root of -16t^2+12t+900" >Polynomial Root of -16t^2+12t+900</a></li>
+    <li><a href="/polynomial-root-of--16t~2_144/" title="Polynomial Root of -16t^2+144" >Polynomial Root of -16t^2+144</a></li>
+    <li><a href="/polynomial-root-of--16t~2_151t-88/" title="Polynomial Root of -16t^2+151t-88" >Polynomial Root of -16t^2+151t-88</a></li>
+    <li><a href="/polynomial-root-of--16t~2_15t_12/" title="Polynomial Root of -16t^2+15t+12" >Polynomial Root of -16t^2+15t+12</a></li>
+    <li><a href="/polynomial-root-of--16t~2_16t_480/" title="Polynomial Root of -16t^2+16t+480" >Polynomial Root of -16t^2+16t+480</a></li>
+    <li><a href="/polynomial-root-of--16t~2_17t-4/" title="Polynomial Root of -16t^2+17t-4" >Polynomial Root of -16t^2+17t-4</a></li>
+    <li><a href="/polynomial-root-of--16t~2_195t-87/" title="Polynomial Root of -16t^2+195t-87" >Polynomial Root of -16t^2+195t-87</a></li>
+    <li><a href="/polynomial-root-of--16t~2_200t_50/" title="Polynomial Root of -16t^2+200t+50" >Polynomial Root of -16t^2+200t+50</a></li>
+    <li><a href="/polynomial-root-of--16t~2_20t_24/" title="Polynomial Root of -16t^2+20t+24" >Polynomial Root of -16t^2+20t+24</a></li>
+    <li><a href="/polynomial-root-of--16t~2_20t_6/" title="Polynomial Root of -16t^2+20t+6" >Polynomial Root of -16t^2+20t+6</a></li>
+    <li><a href="/polynomial-root-of--16t~2_215t-97/" title="Polynomial Root of -16t^2+215t-97" >Polynomial Root of -16t^2+215t-97</a></li>
+    </ul>
+    </div>
+    </div>
+    <p><strong>Polynomial Root Calculator: </strong>Roots of a Polynomial Calculator: Are you trying to find the polynomial equation roots and don’t know the easier method? Then we are here  to help you out in obtaining the roots of the polynomial. This online Root Polynomial Calculator tool assists you to understand the process to calculate the polynomial roots.</p>
+</div></div>
+  <div class="card ">
+    <div class="card-header"><h2 class="h2">What is meant by Polynomial Root?</h2></div>
+    <div class="card-body">
+      <p>Roots are the solutions of the polynomial equation and these are the values of the unknown variable. The equation with a degree of 2 is called a quadratic equation and it is in the form of ax² + bx + c = 0.
+        In the above equation, a, b, c are the coefficients and x is the variable. The solution of variable x can be known by finding the roots of the quadratic equation. The formula of the quadratic equation roots is given as:
+        x = [-b ± √(b² − 4ac)]/(2a)
+        The formula to find the roots of the linear polynomial i.e ax + b is x = -b/a.
+        </p>
+       <img src="/static/images/quadratic-formula.png"> 
+           </div>
+  </div>
+
+  <div class="card ">
+    <div class="card-header"><h3 class="h3">Steps to Calculate Polynomial Roots</h3></div>
+    <div class="card-body">
+      <p>The following are the steps to compute the polynomial root easily. Have a look at these simple steps and get the result.</p>
+      <p>1. Know the highest degree polynomial equation.</p>
+      <p>2. Apply either the quadratic equation formula or linear polynomial formula based on the degree of polynomial.</p>
+      <p>3. Substitute the values in the selected formula</p>
+      <p>4. Solve the problem and get the root value</p>
+      <p>Also, You can use our site ie., <a href="{%url 'polynomials_calculator'%}">factorpolynomials.com</a> provided a trusted and reliable best calculator ie., Polynomial Root Calculator for all your complex calculations & make them easy & simple when your polynomials_calculatorwork or assignments.</p>
+      <img src="{% static 'images/polynomials/Polynomial-Root-Calculator.jpeg' %}" alt="Polynomials Root Calculator">      
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+          <h3 class="h3">Polynomial Root with Example</h3>
+      </div>
+    <div class="card-body">
+          <p><strong>Example</strong></p>
+          <p><strong>Question: Find the roots of polynomial 14x² + 42x + 70..</strong></p>
+          <p><strong>Solution:</strong></p>
+          <p>The given polynomial is 14x² + 42x + 704</p>
+          <p>After factoring we get 14(x² + 3x + 5)</p>
+          <p>By expanding the summation:</p>
+          <p>Polynomial Roots Calculator is a set of methods aimed at finding values of x for which F(x)=0</p>
+          <p>So, x² + 3x + 5 = 0</p>
+          <p>The coefficients of above quadratic equation are a = 1, b = 3 and c = 5</p>
+          <p>The formula of quadratic equation root is x = [-b ± √(b² − 4ac)]/(2a)</p>
+          <p>x = [-3 ± √(3² − 4 * 1 * 5)]/(2 * 1)
+          </p>
+          <p>= [-3 ± √(9 − 20)]/2</p>
+          <p>=  [-3 ± √-11]/2</p>
+          <p>= [-3 + √11 i]/2 or [-3 - √11 i]/2</p>
+          <p>Therefore, the roots of polynomial 14x² + 42x + 70 are [-3 + √11 i]/2 or [-3 - √11 i]/2.</p>
+          </div>
+  </div>
+  <div class="card ">
+      <div class="card-header">
+          <h3 class="h3">FAQs on Polynomial Root Calculator</h3>
+      </div>
+      <div class="card-body">
+          <!-- Question & Answer Starts --->
+         <p class="question"><strong>1. How do you find the roots of a polynomial?</strong></p>
+         <p class="answer">The steps to find the polynomial roots are given here. Make the equation P(x) = 0 by putting each factor value equal to 0 and solving for x.</p><hr>
+
+
+         <p class="question"><strong>2. How to get the discriminant?</strong></p>
+         <p class="answer">The formula to find the discriminant of a 2nd order polynomial is Δ = b² − 4ac. So, use this formula and substitute the values to obtain the discriminant of the equation</p><hr>
+
+
+         <p class="question"><strong>3. What is meant by the polynomial equation?</strong></p>
+         <p class="answer">In mathematics, a polynomial equation is defined as the algebraic equation that has variables, coefficients, constants, mathematical operators. A polynomial equation can have many terms with different exponents. The higher exponent value of the variable is called the degree of the equation.</p><hr>
+
+
+         <p class="question"><strong>4. Find the roots of the polynomial equation 15x² + 8x + 3?</strong></p>
+         <p class="answer">Given polynomial equation is 15x² + 8x + 3
+          It is a quadratic equation in the form of ax² + bx + c. So, a = 15, b = 8, c = 3
+          The formula to find the roots of the quadratic equation is x = [-b ± √(b² − 4ac)]/(2a)
+          x = [-8 ± √(8² − 4 * 15 * 3)]/(2 * 15)
+          = [-8 ± √(64 − 180)]/(30)
+          = [-8 ± √(-116)]/(30)
+          = [-8 + √116i]/(30) and [-8 - √116i]/(30)
+          </p>
+      </div>
+   </div>
+</div>
+<!-- <div class="card">
+  <div class="card-header">
+  <h3 class="h3">Multiplying Polynomials Calculations</h3>
+</div>
+<div class="card-body">
+  <ul>
+    {% for i,j in sk1 %}
+  <li><a  href="{{i}}" title="{{j}}">{{j}}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+</div>
+</div> -->
+{%endblock%}

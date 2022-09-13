@@ -1,0 +1,191 @@
+{%extends 'base/polynomial_base1.html'%}
+{%load static%}
+  {%block meta%}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="{% static 'images/logo/Factor-Polynomial-Com-Fevicon.png' %}" type="icon">
+  {%block css%}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  {%endblock%}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- META DATA STARTS --->
+    <title>Polynomial in Descending Order Calculator | Free Online Polynomial Tool</title>
+    <meta name="description" content="Reordering the Polynomial in Descending Order can be done easily by Polynomial in Descending Order Calculator within a fraction of seconds.</">
+    <link rel="canonical" href="{{request.build_absolute_uri}}" >
+<!-- META DATA ENDS --->
+
+<!-- OPEN GRAPH CONFIGURATIONS STARTS -->
+    <!--  FACEBOOK CONFIGURATION STARTS  -->
+    <meta content="https://www.facebook.com/Factor-Polynomials-102151955136428" property="og:url" />
+    <meta property="og:title" content="Polynomial in Descending Order Calculator | Free Online Polynomial Tool"/>
+    <meta property="og:description" content="Reordering the Polynomial in Descending Order can be done easily by Polynomial in Descending Order Calculator within a fraction of seconds."/>
+    <meta content="" property="og:site_name" />
+    <meta  content="https://factorpolynomials.com/static/images/polynomials/Descending-Order-of-a-Polynomial-Calculator.jpeg" property="og:image" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="435" />
+    <meta property="og:image:width" content="354" />
+    <!--  FACEBOOK CONFIGURATION ENDS  -->
+    <!-- TWITTER CARD CONFIGURATION STARTS  -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="https://twitter.com/factorpolynomil"/>
+    <meta name="twitter:title" content="Polynomial in Descending Order Calculator | Free Online Polynomial Tool"/>
+    <meta name="twitter:description" content="Reordering the Polynomial in Descending Order can be done easily by Polynomial in Descending Order Calculator within a fraction of seconds.</"/>
+    <meta name="twitter:image:src" content="https://factorpolynomials.com/static/images/polynomials/Descending-Order-of-a-Polynomial-Calculator.jpeg"/>
+    <meta property="twitter:image:height" content="435"/>
+    <meta property="twitter:image:width" content="354"/>
+    <!-- TWITTER CARD CONFIGURATION ENDS  -->
+    <!--  LINKEDIN CONFIGURATION STARTS-->
+    <meta property='og:title' content="Polynomial in Descending Order Calculator | Free Online Polynomial Tool"/>
+    <meta property='og:image' content="https://factorpolynomials.com/static/images/polynomials/Descending-Order-of-a-Polynomial-Calculator.jpeg"/>
+    <meta property='og:description' content="Reordering the Polynomial in Descending Order can be done easily by Polynomial in Descending Order Calculator within a fraction of seconds.</"/>
+    <meta property='og:url' content="https://www.linkedin.com/in/factorpolynomials/" />
+    <!-- end of linkedin CONFIGURATIONS ENDS -->
+<!-- OPEN GRAPH CONFIGURATION ENDS -->
+<!-- FAQ SCHEMA STARTS -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a polynomial in descending order?","acceptedAnswer":{"@type":"Answer","text":"Descending order polynomial is the most commonly used order. Basically, when the power of a term decreases for each succeeding term then it is said to be a descending order polynomial. For instance, x^4 + x^2 + 2x is arranged in descending order."}},{"@type":"Question","name":"How do you reorder a polynomial equation in decreasing order?","acceptedAnswer":{"@type":"Answer","text":"Reordering a polynomial in decreasing order can be done easily by using our free online polynomial in descending order calculator."}},{"@type":"Question","name":"Where can I find the Polynomial in Descending Order Calculator?","acceptedAnswer":{"@type":"Answer","text":"Open your browser and visit the factorpolynomials.com website to find the Polynomial in Descending Order Calculator. This tool displays the descending order of a polynomial equation by just taking the input polynomial."}},{"@type":"Question","name":"Arrange the polynomial 3x^5+4x^6+8x^9+x^3+2x-1 in descending order?","acceptedAnswer":{"@type":"Answer","text":"The given polynomial is 3x^5+4x^6+8x^9+x^3+2x-1\n\nNow, arrange the degrees from large to small and reorder the polynomial in descending order.\n\nTherefore, the descending order of a polynomial is 8x^9+4x^6+3x^5+x^3+2x−1."}}]}</script><!--FAQPage Code Generated by https://saijogeorge.com/json-ld-schema-generator/faq/-->
+{%endblock%}
+{%block content%}
+<div class="container">
+    <div class="card c1">
+      <div class="card-header">
+  <h1 class="h1">Polynomial in Descending Order Calculator</h1>
+  </div>
+  <div class="card-body">
+    <p>Free Online Polynomial in descending order calculator gives step-by-step solution for given polynomial in descending order within seconds. Make use of this calculator tool and get the output along with a detailed explanation. <br /><br /></p>
+    <p><b>Ex: </b> <ul>
+      <li><a href="/polynomial-in-descending-order--3y~10-y~5_5_6y~2/" title="-3y^10-y^5+5+6y^2 Polynomial in descending order" >-3y^10-y^5+5+6y^2 Polynomial in descending order</a></li>
+<li><a href="/polynomial-in-descending-order--3y~11-y~8_7_2y~12/" title="-3y^11-y^8+7+2y^12 Polynomial in descending order" >-3y^11-y^8+7+2y^12 Polynomial in descending order</a></li>
+<li><a href="/polynomial-in-descending-order-3y~12-y~11_7_5y~3/" title="3y^12-y^11+7+5y^3 Polynomial in descending order" >3y^12-y^11+7+5y^3 Polynomial in descending order</a></li>
+
+    </ul></p>
+    <form method="POST">{% csrf_token %}
+      <div class="form-row align-items-center">
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInputGroup"> Arrange Polynomials in Descending Order:</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><strong>Arrange Polynomials in Descending Order: </strong></div>
+            </div>
+            <input type="text" class="form-control" name="textfield1" id="inlineFormInputGroup" placeholder="Enter Polynomials" value="10x^2y+7x^3y">
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-2">Calculate</button>
+        </div>
+      </div>
+    </form>
+    <p>{{ cont|default:" "}}</p>
+    <br>
+    <p><b>Here are some samples of Polynomial in descending order calculations.</b></p>
+    <div class='row'>
+      <div class='col-sm-6'> <ul>
+    <li><a href="/polynomial-in-descending-order-(6x~2-4x_11)_(4-x~2-3x)/" title="(6x^2-4x+11)+(4-x^2-3x) Polynomial in descending order" >(6x^2-4x+11)+(4-x^2-3x) Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-1_6x~2_5x~4_3x~3/" title="1+6x^2+5x^4+3x^3 Polynomial in descending order" >1+6x^2+5x^4+3x^3 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order--10p~2q_7p~3q-5q/" title="-10p^2q+7p^3q-5q Polynomial in descending order" >-10p^2q+7p^3q-5q Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order--10x~2y_7x~3y-5y/" title="-10x^2y+7x^3y-5y Polynomial in descending order" >-10x^2y+7x^3y-5y Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order--15x~5y_13x~2y~4-x~8/" title="-15x^5y+13x^2y^4-x^8 Polynomial in descending order" >-15x^5y+13x^2y^4-x^8 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-15x~5y_13x~2y~4-y/" title="15x^5y+13x^2y^4-y Polynomial in descending order" >15x^5y+13x^2y^4-y Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-18x_2x~3-3x~2_10/" title="18x+2x^3-3x^2+10 Polynomial in descending order" >18x+2x^3-3x^2+10 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order--19x~2_2_4x~3-7x/" title="-19x^2+2+4x^3-7x Polynomial in descending order" >-19x^2+2+4x^3-7x Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order--19x~2_2x_4x~3-7x/" title="-19x^2+2x+4x^3-7x Polynomial in descending order" >-19x^2+2x+4x^3-7x Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-24x~2y-12x~3y~2_6x~4/" title="24x^2y-12x^3y^2+6x^4 Polynomial in descending order" >24x^2y-12x^3y^2+6x^4 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-2-6x~3_5x~5-x~2/" title="2-6x^3+5x^5-x^2 Polynomial in descending order" >2-6x^3+5x^5-x^2 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order--2h~4_5h~2-3-2h-8h~3/" title="-2h^4+5h^2-3-2h-8h^3 Polynomial in descending order" >-2h^4+5h^2-3-2h-8h^3 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-2x~11-x~9_2_7x~13/" title="2x^11-x^9+2+7x^13 Polynomial in descending order" >2x^11-x^9+2+7x^13 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-2x~13-x~12_3_6x~11/" title="2x^13-x^12+3+6x^11 Polynomial in descending order" >2x^13-x^12+3+6x^11 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-2x~14-x~11_3_6x~8/" title="2x^14-x^11+3+6x^8 Polynomial in descending order" >2x^14-x^11+3+6x^8 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order--2x~2-4x~4_8x_x~5-2x~3/" title="-2x^2-4x^4+8x+x^5-2x^3 Polynomial in descending order" >-2x^2-4x^4+8x+x^5-2x^3 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-2x~2-4x_x~6_8_3x~10/" title="2x^2-4x+x^6+8+3x^10 Polynomial in descending order" >2x^2-4x+x^6+8+3x^10 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order--2x~3_4x~5-3x~2-7/" title="-2x^3+4x^5-3x^2-7 Polynomial in descending order" >-2x^3+4x^5-3x^2-7 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-2x~3-x~13_2_7x~5/" title="2x^3-x^13+2+7x^5 Polynomial in descending order" >2x^3-x^13+2+7x^5 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order--2x~3-x~13_6_2x~12/" title="-2x^3-x^13+6+2x^12 Polynomial in descending order" >-2x^3-x^13+6+2x^12 Polynomial in descending order</a></li>
+    </ul>
+    </div><div class="col-sm-6">
+    <ul>
+    <li><a href="/polynomial-in-descending-order-2x~3y~2_3x~2y-y-4/" title="2x^3y^2+3x^2y-y-4 Polynomial in descending order" >2x^3y^2+3x^2y-y-4 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-2x~5_14-3x~4_7x_3x~3/" title="2x^5+14-3x^4+7x+3x^3 Polynomial in descending order" >2x^5+14-3x^4+7x+3x^3 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-2x~5-x~8_3_7x~2/" title="2x^5-x^8+3+7x^2 Polynomial in descending order" >2x^5-x^8+3+7x^2 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-2xy~2_x~2y~4-2x~3_y~3/" title="2xy^2+x^2y^4-2x^3+y^3 Polynomial in descending order" >2xy^2+x^2y^4-2x^3+y^3 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-2xy~4_2x~2y-3y~2_10x~3/" title="2xy^4+2x^2y-3y^2+10x^3 Polynomial in descending order" >2xy^4+2x^2y-3y^2+10x^3 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order--2xy~5_3x~7-10x~3y~6_8x~6_4/" title="-2xy^5+3x^7-10x^3y^6+8x^6+4 Polynomial in descending order" >-2xy^5+3x^7-10x^3y^6+8x^6+4 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-2y~13-y~11_4_6y~8/" title="2y^13-y^11+4+6y^8 Polynomial in descending order" >2y^13-y^11+4+6y^8 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-2y~13-y~3_1_7y~4/" title="2y^13-y^3+1+7y^4 Polynomial in descending order" >2y^13-y^3+1+7y^4 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order--2y~14-y~8_4_2y~3/" title="-2y^14-y^8+4+2y^3 Polynomial in descending order" >-2y^14-y^8+4+2y^3 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-2y~2_3y~4-5y_6y~3/" title="2y^2+3y^4-5y+6y^3 Polynomial in descending order" >2y^2+3y^4-5y+6y^3 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-2y~9-y~6_2_7y~10/" title="2y^9-y^6+2+7y^10 Polynomial in descending order" >2y^9-y^6+2+7y^10 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-3_2x~2-3x~4_x~3/" title="3+2x^2-3x^4+x^3 Polynomial in descending order" >3+2x^2-3x^4+x^3 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-3_2x_x~2/" title="3+2x+x^2 Polynomial in descending order" >3+2x+x^2 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-3-4x_8x~2-6_2x-5x~2/" title="3-4x+8x^2-6+2x-5x^2 Polynomial in descending order" >3-4x+8x^2-6+2x-5x^2 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-3-6x_4x~2_3x-6x~2-4/" title="3-6x+4x^2+3x-6x^2-4 Polynomial in descending order" >3-6x+4x^2+3x-6x^2-4 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-3ab~3_4a~2b~6-5b~4/" title="3ab^3+4a^2b^6-5b^4 Polynomial in descending order" >3ab^3+4a^2b^6-5b^4 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order--3f~3_9f_6f~4-2f~2/" title="-3f^3+9f+6f^4-2f^2 Polynomial in descending order" >-3f^3+9f+6f^4-2f^2 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order-3x~10-x~6_4_6x~8/" title="3x^10-x^6+4+6x^8 Polynomial in descending order" >3x^10-x^6+4+6x^8 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order--3x~10-x~9_5_2x~8/" title="-3x^10-x^9+5+2x^8 Polynomial in descending order" >-3x^10-x^9+5+2x^8 Polynomial in descending order</a></li>
+    <li><a href="/polynomial-in-descending-order--3x~12-x~4_8_4x~11/" title="-3x^12-x^4+8+4x^11 Polynomial in descending order" >-3x^12-x^4+8+4x^11 Polynomial in descending order</a></li>
+    </ul>
+    </div>
+    </div>
+    <p><strong>Polynomial in Descending Order Calculator: </strong>Go with the factorpolynomials.com provided free online calculator tools as they hold a detailed explanation of the concept along with instant results. Today, we have come up with the polynomial in descending order online calculator. Here, you can find the definition, how to write a polynomial in descending order in detail with a solved example. Also, you use our handy polynomial descending order calculator for easy calculations and quick results with steps.</p>
+    </div></div>
+  <div class="card ">
+    <div class="card-header"><h2 class="h2">What is Meant by Polynomial in Descending Order?</h2></div>
+    <div class="card-body">
+      <p>Descending order is basically when its terms are arranged in order from the largest degree to the smallest degree. Sometimes you actually find polynomials in descending order if not then follow the below steps and arrange them in descending order.</p>
+      <h3>How to Arrange Polynomials in Descending Order?</h3>
+      <p>To arrange the given polynomials in descending order, all have to follow the below simple steps:</p>
+      <ul>
+      <li>First, we have to take the given polynomial expression and find the degrees of it.</li>
+      <li>Now, Arrange the terms from greatest degree to smallest degree.</li>
+      <li>That's it, the given polynomial is arranged in descending order.</li>
+      </ul>
+      <p>For a better understanding of the concept, we have explained a polynomial in descending order example in a stepwise manner below, refer to that and practice well.</p>
+      <p><strong>Example: </strong></p>
+      <p>Write the polynomial in descending order: 5x-6x^4+3-7x^3?</p>
+      <p><strong>Solution: </strong></p>
+      <p>Given polynomial expression is 5x-6x^4+3-7x^3</p>
+      <p>Now, arrange the terms in descending order of its exponents: 5x-6x^4+3-7x^3</p>
+      <p>Verify the degrees of the terms and order from big to small,</p>
+      <p>5x-6x^4+3-7x^3</p>
+      <p>-6x^4-7x^3+5x+3</p>
+      <p>Hence, the simplified expression written in descending order is -6x^4-7x^3+5x+3.</p>
+
+      </div>
+  </div>
+
+  <div class="card ">
+      <div class="card-header">
+          <h3 class="h3">FAQs on Polynomial in Descending Order Calculator</h3>
+      </div>
+      <div class="card-body">
+          <!-- Question & Answer Starts --->
+         <p class="question"><strong>1. How do you rearrange polynomials?</strong></p>
+        <p>Basically, polynomials can be rearranged in two ways ie., ascending or descending. Descending order is the commonly used order in polynomials. To rearrange the polynomials, find the degrees of the terms and order them from large to small or small to large.</p>
+        <p class="question"><strong>2. How do you write a polynomial in descending order?</strong></p>
+        <p>You can write a polynomial in descending order by arranging the largest degree terms at first and then to the smallest degree terms.</p>
+        <p class="question"><strong>3. What is the standard form for a polynomial?</strong></p>
+        <p>Polynomial in descending order is the standard form for a polynomial.</p>
+        <p class="question"><strong>4. Arrange -2x^3-x^13+6+2x^12 Polynomial in descending order?</strong></p>
+        <p>The given polynomial is -2x^3-x^13+6+2x^12</p>
+        <p>Now, check the degrees of each term and order the equation from large to small in descending order.</p>
+        <p>Hence, the descending order polynomial is -x^13+2x^12-2x^3+6.</p>
+        <p class="question"><strong>5. Which website is best to calculate the descending order polynomial?</p>
+        <p>Factorpolynomials.com is the best website that deals with all mathematical calculators for the concept of polynomials. So, here you can easily find the efficient &amp; handy polynomial in descending order calculator - online free.</p>
+              </div>
+   </div>
+</div>
+<!-- <div class="card">
+  <div class="card-header">
+  <h3 class="h3">Multiplying Polynomials Calculations</h3>
+</div>
+<div class="card-body">
+  <ul>
+    {% for i,j in sk1 %}
+  <li><a  href="{{i}}" title="{{j}}">{{j}}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+</div>
+</div> -->
+{%endblock%}

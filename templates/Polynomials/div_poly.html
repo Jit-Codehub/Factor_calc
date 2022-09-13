@@ -1,0 +1,197 @@
+{%extends 'base/polynomial_base1.html'%}
+{%load static%}
+  {%block meta%}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="{% static 'images/logo/Factor-Polynomial-Com-Fevicon.png' %}" type="icon">
+  {%block css%}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  {%endblock%}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- META DATA STARTS --->
+    <title>Dividing Polynomials Calculator | Find Long Division of Polynomials</title>
+    <meta name="description" content="Dividing Polynomials Calculator divides two polynomials quickly. Check the steps to find the division of 2 polynomials using long division method, questions.">
+    <link rel="canonical" href="{{request.build_absolute_uri}}" >
+<!-- META DATA ENDS --->
+
+<!-- OPEN GRAPH CONFIGURATIONS STARTS -->
+    <!--  FACEBOOK CONFIGURATION STARTS  -->
+    <meta content="https://www.facebook.com/Factor-Polynomials-102151955136428" property="og:url" />
+    <meta property="og:title" content="Dividing Polynomials Calculator | Find Long Division of Polynomials"/>
+    <meta property="og:description" content="Dividing Polynomials Calculator divides two polynomials quickly. Check the steps to find the division of 2 polynomials using long division method, questions."/>
+    <meta content="" property="og:site_name" />
+    <meta  content="https://factorpolynomials.com/static/images/polynomials/Polynomials-Division-Calculator.jpeg" property="og:image" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="435" />
+    <meta property="og:image:width" content="354" />
+    <!--  FACEBOOK CONFIGURATION ENDS  -->
+    <!-- TWITTER CARD CONFIGURATION STARTS  -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="https://twitter.com/factorpolynomil"/>
+    <meta name="twitter:title" content="Dividing Polynomials Calculator | Find Long Division of Polynomials"/>
+    <meta name="twitter:description" content="Dividing Polynomials Calculator divides two polynomials quickly. Check the steps to find the division of 2 polynomials using long division method, questions."/>
+    <meta name="twitter:image:src" content="https://factorpolynomials.com/static/images/polynomials/Polynomials-Division-Calculator.jpeg"/>
+    <meta property="twitter:image:height" content="435"/>
+    <meta property="twitter:image:width" content="354"/>
+    <!-- TWITTER CARD CONFIGURATION ENDS  -->
+    <!--  LINKEDIN CONFIGURATION STARTS-->
+    <meta property='og:title' content="Dividing Polynomials Calculator | Find Long Division of Polynomials"/>
+    <meta property='og:image' content="https://factorpolynomials.com/static/images/polynomials/Polynomials-Division-Calculator.jpeg"/>
+    <meta property='og:description' content="Dividing Polynomials Calculator divides two polynomials quickly. Check the steps to find the division of 2 polynomials using long division method, questions."/>
+    <meta property='og:url' content="https://www.linkedin.com/in/factorpolynomials/" />
+    <!-- end of linkedin CONFIGURATIONS ENDS -->
+<!-- OPEN GRAPH CONFIGURATION ENDS -->
+<!-- FAQ SCHEMA STARTS -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the easiest way to divide long polynomials?","acceptedAnswer":{"@type":"Answer","text":"Polynomial Long Division Method is the easiest way to divide two long polynomials."}},{"@type":"Question","name":"How do you do long division with polynomials?","acceptedAnswer":{"@type":"Answer","text":"There are many ways to perform long division with polynomials. One of the best ways to do long polynomials division is with the polynomial long division method. With the help of this method, you can easily divide the two polynomials."}},{"@type":"Question","name":"How do you do a division of polynomials on a calculator?","acceptedAnswer":{"@type":"Answer","text":"With the help of Polynomial Long Division Calculator, you can quickly do the long division of two polynomials. Simply enter the input polynomial expressions in the input field and tap on the calculate button to get the result in no time along with detailed steps."}},{"@type":"Question","name":"From where can I get to know the process of dividing two polynomials using the polynomial long division method?","acceptedAnswer":{"@type":"Answer","text":"Detailed steps to divide two long polynomials using polynomial long division method is provided here on our page."}},{"@type":"Question","name":"Can a number have more than one square root?","acceptedAnswer":{"@type":"Answer","text":"Yes, a number can have more than one square root. In fact, all positive numbers will have two square roots one is positive and the other is negative."}}]}</script><!--FAQPage Code Generated by https://saijogeorge.com/json-ld-schema-generator/faq/-->
+{%endblock%}
+{%block content%}
+<div class="container">
+    <div class="card c1">
+      <div class="card-header">
+  <h1 class="h1">Polynomial Long Division Calculator</h1>
+  </div>
+  <div class="card-body">
+    <p>Dividing Polynomials Calculator helps to find the division of two polynomials. Just give the details of two polynomials in the mentioned input fields and click the calculate button to get the output which is the result polynomial easily.</p>
+    <br>
+    <p><b>Ex: </b>  
+    <ul>
+      <li><a href="/dividing-polynomials-(x~2_7x_15)-div-(x_4)/" title="Dividing Polynomials (x^2+7x+15)/(x+4)" >Dividing Polynomials (x^2+7x+15)/(x+4)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_7x_6)-div-(x_1)/" title="Dividing Polynomials (x^2+7x+6)/(x+1)" >Dividing Polynomials (x^2+7x+6)/(x+1)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_7x_6)-div-(x_6)/" title="Dividing Polynomials (x^2+7x+6)/(x+6)" >Dividing Polynomials (x^2+7x+6)/(x+6)</a></li>
+
+    </ul>
+    </p>
+    <form method="POST">{% csrf_token %}
+      <div class="form-row align-items-center">
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInputGroup">Dividing Polynomials</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><strong>Calculate Division of two Polynomials: </strong></div>
+            </div>
+            <input type="text" class="form-control" name="textfield1" id="inlineFormInputGroup" placeholder="Enter Polynomials" value="(x^2+2x+8)/(x+9)">
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-2">Calculate</button>
+        </div>
+      </div>
+    </form>
+    <p>{{ cont|default:" "}}</p>
+    <br>
+    <p><strong>Here are some samples of Dividing Polynomials calculations.</strong></p>
+    <div class='row'>
+      <div class='col-sm-6'> <ul>
+    <li><a href="/dividing-polynomials-(3x~2y_6x~2y~2-xy~2)-div-(3xy)/" title="Dividing Polynomials (3x^2y+6x^2y^2-xy^2)/(3xy)" >Dividing Polynomials (3x^2y+6x^2y^2-xy^2)/(3xy)</a></li>
+    <li><a href="/dividing-polynomials-(3x~2y_9x~2y~2-xy~2)-div-(3xy)/" title="Dividing Polynomials (3x^2y+9x^2y^2-xy^2)/(3xy)" >Dividing Polynomials (3x^2y+9x^2y^2-xy^2)/(3xy)</a></li>
+    <li><a href="/dividing-polynomials-(-3x~3_5x_14)-div-(x-2)/" title="Dividing Polynomials (-3x^3+5x+14)/(x-2)" >Dividing Polynomials (-3x^3+5x+14)/(x-2)</a></li>
+    <li><a href="/dividing-polynomials-(3x~3-2x~2_3x-4)-div-(x-3)/" title="Dividing Polynomials (3x^3-2x^2+3x-4)/(x-3)" >Dividing Polynomials (3x^3-2x^2+3x-4)/(x-3)</a></li>
+    <li><a href="/dividing-polynomials-(3x~3-2x_5)-div-(x-3)/" title="Dividing Polynomials (3x^3-2x+5)/(x-3)" >Dividing Polynomials (3x^3-2x+5)/(x-3)</a></li>
+    <li><a href="/dividing-polynomials-(3x~3-3x~2-4x_3)-div-(x_3)/" title="Dividing Polynomials (3x^3-3x^2-4x+3)/(x+3)" >Dividing Polynomials (3x^3-3x^2-4x+3)/(x+3)</a></li>
+    <li><a href="/dividing-polynomials-(3x~3y~-1z~-1)-div-(x-4yz)/" title="Dividing Polynomials (3x^3y^-1z^-1)/(x-4yz)" >Dividing Polynomials (3x^3y^-1z^-1)/(x-4yz)</a></li>
+    <li><a href="/dividing-polynomials-(3x~4_2x~3-x~2_2x-19)-div-(x_2)/" title="Dividing Polynomials (3x^4+2x^3-x^2+2x-19)/(x+2)" >Dividing Polynomials (3x^4+2x^3-x^2+2x-19)/(x+2)</a></li>
+    <li><a href="/dividing-polynomials-(3x~4_2x~3-x~2_2x-24)-div-(x_2)/" title="Dividing Polynomials (3x^4+2x^3-x^2+2x-24)/(x+2)" >Dividing Polynomials (3x^4+2x^3-x^2+2x-24)/(x+2)</a></li>
+    <li><a href="/dividing-polynomials-(3x~4_2x~3-x~2_2x-9)-div-(x_2)/" title="Dividing Polynomials (3x^4+2x^3-x^2+2x-9)/(x+2)" >Dividing Polynomials (3x^4+2x^3-x^2+2x-9)/(x+2)</a></li>
+    <li><a href="/dividing-polynomials-(3x~4-2x~3_11)-div-(-3x~4)/" title="Dividing Polynomials (3x^4-2x^3+11)/(-3x^4)" >Dividing Polynomials (3x^4-2x^3+11)/(-3x^4)</a></li>
+    <li><a href="/dividing-polynomials-(3x~4-2x~3_5)-div-(-3x~4)/" title="Dividing Polynomials (3x^4-2x^3+5)/(-3x^4)" >Dividing Polynomials (3x^4-2x^3+5)/(-3x^4)</a></li>
+    <li><a href="/dividing-polynomials-(3x~4-2x~3_7)-div-(-3x~4)/" title="Dividing Polynomials (3x^4-2x^3+7)/(-3x^4)" >Dividing Polynomials (3x^4-2x^3+7)/(-3x^4)</a></li>
+    <li><a href="/dividing-polynomials-(3x~4-3x~3-6x-10)-div-(x-2)/" title="Dividing Polynomials (3x^4-3x^3-6x-10)/(x-2)" >Dividing Polynomials (3x^4-3x^3-6x-10)/(x-2)</a></li>
+    <li><a href="/dividing-polynomials-(3x~4-4x~2_8x-1)-div-(x-2)/" title="Dividing Polynomials (3x^4-4x^2+8x-1)/(x-2)" >Dividing Polynomials (3x^4-4x^2+8x-1)/(x-2)</a></li>
+    <li><a href="/dividing-polynomials-(3x_15)-div-(6-x)/" title="Dividing Polynomials (3x+15)/(6-x)" >Dividing Polynomials (3x+15)/(6-x)</a></li>
+    <li><a href="/dividing-polynomials-(3x_9)-div-(3x)/" title="Dividing Polynomials (3x+9)/(3x)" >Dividing Polynomials (3x+9)/(3x)</a></li>
+    <li><a href="/dividing-polynomials-(3x-2)-div-(x-3)/" title="Dividing Polynomials (3x-2)/(x-3)" >Dividing Polynomials (3x-2)/(x-3)</a></li>
+    <li><a href="/dividing-polynomials-(3x-3)-div-(6-x)/" title="Dividing Polynomials (3x-3)/(6-x)" >Dividing Polynomials (3x-3)/(6-x)</a></li>
+    <li><a href="/dividing-polynomials-(3x-6)-div-(2-x)/" title="Dividing Polynomials (3x-6)/(2-x)" >Dividing Polynomials (3x-6)/(2-x)</a></li>
+    </ul>
+    </div><div class="col-sm-6">
+    <ul>
+    <li><a href="/dividing-polynomials-(3x-6)-div-(5x-10)/" title="Dividing Polynomials (3x-6)/(5x-10)" >Dividing Polynomials (3x-6)/(5x-10)</a></li>
+    <li><a href="/dividing-polynomials-(3x-6)-div-(6-3x)/" title="Dividing Polynomials (3x-6)/(6-3x)" >Dividing Polynomials (3x-6)/(6-3x)</a></li>
+    <li><a href="/dividing-polynomials-(3y~3_2y~2-7y_2)-div-(3y-1)/" title="Dividing Polynomials (3y^3+2y^2-7y+2)/(3y-1)" >Dividing Polynomials (3y^3+2y^2-7y+2)/(3y-1)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_2x_8)-div-(x_8)/" title="Dividing Polynomials (x^2+2x+8)/(x+8)" >Dividing Polynomials (x^2+2x+8)/(x+8)</a></li>
+    <li><a href="/dividing-polynomials-(x~3_5x_7)-div-(x_6)/" title="Dividing Polynomials (x^3+5x+7)/(x+6)" >Dividing Polynomials (x^3+5x+7)/(x+6)</a></li>
+    <li><a href="/dividing-polynomials-(x~4_2x_8)-div-(x_6)/" title="Dividing Polynomials (x^4+2x+8)/(x+6)" >Dividing Polynomials (x^4+2x+8)/(x+6)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_5x_4)-div-(x_1)/" title="Dividing Polynomials (x^2+5x+4)/(x+1)" >Dividing Polynomials (x^2+5x+4)/(x+1)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_5x_4)-div-(x_4)/" title="Dividing Polynomials (x^2+5x+4)/(x+4)" >Dividing Polynomials (x^2+5x+4)/(x+4)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_5x_6)-div-(x_2)/" title="Dividing Polynomials (x^2+5x+6)/(x+2)" >Dividing Polynomials (x^2+5x+6)/(x+2)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_5x_6)-div-(x_3)/" title="Dividing Polynomials (x^2+5x+6)/(x+3)" >Dividing Polynomials (x^2+5x+6)/(x+3)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_6x_5)-div-(x_1)/" title="Dividing Polynomials (x^2+6x+5)/(x+1)" >Dividing Polynomials (x^2+6x+5)/(x+1)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_6x_5)-div-(x_5)/" title="Dividing Polynomials (x^2+6x+5)/(x+5)" >Dividing Polynomials (x^2+6x+5)/(x+5)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_6x_8)-div-(x_2)/" title="Dividing Polynomials (x^2+6x+8)/(x+2)" >Dividing Polynomials (x^2+6x+8)/(x+2)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_6x_8)-div-(x_4)/" title="Dividing Polynomials (x^2+6x+8)/(x+4)" >Dividing Polynomials (x^2+6x+8)/(x+4)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_6x_9)-div-(x~2-9)/" title="Dividing Polynomials (x^2+6x+9)/(x^2-9)" >Dividing Polynomials (x^2+6x+9)/(x^2-9)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_6x_9)-div-(x_3)/" title="Dividing Polynomials (x^2+6x+9)/(x+3)" >Dividing Polynomials (x^2+6x+9)/(x+3)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_76x_98)-div-(x_6)/" title="Dividing Polynomials (x^2+76x+98)/(x+6)" >Dividing Polynomials (x^2+76x+98)/(x+6)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_7x_10)-div-(x_2)/" title="Dividing Polynomials (x^2+7x+10)/(x+2)" >Dividing Polynomials (x^2+7x+10)/(x+2)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_7x_10)-div-(x_5)/" title="Dividing Polynomials (x^2+7x+10)/(x+5)" >Dividing Polynomials (x^2+7x+10)/(x+5)</a></li>
+    <li><a href="/dividing-polynomials-(x~2_7x_12)-div-(x_3)/" title="Dividing Polynomials (x^2+7x+12)/(x+3)" >Dividing Polynomials (x^2+7x+12)/(x+3)</a></li>
+        </ul>
+    </div>
+    </div>
+    <p><strong>Polynomial Long Division Calculator: </strong> It is a one-stop destination to solve division of two polynomials. Here, you will divide two polynomials easily by entering the required fields of the calculator. Also, find the step by step process to calculate polynomial long division and what is dividing polynomials. Get the solved example questions in the following sections of this page.</p>
+</div></div>
+  <div class="card">
+    <div class="card-header"><h2 class="h2">What is the Polynomial Long Division?</h2></div>
+    <div class="card-body">
+      <p>A polynomial is an algebraic expression with several terms. The elements of a polynomial are constants, variables, coefficients, arithmetic operators and exponents.
+        Generally, the long division method is used to divide the polynomials. It follows dividing a polynomial by another polynomial having the same or lower degree. The other method used to find division of polynomials is synthetic division method.
+        </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><h3 class="h3">How to Divide Polynomials Using the Long Division Method?</h3></div>
+    <div class="card-body">
+      <p>The below-included are the steps to compute the two polynomials division with long division method. Use these techniques to check the result in a fraction of seconds.</p>
+      <ol>
+        <li>Firstly, arrange polynomials in the descending order of their degrees.</li>
+        <li>Write dividend in between ")(" and divisor before ")".</li>
+        <li>Start performing a long division method.</li>
+        <li>Divide the first term of the dividend by the first term of the divisor. The obtained result is the first term of the quotient.</li>
+        <li>And multiply the result by the divisor. Write the product below the dividend.</li>
+        <li>Subtract the product from the dividend to get a new polynomial.</li>
+        <li>Repeat steps 4 to 6 with the generated new polynomials till there are no more terms left and the remainder should be 0.</li>
+      </ol>
+      <p><a href="{%url 'polynomials_calculator'%}">factorpolynomials.com</a> has different algebra concepts calculators which are free to use & easy to understand by those calculators you can make any of your calculations easy & quick.</p>
+      <img src="{% static 'images/polynomials/Polynomials-Division-Calculator.jpeg' %}" alt="Polynomial Division Calculator">
+    </div>
+  </div>
+
+  <div class="card ">
+      <div class="card-header">
+          <h3 class="h3">FAQs on Polynomial Long Division Calculator</h3>
+      </div>
+      <div class="card-body">
+          <!-- Question & Answer Starts -->
+         <p class="question"><strong>1. How do you divide polynomials on a calculator?</strong></p>
+         <p class="answer">Enter two polynomials in the input fields and press the calculate button. The quotient polynomial will get displayed on the screen.</p><hr>
+
+
+         <p class="question"><strong>2. Which is the easiest way to divide polynomials?</strong></p>
+         <p class="answer">The polynomial long division method is the easiest way to divide two long polynomials.</p><hr>
+
+
+         <p class="question"><strong>3. What is polynomials division?</strong></p>
+         <p class="answer">A polynomial is an expression that has many terms. It has coefficients, variables, constants, exponents and arithmetic operators. We use the polynomial long division method for finding the division of two polynomials.</p><hr>
+  </div>
+   </div>
+</div>
+<!-- <div class="card">
+  <div class="card-header">
+  <h3 class="h3">Dividing Polynomials Calculations</h3>
+</div>
+<div class="card-body">
+  <ul>
+    {% for i,j in sk1 %}
+  <li><a  href="{{i}}" title="{{j}}">{{j}}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+</div>
+</div> -->
+{%endblock%}

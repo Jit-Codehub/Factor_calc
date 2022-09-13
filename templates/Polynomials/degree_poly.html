@@ -1,0 +1,206 @@
+{%extends 'base/polynomial_base1.html'%}
+{%load static%}
+  {%block meta%}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="{% static 'images/logo/Factor-Polynomial-Com-Fevicon.png' %}" type="icon">
+  {%block css%}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  {%endblock%}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- META DATA STARTS --->
+    <title>Degree of a Polynomial Calculator | Online Polynomial Degree Calculator</title>
+    <meta name="description" content="Use our free online Degree of a Polynomial Calculator &amp; find the simple steps on How to determine the degree of a polynomial in just seconds">
+    <link rel="canonical" href="{{request.build_absolute_uri}}" >
+<!-- META DATA ENDS --->
+
+<!-- OPEN GRAPH CONFIGURATIONS STARTS -->
+    <!--  FACEBOOK CONFIGURATION STARTS  -->
+    <meta content="https://www.facebook.com/Factor-Polynomials-102151955136428" property="og:url" />
+    <meta property="og:title" content="Degree of a Polynomial Calculator | Online Polynomial Degree Calculator"/>
+    <meta property="og:description" content="Use our free online Degree of a Polynomial Calculator &amp; find the simple steps on How to determine the degree of a polynomial in just seconds"/>
+    <meta content="" property="og:site_name" />
+    <meta  content="https://factorpolynomials.com/static/images/polynomials/Degree-of-Polynomial-Calculator.jpeg" property="og:image" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="435" />
+    <meta property="og:image:width" content="354" />
+    <!--  FACEBOOK CONFIGURATION ENDS  -->
+    <!-- TWITTER CARD CONFIGURATION STARTS  -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="https://twitter.com/factorpolynomil"/>
+    <meta name="twitter:title" content="Degree of a Polynomial Calculator | Online Polynomial Degree Calculator"/>
+    <meta name="twitter:description" content="Use our free online Degree of a Polynomial Calculator &amp; find the simple steps on How to determine the degree of a polynomial in just seconds"/>
+    <meta name="twitter:image:src" content="https://factorpolynomials.com/static/images/polynomials/Degree-of-Polynomial-Calculator.jpeg"/>
+    <meta property="twitter:image:height" content="435"/>
+    <meta property="twitter:image:width" content="354"/>
+    <!-- TWITTER CARD CONFIGURATION ENDS  -->
+    <!--  LINKEDIN CONFIGURATION STARTS-->
+    <meta property='og:title' content="Degree of a Polynomial Calculator | Online Polynomial Degree Calculator"/>
+    <meta property='og:image' content="https://factorpolynomials.com/static/images/polynomials/Degree-of-Polynomial-Calculator.jpeg"/>
+    <meta property='og:description' content="Use our free online Degree of a Polynomial Calculator &amp; find the simple steps on How to determine the degree of a polynomial in just seconds"/>
+    <meta property='og:url' content="https://www.linkedin.com/in/factorpolynomials/" />
+    <!-- end of linkedin CONFIGURATIONS ENDS -->
+<!-- OPEN GRAPH CONFIGURATION ENDS -->
+<!-- FAQ SCHEMA STARTS -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the degree of each polynomial?","acceptedAnswer":{"@type":"Answer","text":"The degree of each term in a polynomial in two variables is the sum of the exponents in each term and the degree of the polynomial is the highest sum value."}},{"@type":"Question","name":"What is a Degree in Algebra?","acceptedAnswer":{"@type":"Answer","text":"In algebra \"Degree\" is sometimes described as \"Order\". The degree for one variable polynomial expression is the largest exponent of that variable."}},{"@type":"Question","name":"How do you determine the degree of a polynomial?","acceptedAnswer":{"@type":"Answer","text":"o determine the degree of the polynomial, add up the exponents of each term, and select the highest sum if the expression is having two variables. The degree of the polynomial can be determined as the largest exponent of the variable if the expression is having one variable."}},{"@type":"Question","name":" How can I find the degree value of a polynomial using the degree of a polynomial calculator?","acceptedAnswer":{"@type":"Answer","text":"It is so simple to find the degree value of a polynomial with a degree of a polynomial calculator. All you need to do is provide the given expression in the input box & attain the output in no time."}}]}</script><!--FAQPage Code Generated by https://saijogeorge.com/json-ld-schema-generator/faq/-->
+{%endblock%}
+{%block content%}
+<div class="container">
+    <div class="card c1">
+      <div class="card-header">
+  <h1 class="h1">Degree of a Polynomial Calculator</h1>
+  </div>
+  <div class="card-body">
+    <p>Calculator to find degree of a polynomial online is provided here for free of charge. Just enter the polynomial expression in the input field and get the output with steps from the factorpolynomials.com Degree of a Polynomial Calculator.</p><br>
+    <p><b>Ex: </b> 
+    <ul>
+      <li><a href="/degree-of-a-polynomial-x~2_6xy_9y~2/" title="Degree of a polynomial x^2+6xy+9y^2" >Degree of a polynomial x^2+6xy+9y^2</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_7x_10/" title="Degree of a polynomial x^2+7x+10" >Degree of a polynomial x^2+7x+10</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_6xy-7y~2/" title="Degree of a polynomial x^2+6xy-7y^2" >Degree of a polynomial x^2+6xy-7y^2</a></li>
+
+    </ul>
+    </p>
+    <form method="POST">{% csrf_token %}
+      <div class="form-row align-items-center">
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInputGroup">Degree of Polynomial</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><strong>Determine the Degree of a Polynomial: </strong></div>
+            </div>
+            <input type="text" class="form-control" name="textfield1" id="inlineFormInputGroup" placeholder="Enter Polynomial" value="x^2+6xy+10y^2">
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-2">Calculate</button>
+        </div>
+      </div>
+    </form>
+    <p>{{ cont|default:" "}}</p>
+    <br>
+    <p><strong>Here are some samples of Degree of a polynomial calculations.</strong></p>
+ <div class='row'>
+  <div class='col-sm-6'> <ul>
+<li><a href="/degree-of-a-polynomial-x~2_13x_47/" title="Degree of a polynomial x^2+13x+47" >Degree of a polynomial x^2+13x+47</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_11x_121-div-4/" title="Degree of a polynomial x^2+11x+121/4" >Degree of a polynomial x^2+11x+121/4</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_16xy_64y~2/" title="Degree of a polynomial x^2+16xy+64y^2" >Degree of a polynomial x^2+16xy+64y^2</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_16x_60/" title="Degree of a polynomial x^2+16x+60" >Degree of a polynomial x^2+16x+60</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_16x_4/" title="Degree of a polynomial x^2+16x+4" >Degree of a polynomial x^2+16x+4</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_18xy_81y~2/" title="Degree of a polynomial x^2+18xy+81y^2" >Degree of a polynomial x^2+18xy+81y^2</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_20x_100-x~4/" title="Degree of a polynomial x^2+20x+100-x^4" >Degree of a polynomial x^2+20x+100-x^4</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_20x/" title="Degree of a polynomial x^2+20x" >Degree of a polynomial x^2+20x</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_21/" title="Degree of a polynomial x^2+21" >Degree of a polynomial x^2+21</a></li>
+<li><a href="/degree-of-a-polynomial-x~2y~2-12xy_36/" title="Degree of a polynomial x^2y^2-12xy+36" >Degree of a polynomial x^2y^2-12xy+36</a></li>
+<li><a href="/degree-of-a-polynomial-x~2y~2-144/" title="Degree of a polynomial x^2y^2-144" >Degree of a polynomial x^2y^2-144</a></li>
+<li><a href="/degree-of-a-polynomial-x~2-8-div-7*(xy)_16-div-49y~2/" title="Degree of a polynomial x^2-8/7*(xy)+16/49y^2" >Degree of a polynomial x^2-8/7*(xy)+16/49y^2</a></li>
+<li><a href="/degree-of-a-polynomial-x~2-a~2/" title="Degree of a polynomial x^2-a^2" >Degree of a polynomial x^2-a^2</a></li>
+<li><a href="/degree-of-a-polynomial-x~2y~2-2xy-15/" title="Degree of a polynomial x^2y^2-2xy-15" >Degree of a polynomial x^2y^2-2xy-15</a></li>
+<li><a href="/degree-of-a-polynomial-x~2y~2-16/" title="Degree of a polynomial x^2y^2-16" >Degree of a polynomial x^2y^2-16</a></li>
+<li><a href="/degree-of-a-polynomial-x~2y~2-16xy_64/" title="Degree of a polynomial x^2y^2-16xy+64" >Degree of a polynomial x^2y^2-16xy+64</a></li>
+<li><a href="/degree-of-a-polynomial-x~2-1-div-4x/" title="Degree of a polynomial x^2-1/4x" >Degree of a polynomial x^2-1/4x</a></li>
+<li><a href="/degree-of-a-polynomial-x~2-1-div-169/" title="Degree of a polynomial x^2-1/169" >Degree of a polynomial x^2-1/169</a></li>
+<li><a href="/degree-of-a-polynomial-x~12_y~12/" title="Degree of a polynomial x^12+y^12" >Degree of a polynomial x^12+y^12</a></li>
+<li><a href="/degree-of-a-polynomial-x~12-25/" title="Degree of a polynomial x^12-25" >Degree of a polynomial x^12-25</a></li>
+</ul>
+</div><div class="col-sm-6">
+<ul>
+<li><a href="/degree-of-a-polynomial-x~2_5x-1/" title="Degree of a polynomial x^2+5x-1" >Degree of a polynomial x^2+5x-1</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_5x-4/" title="Degree of a polynomial x^2+5x-4" >Degree of a polynomial x^2+5x-4</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_5x_1/" title="Degree of a polynomial x^2+5x+1" >Degree of a polynomial x^2+5x+1</a></li>
+<li><a href="/degree-of-a-polynomial--x~2_5x_1/" title="Degree of a polynomial -x^2+5x+1" >Degree of a polynomial -x^2+5x+1</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_5x_25/" title="Degree of a polynomial x^2+5x+25" >Degree of a polynomial x^2+5x+25</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_26x_169/" title="Degree of a polynomial x^2+26x+169" >Degree of a polynomial x^2+26x+169</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_2x_5x_10/" title="Degree of a polynomial x^2+2x+5x+10" >Degree of a polynomial x^2+2x+5x+10</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_2ax_a~2/" title="Degree of a polynomial x^2+2ax+a^2" >Degree of a polynomial x^2+2ax+a^2</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_2x-4/" title="Degree of a polynomial x^2+2x-4" >Degree of a polynomial x^2+2x-4</a></li>
+<li><a href="/degree-of-a-polynomial--x~2_2x-1/" title="Degree of a polynomial -x^2+2x-1" >Degree of a polynomial -x^2+2x-1</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_2x-1/" title="Degree of a polynomial x^2+2x-1" >Degree of a polynomial x^2+2x-1</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_2x-10/" title="Degree of a polynomial x^2+2x-10" >Degree of a polynomial x^2+2x-10</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_2xy-15y~2/" title="Degree of a polynomial x^2+2xy-15y^2" >Degree of a polynomial x^2+2xy-15y^2</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_2xy-24y~2/" title="Degree of a polynomial x^2+2xy-24y^2" >Degree of a polynomial x^2+2xy-24y^2</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_3x_1/" title="Degree of a polynomial x^2+3x+1" >Degree of a polynomial x^2+3x+1</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_32x_256/" title="Degree of a polynomial x^2+32x+256" >Degree of a polynomial x^2+32x+256</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_2xy-8y~2/" title="Degree of a polynomial x^2+2xy-8y^2" >Degree of a polynomial x^2+2xy-8y^2</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_2xy-80y~2/" title="Degree of a polynomial x^2+2xy-80y^2" >Degree of a polynomial x^2+2xy-80y^2</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_2y_26/" title="Degree of a polynomial x^2+2y+26" >Degree of a polynomial x^2+2y+26</a></li>
+<li><a href="/degree-of-a-polynomial-x~2_3/" title="Degree of a polynomial x^2+3" >Degree of a polynomial x^2+3</a></li>
+</ul>
+</div>
+</div>
+    <p><strong>Degree of a Polynomial Calculator:</strong> All basic and complex problems on polynomial degree are calculated so easily &amp; efficiently by using our Degree of a polynomial calculator. Polynomial Degree is nothing but the highest exponent of the polynomial expression. Gain more details about degree of an expression, how to find it effortlessly with solved steps from this page. Also, use this handy Polynomial Degree Calculator &amp; avail the exact results with a detailed show work.</p></div></div>
+  <div class="card ">
+    <div class="card-header"><h2 class="h2">What is Meant by Degree of Polynomial?</</h2></div>
+    <div class="card-body">
+      <p>The degree of a polynomial is the greatest exponential power connected with the polynomial variable. Also, it is known as the order of the polynomial. Sometime, degree is noted as 'deg'.</p>
+    <p>For example, let's take the trinomial x^2+x+2. Here variable x has the highest exponent x^2 that is 2, hence the polynomial degree is 2.</p>
+    <p>Some more examples to find the degree of polynomial is as follows:</p>
+    <ul>
+    <li>3y^2+2xy^3+1</li>
+    <li>6x^4+3y^3+2z^2+1</li>
+    </ul>
+    <h3>How to Find Polynomial Degree? (Simple Steps)</h3>
+    <p>In order to calculate the polynomial degree, the steps provided here are to be followed carefully:</p>
+    <ol>
+    <li>First, we need to check the variables and coefficients should be ignored.</li>
+    <li>Next, we should find the greatest exponent in the given expression of polynomial.</li>
+    <li>To do this, write down the each term of the polynomial expression and their degrees values.</li>
+    <li>Finally, you can pick the exact highest degree value and it is called degree of the polynomial.</li>
+    </ol>
+    <p>Explore the <a title="factorpolynomials.com" href="https://factorpolynomials.com/"><strong>factorpolynomials.com</strong></a> and easily find the polynomial degree with the help of our online degree of a polynomial calculator. Here, we have explained the concept of degree of polynomial with solved example. So, please check it out &amp; practice well.</p>
+
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card ">
+    <div class="card-header"><h3 class="h3">Example: Find the polynomial degree for the expression: x^4+x^3+2x^2+5</h3></div>
+    <div class="card-body">
+      <p><strong>Solution:</strong></p>
+      <p>Given expression is x^4+x^3+2x^2+5</p>
+      <p>The degree of polynomial is the highest degree values in the given expression. So, let's find out the degree of each term in the expression.</p>
+      <p>The degree of x^4 is 4</p>
+      <p>The degree of x^3 is 3</p>
+      <p>The degree of 2x^2 is 2</p>
+      <p>The degree of 5 is 0</p>
+      <p>Hence, the highest exponential value is polynomial degree. So, 4 is the degree of a polynomial x^4+x^3+2x^2+5.</p>
+
+      <p>You can easily find out the degree value of any polynomials on our Degree of a Polynomial Calculator by just entering the input expression and click on the calculate button. If you are searching for other polynomial or algebra concepts calculators then here is our website link @ <a href="{%url 'polynomials_calculator'%}">factorpolynomials.com</a> visit & explore more maths concepts.</p>
+      <img src="{% static 'images/polynomials/Degree-of-Polynomial-Calculator.jpeg' %}" alt="Degree of a Polynomial Calculator">
+    </div>
+  </div>
+  <div class="card ">
+      <div class="card-header">
+          <h3 class="h3">FAQs on Degree of a Polynomial Calculator</h3>
+      </div>
+      <div class="card-body">
+          <!-- Question & Answer Starts --->
+         <p class="question"><strong>1. How do you determine the degree of a polynomial for two variables?</strong></p>
+          <p>Add up the exponents of each term and select the highest sum of the variable to get the degree of a polynomial for two variables.</p>
+          <p class="question"><strong>2. What is the 5 degree of a polynomial?</strong></p>
+          <p>The 5 degree of a polynomial is called Quintic.</p>
+          <p class="question"><strong>3. How do you find the degree of a polynomial with online calculator tool?</strong></p>
+          <p>By using the degree of a polynomial online calculator, we can easily find the degree of a polynomial. Just provide the expression in the input field and you are away of one click to calculate the polynomial degree of the given expression.</p>
+          <p class="question"><strong>4. What is the degree of 12 polynomial?</strong></p>
+          <p>Here 12 is not a polynomial expression. So, the degree of 12 polynomial is Zero.</p>
+          </div>
+   </div>
+</div>
+<!-- <div class="card">
+  <div class="card-header">
+  <h3 class="h3">Degree of Polynomial Calculations</h3>
+</div>
+<div class="card-body">
+  <ul>
+    {% for i,j in sk1 %}
+  <li><a  href="{{i}}" title="{{j}}">{{j}}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+</div>
+</div> -->
+{%endblock%}

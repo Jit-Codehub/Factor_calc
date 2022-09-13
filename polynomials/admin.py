@@ -1,0 +1,23 @@
+from django.contrib import admin
+from .models import *
+# Register your models here.
+admin.site.register(add_poly_db)
+admin.site.register(sub_poly_db)
+admin.site.register(mul_poly_db)
+admin.site.register(div_poly_db)
+admin.site.register(check_poly_db)
+admin.site.register(degree_poly_db)
+admin.site.register(ascding_poly_db)
+admin.site.register(descding_poly_db)
+admin.site.register(leading_poly_db)
+admin.site.register(fact_poly_db)
+admin.site.register(gcf_poly_db)
+admin.site.register(gcf_fact_db)
+admin.site.register(poly_lcm_db)
+admin.site.register(poly_prime_db)
+admin.site.register(poly_fact_cube_db)
+admin.site.register(poly_fact_sqr_db)
+admin.site.register(binom_expn_db)
+admin.site.register(fact_complex_db)
+admin.site.register(poly_root_db)
+admin.site.register(poly_remainer_db)

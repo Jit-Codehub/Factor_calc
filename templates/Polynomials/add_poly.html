@@ -1,0 +1,229 @@
+{%extends 'base/polynomial_base1.html'%}
+{%load static%}
+  {%block meta%}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="{% static 'images/logo/Factor-Polynomial-Com-Fevicon.png' %}" type="icon">
+  {%block css%}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  {%endblock%}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- META DATA STARTS --->
+    <title>Adding Polynomials Calculator | Find Addition of Polynomials</title>
+    <meta name="description" content="Online Adding Polynomials Calculator is helpful to find the addition of polynomials easily. Check the steps on how to add polynomials with example questions.">
+    <link rel="canonical" href="{{request.build_absolute_uri}}" >
+<!-- META DATA ENDS --->
+
+<!-- OPEN GRAPH CONFIGURATIONS STARTS -->
+    <!--  FACEBOOK CONFIGURATION STARTS  -->
+    <meta content="https://www.facebook.com/Factor-Polynomials-102151955136428" property="og:url" />
+    <meta property="og:title" content="Adding Polynomials Calculator | Find Addition of Polynomials"/>
+    <meta property="og:description" content="Online Adding Polynomials Calculator is helpful to find the addition of polynomials easily. Check the steps on how to add polynomials with example questions."/>
+    <meta content="" property="og:site_name" />
+    <meta  content="https://factorpolynomials.com/static/images/polynomials/Polynomials-Addition-Calculator.jpeg" property="og:image" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="435" />
+    <meta property="og:image:width" content="354" />
+    <!--  FACEBOOK CONFIGURATION ENDS  -->
+    <!-- TWITTER CARD CONFIGURATION STARTS  -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="https://twitter.com/factorpolynomil"/>
+    <meta name="twitter:title" content="Adding Polynomials Calculator | Find Addition of Polynomials"/>
+    <meta name="twitter:description" content="Online Adding Polynomials Calculator is helpful to find the addition of polynomials easily. Check the steps on how to add polynomials with example questions."/>
+    <meta name="twitter:image:src" content="https://factorpolynomials.com/static/images/polynomials/Polynomials-Addition-Calculator.jpeg"/>
+    <meta property="twitter:image:height" content="435"/>
+    <meta property="twitter:image:width" content="354"/>
+    <!-- TWITTER CARD CONFIGURATION ENDS  -->
+    <!--  LINKEDIN CONFIGURATION STARTS-->
+    <meta property='og:title' content="Adding Polynomials Calculator | Find Addition of Polynomials"/>
+    <meta property='og:image' content="https://factorpolynomials.com/static/images/polynomials/Polynomials-Addition-Calculator.jpeg"/>
+    <meta property='og:description' content="Online Adding Polynomials Calculator is helpful to find the addition of polynomials easily. Check the steps on how to add polynomials with example questions."/>
+    <meta property='og:url' content="https://www.linkedin.com/in/factorpolynomials/" />
+    <!-- end of linkedin CONFIGURATIONS ENDS -->
+<!-- OPEN GRAPH CONFIGURATION ENDS -->
+<!-- FAQ SCHEMA STARTS -->
+<script type="application/ld+json">{"@context": "https://schema.org","@type": "FAQPage","mainEntity": [{"@type": "Question","name":"1.
+  How do you add polynomials?
+  ","acceptedAnswer": {"@type": "Answer","text":" To add polynomials, remove the parenthesis or braces between them. Write similar terms together. Add similar terms and constants to get the final expression."}	}, {"@type": "Question","name":"2.
+  What are polynomials?
+  ","acceptedAnswer": {"@type": "Answer","text":" In mathematics, polynomials are expressions that are composed of several terms. In the word polynomial, the term "poly" means many, "nomial" means terms."}	}, {"@type": "Question","name":"3.
+  Solve x²+2-6x²+7x-9.
+  ","acceptedAnswer": {"@type": "Answer","text":" x²+2-6x²+7x-9 = x²-6x²+7x-9+2
+  = -5x²+7x-7"}	}, {"@type": "Question","name":"4.
+  How to add polynomials using the column method?
+  ","acceptedAnswer": {"@type": "Answer","text":" Adding polynomials using the column method means writing two different polynomials in two different rows one after the other. The like terms of both polynomials should be in the same column and then add them."}	}]}</script>
+  
+{%endblock%}
+{%block content%}
+<div class="container">
+    <div class="card c1">
+      <div class="card-header">
+  <h1 class="h1">Adding Polynomials Calculator</h1>
+  </div>
+  <div class="card-body">
+    <p>Handy Adding Polynomials Calculator is a free tool that finds the sum of the polynomials and gives the answer effortlessly. Provide the polynomial expressions in the input boxes and hit the calculate button to get the result with step by step explanation.</p>
+    <br>
+    <p><b>Ex: </b> 
+    <ul>
+      <li><a href="/adding-polynomials-8x~2_6x-3_2x~2_7x_3/" title="Adding Polynomials 8x^2+6x-3+2x^2+7x+3" >Adding Polynomials 8x^2+6x-3+2x^2+7x+3</a></li>
+    <li><a href="/adding-polynomials-4x~2_7x_6_2x~2_7x_9/" title="Adding Polynomials 4x^2+7x+6+2x^2+7x+9" >Adding Polynomials 4x^2+7x+6+2x^2+7x+9</a></li>
+    <li><a href="/adding-polynomials-5x~2_7x_9_2x~2_7x-1/" title="Adding Polynomials 5x^2+7x+9+2x^2+7x-1" >Adding Polynomials 5x^2+7x+9+2x^2+7x-1</a></li>
+
+      </ul>
+    </p>
+    <form method="POST">{% csrf_token %}
+      <div class="form-row align-items-center">
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInputGroup">Adding Polynomials</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><strong>Calculate Addition of given Polynomials:</strong></div>
+            </div>
+            
+            <input type="text" class="form-control" name="textfield1" id="inlineFormInputGroup" placeholder="Enter Polynomials" value="x^5+3x^5+1+x^6+x^3+x">
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-2">Calculate</button>
+        </div>
+      </div>
+    </form>
+    <p>{{ cont|default:" "}}</p>
+    <br>
+    <p><strong>Here are some samples of Adding Polynomials calculations.</strong></p>
+    <div class='row'>
+      <div class='col-sm-6'> <ul>
+    <li><a href="/adding-polynomials-16t~2-105t_34_5t~2-151t_88/" title="Adding Polynomials 16t^2-105t+34+5t^2-151t+88" >Adding Polynomials 16t^2-105t+34+5t^2-151t+88</a></li>
+    <li><a href="/adding-polynomials-18t~2-17t_4_6t~2-21t_6/" title="Adding Polynomials 18t^2-17t+4+6t^2-21t+6" >Adding Polynomials 18t^2-17t+4+6t^2-21t+6</a></li>
+    <li><a href="/adding-polynomials-26t~2-215t_97_9t~2-23t_8/" title="Adding Polynomials 26t^2-215t+97+9t^2-23t+8" >Adding Polynomials 26t^2-215t+97+9t^2-23t+8</a></li>
+    <li><a href="/adding-polynomials-6t~2-24t_140_8t~2-175t_85/" title="Adding Polynomials 6t^2-24t+140+8t^2-175t+85" >Adding Polynomials 6t^2-24t+140+8t^2-175t+85</a></li>
+    <li><a href="/adding-polynomials-7t~2-29t_12-16t~2-2t_20/" title="Adding Polynomials 7t^2-29t+12-16t^2-2t+20" >Adding Polynomials 7t^2-29t+12-16t^2-2t+20</a></li>
+    <li><a href="/adding-polynomials-t~2-33t_16_6t~2-35t_18/" title="Adding Polynomials t^2-33t+16+6t^2-35t+18" >Adding Polynomials t^2-33t+16+6t^2-35t+18</a></li>
+    <li><a href="/adding-polynomials--19x~2_215x-97_x~2_96x_112/" title="Adding Polynomials -19x^2+215x-97+x^2+96x+112" >Adding Polynomials -19x^2+215x-97+x^2+96x+112</a></li>
+    <li><a href="/adding-polynomials--11x~2_21x-6_2x~2_16x-9/" title="Adding Polynomials -11x^2+21x-6+2x^2+16x-9" >Adding Polynomials -11x^2+21x-6+2x^2+16x-9</a></li>
+    <li><a href="/adding-polynomials--6x~2_235x-151_2x~2_20x_47/" title="Adding Polynomials -6x^2+235x-151+2x^2+20x+47" >Adding Polynomials -6x^2+235x-151+2x^2+20x+47</a></li>
+    <li><a href="/adding-polynomials--x~2_23x-8_2x~2_20x_52/" title="Adding Polynomials -x^2+23x-8+2x^2+20x+52" >Adding Polynomials -x^2+23x-8+2x^2+20x+52</a></li>
+    <li><a href="/adding-polynomials--x~2_255_2x~2_2x_1/" title="Adding Polynomials -x^2+255+2x^2+2x+1" >Adding Polynomials -x^2+255+2x^2+2x+1</a></li>
+    <li><a href="/adding-polynomials--24x~2_27x-10_2x~2_2x_5/" title="Adding Polynomials -24x^2+27x-10+2x^2+2x+5" >Adding Polynomials -24x^2+27x-10+2x^2+2x+5</a></li>
+    <li><a href="/adding-polynomials--7x~2_32x_104_2x~2_2x_6/" title="Adding Polynomials -7x^2+32x+104+2x^2+2x+6" >Adding Polynomials -7x^2+32x+104+2x^2+2x+6</a></li>
+    <li><a href="/adding-polynomials--4x~2_32x_120_2x~2_2x-12/" title="Adding Polynomials -4x^2+32x+120+2x^2+2x-12" >Adding Polynomials -4x^2+32x+120+2x^2+2x-12</a></li>
+    <li><a href="/adding-polynomials--10x~2_32x_136_2x~2_2x-2/" title="Adding Polynomials -10x^2+32x+136+2x^2+2x-2" >Adding Polynomials -10x^2+32x+136+2x^2+2x-2</a></li>
+    <li><a href="/adding-polynomials--9x~2_32x_152_2x~2_2x-5/" title="Adding Polynomials -9x^2+32x+152+2x^2+2x-5" >Adding Polynomials -9x^2+32x+152+2x^2+2x-5</a></li>
+    <li><a href="/adding-polynomials--8x~2_32x_72_2x~2_2x-6/" title="Adding Polynomials -8x^2+32x+72+2x^2+2x-6" >Adding Polynomials -8x^2+32x+72+2x^2+2x-6</a></li>
+    <li><a href="/adding-polynomials--6x~2_32x_88_2x~2_3x/" title="Adding Polynomials -6x^2+32x+88+2x^2+3x" >Adding Polynomials -6x^2+32x+88+2x^2+3x</a></li>
+    <li><a href="/adding-polynomials-16x~2_32x-9_2x~2_3x_1/" title="Adding Polynomials 16x^2+32x-9+2x^2+3x+1" >Adding Polynomials 16x^2+32x-9+2x^2+3x+1</a></li>
+    <li><a href="/adding-polynomials--16x~2_60x_16_2x~2_8x_2/" title="Adding Polynomials -16x^2+60x+16+2x^2+8x+2" >Adding Polynomials -16x^2+60x+16+2x^2+8x+2</a></li>
+    </ul>
+    </div><div class="col-sm-6">
+    <ul>
+    <li><a href="/adding-polynomials--16x~2_64x_80_2x~2_8x_5/" title="Adding Polynomials -16x^2+64x+80+2x^2+8x+5" >Adding Polynomials -16x^2+64x+80+2x^2+8x+5</a></li>
+    <li><a href="/adding-polynomials-x~2-151x_88-6x~2_128x_144/" title="Adding Polynomials x^2-151x+88-6x^2+128x+144" >Adding Polynomials x^2-151x+88-6x^2+128x+144</a></li>
+    <li><a href="/adding-polynomials-6x~2-175x_85-8x~2_151x-88/" title="Adding Polynomials 6x^2-175x+85-8x^2+151x-88" >Adding Polynomials 6x^2-175x+85-8x^2+151x-88</a></li>
+    <li><a href="/adding-polynomials-8x~2-201x_93-9x~2_175x-85/" title="Adding Polynomials 8x^2-201x+93-9x^2+175x-85" >Adding Polynomials 8x^2-201x+93-9x^2+175x-85</a></li>
+    <li><a href="/adding-polynomials-10x~2-215x_97-2x~2_17x-4/" title="Adding Polynomials 10x^2-215x+97-2x^2+17x-4" >Adding Polynomials 10x^2-215x+97-2x^2+17x-4</a></li>
+    <li><a href="/adding-polynomials-5x~2-235x_151-7x~2_195x-87/" title="Adding Polynomials 5x^2-235x+151-7x^2+195x-87" >Adding Polynomials 5x^2-235x+151-7x^2+195x-87</a></li>
+    <li><a href="/adding-polynomials-9x~2-240x_896-2x~2_201x-93/" title="Adding Polynomials 9x^2-240x+896-2x^2+201x-93" >Adding Polynomials 9x^2-240x+896-2x^2+201x-93</a></li>
+    <li><a href="/adding-polynomials-x~2_3x_2-6x~2_7x-9/" title="Adding Polynomials x^2+3x+2-6x^2+7x-9" >Adding Polynomials x^2+3x+2-6x^2+7x-9</a></li>
+    <li><a href="/adding-polynomials-6x~2_3x_4x_x~2-4x-7/" title="Adding Polynomials 6x^2+3x+4x+x^2-4x-7" >Adding Polynomials 6x^2+3x+4x+x^2-4x-7</a></li>
+    <li><a href="/adding-polynomials-22x~2_3x_5-12x~2_4x_3/" title="Adding Polynomials 22x^2+3x+5-12x^2+4x+3" >Adding Polynomials 22x^2+3x+5-12x^2+4x+3</a></li>
+    <li><a href="/adding-polynomials-3x~2_3x-1_9x~2_4x_3/" title="Adding Polynomials 3x^2+3x-1+9x^2+4x+3" >Adding Polynomials 3x^2+3x-1+9x^2+4x+3</a></li>
+    <li><a href="/adding-polynomials-4x~2_3x-5_2x~2_4x-4/" title="Adding Polynomials 4x^2+3x-5+2x^2+4x-4" >Adding Polynomials 4x^2+3x-5+2x^2+4x-4</a></li>
+    <li><a href="/adding-polynomials-6x~2_3x-7_2x~2_4x_7/" title="Adding Polynomials 6x^2+3x-7+2x^2+4x+7" >Adding Polynomials 6x^2+3x-7+2x^2+4x+7</a></li>
+    <li><a href="/adding-polynomials-7x~2_3x-8_2x~2_5x_3/" title="Adding Polynomials 7x^2+3x-8+2x^2+5x+3" >Adding Polynomials 7x^2+3x-8+2x^2+5x+3</a></li>
+    <li><a href="/adding-polynomials-8x~2_4x_2_2x~2_5x_4/" title="Adding Polynomials 8x^2+4x+2+2x^2+5x+4" >Adding Polynomials 8x^2+4x+2+2x^2+5x+4</a></li>
+    <li><a href="/adding-polynomials-9x~2_4x-5_2x~2_6x_1/" title="Adding Polynomials 9x^2+4x-5+2x^2+6x+1" >Adding Polynomials 9x^2+4x-5+2x^2+6x+1</a></li>
+    <li><a href="/adding-polynomials-10x~2_4x-6_2x~2_4x-9/" title="Adding Polynomials 10x^2+4x-6+2x^2+4x-9" >Adding Polynomials 10x^2+4x-6+2x^2+4x-9</a></li>
+    <li><a href="/adding-polynomials-11x~2_5x_5_2x~2_6x_3/" title="Adding Polynomials 11x^2+5x+5+2x^2+6x+3" >Adding Polynomials 11x^2+5x+5+2x^2+6x+3</a></li>
+    <li><a href="/adding-polynomials-21x~2_5x-3_2x~2_6x_9/" title="Adding Polynomials 21x^2+5x-3+2x^2+6x+9" >Adding Polynomials 21x^2+5x-3+2x^2+6x+9</a></li>
+    <li><a href="/adding-polynomials-24x~2_6x-1_2x~2_6x-2/" title="Adding Polynomials 24x^2+6x-1+2x^2+6x-2" >Adding Polynomials 24x^2+6x-1+2x^2+6x-2</a></li>
+    </ul>
+    </div>
+    </div>
+    <p><strong>Adding Polynomials Calculator: </strong>This calculator makes it easy for you to calculate the sum of polynomials by producing the exact answer. In addition to the answer, it also shows the detailed calculation work. Here we are providing the steps for adding polynomials and example questions with solutions.</p>
+</div></div>
+  <div class="card ">
+    <div class="card-header"><h2 class="h2">What is the Addition of Polynomials?</h2></div>
+    <div class="card-body">
+      <p>In general, a polynomial is defined as an expression having different terms.
+        Adding polynomials means combining the similar terms (terms with the same order). To find the sum of polynomials add the coefficients of variables having the same power. We have two different methods to add polynomials; they are like term method and column method.
+        </p>
+    </div>
+  </div>
+  <div class="card ">
+    <div class="card-header"><h3 class="h3">How to add polynomials?</h3></div>
+    <div class="card-body">
+      <p>Steps to Add Polynomials</p>
+      <p>Following are the steps to add two polynomials easily.</p>
+      <ul>
+        <li>Take any two polynomials having different terms.</li>
+        <li>Place the like terms together.</li>
+        <li>Add all like terms and constants.</li>
+        <li>Write the final polynomial either in ascending or descending order of their degree.</li>
+      </ul>
+      <p>If you are n't aware of the concept of the like terms you can add polynomials using column method i.e. line the polynomials up column-wise and add. Using the columns method can be great for complicated sums.</p>
+      <p>Seek help from free online calculators provided for multiple concepts of maths you might be looking for at <a href="{%url 'polynomials_calculator'%}">factorpolynomials.com</a></p>
+      
+      <img src="{% static 'images/polynomials/Polynomials-Addition-Calculator.jpeg' %}" alt="Polynomials Addition Calculator">
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+          <h3 class="h3">Multiplying Polynomials with Example</h3>
+      </div>
+    <div class="card-body">
+          <p><strong>Example</strong></p>
+          <p><strong>Question:Add 1 + 3x² + 5x + 10x³ + 2x + x⁴ + x³ + 5</strong></p>
+          <p><strong>Solution:</strong></p>
+          <p>Given input is 1 + 3x² + 5x + 10x³ + 2x + x⁴ + x³ + 5</p>
+          <p>Group the similar terms</p>
+          <p>1 + 3x² + 5x + 10x³ + 2x + x⁴ + x³ + 5 = 1 + 5 + 5x + 2x + 3x² + 10x³ + x³ + x⁴</p>
+          <p>Add the like terms</p>
+          <p>= 6 + 7x + 3x² + 11x³ + x⁴</p>
+          <p>Therefore, 1 + 3x² + 5x + 10x³ + 2x + x⁴ + x³ + 5 = 6 + 7x + 3x² + 11x³ + x⁴.</p>
+          <a href="/">factorpolynomials.com</a> has got concepts like addition, subtraction, multiplication, division of polynomials, and many more along with their relevant calculators all one under one roof.
+          </div>
+  </div>
+  <div class="card">
+      <div class="card-header">
+          <h3 class="h3">FAQs on Adding Polynomials</h3>
+      </div>
+      <div class="card-body">
+          <!-- Question & Answer Starts --->
+         <p class="question"><strong>1. How do you add polynomials?</strong></p>
+         <p class="answer">To add polynomials, remove the parentheses or braces between them. Write similar terms together. Add similar terms and constants to get the final expression.</p><hr>
+
+
+         <p class="question"><strong>2. What are polynomials?</strong></p>
+         <p class="answer">In mathematics, polynomials are expressions that are composed of several terms. In the word polynomial, the term "poly" means many, "nomial" means terms.</p><hr>
+
+
+         <p class="question"><strong>3. Solve x²+2-6x²+7x-9.</strong></p>
+         <p class="answer">x²+2-6x²+7x-9 = x²-6x²+7x-9+2
+          = -5x²+7x-7
+          .</p><hr>
+
+
+         <p class="question"><strong>4. How to add polynomials using the column method?</strong></p>
+         <p class="answer">Adding polynomials using the column method means writing two different polynomials in two different rows one after the other. The like terms of both polynomials should be in the same column and then add them.</p>
+      </div>
+   </div>
+</div>
+<!-- <div class="card">
+  <div class="card-header">
+  <h3 class="h3">Adding Polynomials Calculations</h3>
+</div>
+<div class="card-body">
+  <ul>
+    {% for i,j in sk1 %}
+  <li><a  href="{{i}}" title="{{j}}">{{j}}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+</div>
+</div> -->
+{%endblock%}
